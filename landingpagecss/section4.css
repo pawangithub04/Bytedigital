@@ -163,6 +163,8 @@
     width: 100%;
     max-width: 398px;
     max-height: 144px;
+    position: relative;
+    bottom: -32px;
 }
 
 .line {
