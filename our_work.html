@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background: linear-gradient(90deg, #232526 0%, #414345 100%);
+    }
+    .header{
+    padding: 252px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    display: flex;
+justify-content: space-between;
+}
+.logo{
+    display: flex;
+}
+.byte {
+    color: #F5F5F5;
+    font-family: IBM Plex Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.72px;
+}
+
+.digital {
+    color: #F5F5F5;
+    font-family: IBM Plex Sans;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.52px;
+}
+.headlinks{
+    display: flex;
+width: 50%;
+justify-content: space-between;
+align-items: center;
+}
+.hamburger{
+    display: none;
+}
+.headlinks a:hover {
+color: #8CDFD6;
+font-family: IBM Plex Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.48px;
+}
+
+.headlinks a {
+    color: #F5F5F5;
+    font-family: IBM Plex Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.48px;
+}
+/* ................mainsection..................... */
+
+
+.project_success{
+    
+    padding: 252px;
+    padding-bottom: 80px;
+    padding-top: 120px;
+    background: #3D3D3D;
+}
+.ourwork_main{
+    padding: 120px 252px;
+   
+   
+    
+}
+.work_main{
+    width: 56%;
+}
+.success_folder{display: flex;
+    flex-direction: column;
+    row-gap: 40px;}
+.work_h1 h1{
+    color: #FAFAFA;
+font-family: IBM Plex Mono;
+font-size: 72px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -1.44px;
+margin: 0;
+margin-bottom: 32px;
+
+}
+.work_h1 h1 span{
+    color: var(--secondary, #70C1D6);
+font-family: IBM Plex Mono;
+font-size: 72px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -1.44px;
+margin: 0;
+margin-bottom: 32px;
+
+}
+.work_p1 p{
+    color: #E0E0E0;     
+font-family: IBM Plex Mono;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.48px;
+margin: 0;
+margin-bottom: 80px;
+
+}
+.work_p2 p{
+    
+    color: var(--secondary, #70C1D6);  
+font-family: IBM Plex Mono;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.4px;
+margin: 0;
+margin-bottom: 16px;
+
+}
+.project_underline1{
+    width: 1416px;
+height: 2px;
+background: #D9D9D9;
+}
+.project_success h3{
+    color: var(--secondary, #70C1D6);
+font-family: IBM Plex Mono;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.48px;
+text-transform: uppercase;
+margin: 0;
+margin-bottom: 8px;
+}
+.project_success p{
+    color: #F5F5F5;
+font-family: IBM Plex Mono;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.8px;
+margin: 0;
+margin-bottom: 40px;
+}
+.success_project_name p{
+    color: #CCC;
+font-family: IBM Plex Mono;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.64px;
+margin: 0;
+}
+.rendor{
+    border-radius: 8px;
+border: 2px solid var(--secondary, #70C1D6);
+background-image: url("IMAGES/project_success_1.svg"); /* Multiple images */
+    background-position: center bottom, left top; /* Position of each image */
+    background-repeat: no-repeat, repeat-x; /* Repeat behavior for each image */
+    background-size: cover, auto; /* Size of each image */
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 400px;
+}
+.gibbon{
+    border-radius: 8px;
+border: 2px solid var(--secondary, #70C1D6);
+background-image: url("IMAGES/project_success_2.svg"); /* Multiple images */
+    background-position: center bottom, left top; /* Position of each image */
+    background-repeat: no-repeat, repeat-x; /* Repeat behavior for each image */
+    background-size: cover, auto; /* Size of each image */
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 400px;
+}
+.success_icons{
+    width: 50%;
+    
+}
+.success_folder_row{
+    display: flex;
+    width: 100%;
+    column-gap: 24px;
+}
+.project_comming_up{
+    border-radius: 8px;
+border: 2px solid var(--primary, #8CDFD6);
+border-radius: 8px;
+border: 2px solid var(--primary, #8CDFD6);
+background: linear-gradient(90deg, #2BC0E4 0%, #EAECC6 100%);
+    width: 100%;
+    height: 400px;
+}
+.project_lets_chat{
+    border-radius: 24px;
+border: 2px solid var(--primary, #8CDFD6);
+background: linear-gradient(90deg, #8CDFD6 0%, #2CA799 100%);
+width: 100%;
+height: 400px;
+}
+.success_project_name{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+.success_underline{
+    width: 696px;
+    height: 1px;
+    background: #CCC;
+}
+/* ................foooter................... */
+.have_project{
+text-align: center;
+}
+
+.have_project h3{
+color: #000;
+font-family: IBM Plex Sans;
+font-size: 120px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin: 0;
+
+}
+.have_convo{
+text-align: center;
+
+margin: 0;
+}
+.have_convo p{
+color: #000;
+font-family: IBM Plex Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 24px;
+margin-bottom: 48px;
+}
+.header_book button{
+border-radius: 8px;
+border: 2px solid #32B4A5;
+background: #8CDFD6;
+display: block;
+margin: auto;
+padding-left: 64px;
+padding-right: 64px;
+padding-top:24px ;
+padding-bottom:24px ;
+text-align: center;
+margin-bottom: 48px;}
+.header_book a {color: #000;
+font-family: IBM Plex Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.48px;
+margin-bottom: 48px;
+}
+
+.add_cmpny-name p {
+color: #1F1F1F;
+font-family: IBM Plex Sans;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.92px;
+margin: 0;
+margin-bottom: 16px;
+}
+.cmpny_address p { 
+color: #3D3D3D;
+font-family: IBM Plex Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 1.44px;
+margin: 0;
+margin-bottom: 16px;
+}
+.cmpny_phn_no a{
+color: #3D3D3D;
+font-family: IBM Plex Sans;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 1.92px;
+margin: 0;
+margin-bottom: 16px;
+}
+.cmpny_email a{
+color: #3D3D3D;
+font-family: IBM Plex Sans;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 1.92px;
+}
+.cmpny p{
+color: #3D3D3D;
+font-family: IBM Plex Sans;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 1.92px;
+margin: 0;
+margin-bottom: 24px;
+}
+.service1{
+color: #1F1F1F;
+font-family: IBM Plex Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.44px;
+margin-bottom: 16px;
+}
+.service2{
+color: #1F1F1F;
+font-family: IBM Plex Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.44px;
+margin-bottom: 16px;
+}
+.service3{
+color: #1F1F1F;
+font-family: IBM Plex Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.44px;
+margin-bottom: 16px;
+}
+.service4{
+color: #1F1F1F;
+font-family: IBM Plex Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.44px;
+margin-bottom: 16px;
+}
+.copyright a{
+color: #3D3D3D;
+font-family: IBM Plex Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.96px;
+}
+.tndc a{
+color: #292929;
+font-family: IBM Plex Sans;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.02px;
+}
+.privacy-policy a{
+color: #292929;
+font-family: IBM Plex Sans;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.02px;
+}
+.footer{
+padding: 85px;
+background: #98D2E1;
+}
+.footer_table_sec{
+display: flex;
+justify-content: space-between;
+}
+.common_links{
+display: flex;
+justify-content: space-between;
+margin: 0;
+margin-top: 40px;
+align-items: center;
+}
+.copy_right ul {
+display: flex;
+justify-content: space-around;
+padding-left: 0px;
+list-style: none;
+
+}
+.logo_links{
+display: flex;
+width: 180px;
+justify-content: space-between;
+
+}
+
+.copy_right{
+width: 800px;
+}
+.links{
+display: flex;
+flex-direction: column;
+}
+.addrs{
+width: 690px;
+margin-bottom: 80px;
+}
+.hrline{
+height: 3px;
+stroke-width: 4px;
+background: #292929;
+margin-bottom: 80px;
+}
+hr{
+margin: 0;
+}
+a{
+text-decoration: none;
+}
+.foot{
+height: 2px;
+stroke-width: 4px;
+background: #3D3D3D;
+margin-bottom: 80px;
+}
+
+</style>
+<body>
+    <header>
+        <div class="header" id="header">
+            <div class="logo" id="logo">
+                <img src="IMAGES/byteLOGO.svg" alt="">
+                <div class="byte-digital">
+                    <div class="byte">Byte</div>
+                    <div class="digital">Digital</div>
+                </div>
+            </div>
+            <div class="headlinks" id="headerlinks">
+                
+                <a href="about_us8aug.html"><div class="no-decoration">About us </div></a>
+                <a href="#"><div class="no-decoration">Services </div></a>
+                <a href="#"><div class="no-decoration">Our work </div></a>
+                <a href="#"><div class="no-decoration">Blog </div></a>
+                <a href="#"><div class="no-decoration"><button>Book a call</button> </div></a>
+                
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="ourworkpage">
+            <div class="ourwork_main">
+                <div class="work_main">
+                    <div class="work_h1"><h1>Our <span> Work</span></h1></div>
+                    <div class="work_p2"><p>Explore Byte Digital's Innovative Web and Mobile Solutions: Elevating Brands Online and On-the-Go</p></div>
+                    <div class="work_p1"><p>Every project is unique with their own specific needs and desired outcomes. See how we worked with our previous clients to plan and execute a project that exceeded their expectations.</p></div>
+                    <div class="project_underline1"></div>
+                </div>
+            </div>
+
+            <div class="project_success">
+                <h3>Our previous success</h3>
+                <p>See what we have done</p>
+                <div class="success_folder">
+                    <div class="success_folder_row">
+                        <div class="success_icons"  id="success_render">
+                            <div class="rendor"></div>
+                            <div class="success_project_name">
+                                <p>Render networks</p>
+                                <img src="IMAGES/project_success_arrow.svg" alt="">
+                            </div>
+                            <div class="success_underline"></div>
+                        </div>
+                        <div class="success_icons"  id="success_gibbon">
+                            <div class="gibbon"></div>
+                            <div class="success_project_name">
+                                <p>Gibbon multimedia</p>
+                                <img src="IMAGES/project_success_arrow.svg" alt="">
+                            </div>
+                            <div class="success_underline"></div>
+                        </div>
+                    </div>
+                    <div class="success_folder_row">
+                        <div class="success_icons"  id="sucess_comming_up">
+                            <div class="project_comming_up"></div>
+                            <div class="success_project_name">
+                                <p>Coming soon</p>
+                                <img src="IMAGES/project_success_arrow.svg" alt="">
+                            </div>
+                            <div class="success_underline"></div>
+                        </div>
+                        <div class="success_icons"  id="success_lets_chat">
+                            <div class="project_lets_chat">
+                                <img src="IMAGES/project_success_4.svg" alt="">
+                            </div>
+                            <div class="success_project_name">
+                                <p>Talk to us</p>
+                                <img src="IMAGES/project_success_arrow.svg" alt="">
+                            </div>
+                            <div class="success_underline"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="have_project"><h3>Have a project</h3></div>
+            <div class="have_convo">
+                <p>We should start a conversation ✋</p>
+                
+            </div>
+            <div class="header_book"><button><a href="contacusforlive.html">Book free call today</a></button></div>
+            <div class="hrline"></div>
+            <div class="footer_table_sec">
+                <div class="addrs">
+                    <div class="add_cmpny-name"><p>BYTE DIGITAL</p></div>
+                    <div class="cmpny_address"><p>Ground floor, 470, St. Kilda Road,Melbourne, VIC 3004, Australia</p></div>
+                    <div class="cmpny_phn_no"><a href="">+61 - 452515004</a></div>
+                    <div class="cmpny_email"><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new">hello@byte-digital.com.au</a></div>
+                </div>
+                <div class="links">
+                    <div class="cmpny"><p>Company</p></div>
+                    <a href="about_us8aug.html" class="service1">About us</a>
+                    <a href="#" class="service2">Services</a>
+                    <a href="#" class="service3">Our work</a>
+                    <a href="#" class="service4"> Our Blog</a>
+                  </div>
+    
+            </div>
+            <div class="foot"></div>
+            <div class="common_links">
+                <div class="copy_right">
+                    <ul>
+                        <li class="copyright"><a href="#">© Copyright 2023 Byte Digital Consulting Pty Ltd.</a></li>
+                        <li class="tndc"><a href="#">Terms & conditions</a></li>
+                        <li class="privacy-policy"><a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="logo_links">
+                    
+                        <div class="linkdin"><a href="https://www.linkedin.com/company/byte-digital-solutions/" target="_blank"><img src="IMAGES/linkdin.svg" alt="LinkedIn"></a></div>
+                        <div class="facebook"><a href="https://www.facebook.com/people/Byte-Digital/61550311131920/?is_tour_dismissed=true" target="_blank"><img src="IMAGES/FACEBOOK.svg" alt="Facebook"></a></div>
+                        <div  class="twitter"><a href="https://twitter.com/i/flow/login?redirect_after_login=%2FByteDigital_" target="_blank"><img src="IMAGES/TWITTER.svg" alt="Twitter"></a></div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>
