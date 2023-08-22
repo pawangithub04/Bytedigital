@@ -176,7 +176,7 @@ line-height: normal;
 letter-spacing: 1.02px;
 }
 .footer{
-padding: 85px;
+padding: 250px;
 background: #98D2E1;
 }
 .footer_table_sec{
@@ -234,7 +234,7 @@ background: #3d3d3d;
 margin-bottom: 80px;
 }
 .header{
-padding: 85px;
+padding: 280px;
 padding-bottom: 24px;
 padding-top: 24px;
 display: flex;
@@ -264,8 +264,8 @@ letter-spacing: -0.52px;
 }
 .headlinks{
 display: flex;
-width: 50%;
-justify-content: space-between;
+column-gap: 40px;
+
 align-items: center;
 }
 .hamburger{
@@ -864,7 +864,7 @@ margin-top: 32px;
 }
 
 }
-@media only screen and (max-width: 1146px) {
+@media only screen and (max-width: 1150px) {
 .header{align-items: center;
 justify-content: space-between;}
 .headlinks{display: none;}
