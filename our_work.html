@@ -14,7 +14,9 @@
 <style>
     body{
         background: linear-gradient(90deg, #232526 0%, #414345 100%);
+
     }
+   
     .header{
     padding: 252px;
     padding-bottom: 24px;
@@ -46,8 +48,8 @@ justify-content: space-between;
 }
 .headlinks{
     display: flex;
-width: 50%;
-justify-content: space-between;
+
+column-gap: 30px;
 align-items: center;
 }
 .no-decoration button:hover{
@@ -162,7 +164,8 @@ margin-bottom: 16px;
 
 }
 .project_underline1{
-    width: 1416px;
+    
+    width: 100%;
 height: 2px;
 background: #D9D9D9;
 }
@@ -212,14 +215,12 @@ background-image: url("IMAGES/project_success_1.svg"); /* Multiple images */
 }
 .gibbon{
     border-radius: 8px;
-border: 2px solid var(--secondary, #70C1D6);
-background-image: url("IMAGES/project_success_2.svg"); /* Multiple images */
-    background-position: center bottom, left top; /* Position of each image */
-    background-repeat: no-repeat, repeat-x; /* Repeat behavior for each image */
-    background-size: cover, auto; /* Size of each image */
-    background-color: #f5f5f5;
+    
+    border: 2px solid var(--primary, #8CDFD6);
+    background: linear-gradient(90deg, #2C3E50 0%, #4CA1AF 100%);
     width: 100%;
     height: 400px;
+    padding: 47px 31px;
 }
 .success_icons{
     width: 50%;
@@ -253,11 +254,12 @@ height: 400px;
     margin-bottom: 8px;
 }
 .success_underline{
-    width: 696px;
+    width: 100%;
     height: 1px;
     background: #CCC;
 }
 /* ................foooter................... */
+/* footer_main heading  */
 .have_project{
 text-align: center;
 }
@@ -287,6 +289,7 @@ line-height: normal;
 margin-top: 24px;
 margin-bottom: 48px;
 }
+/* this is wrritten by mistake here i m talking about footer not header so  */
 .header_book button{
 border-radius: 8px;
 border: 2px solid #32B4A5;
@@ -430,7 +433,7 @@ line-height: normal;
 letter-spacing: 1.02px;
 }
 .footer{
-padding: 85px;
+padding: 85px 252px;
 background: #98D2E1;
 }
 .footer_table_sec{
@@ -487,7 +490,44 @@ stroke-width: 4px;
 background: #3D3D3D;
 margin-bottom: 80px;
 }
-
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>media query for screen with 1650 px here i m just decreasing the right lefv padding>>>>>>>>>>>>>>> */
+@media (max-width:1650px){
+    .header{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    .ourwork_main {
+        padding-left: 200px;
+        padding-right: 200px;   
+    }
+    .project_success {
+        padding-left: 200px;
+        padding-right: 200px;  
+    }
+    .footer {
+        padding-left: 200px;
+        padding-right: 200px; 
+    }
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>media query for screen with 1530px here i m just decreasing the right lefv padding>>>>>>>>>>>>>>> */
+@media (max-width:1650px){
+    .header{
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    .ourwork_main {
+        padding-left: 150px;
+        padding-right: 150px;   
+    }
+    .project_success {
+        padding-left: 150px;
+        padding-right: 150px;  
+    }
+    .footer {
+        padding-left: 150px;
+        padding-right: 150px; 
+    }
+}
 </style>
 <body>
     <header>
@@ -522,8 +562,9 @@ margin-bottom: 80px;
                     <div class="work_h1"><h1>Our <span> Work</span></h1></div>
                     <div class="work_p2"><p>Explore Byte Digital's Innovative Web and Mobile Solutions: Elevating Brands Online and On-the-Go</p></div>
                     <div class="work_p1"><p>Every project is unique with their own specific needs and desired outcomes. See how we worked with our previous clients to plan and execute a project that exceeded their expectations.</p></div>
-                    <div class="project_underline1"></div>
+                    
                 </div>
+                <div class="project_underline1"></div>
             </div>
 
             <div class="project_success">
@@ -532,19 +573,21 @@ margin-bottom: 80px;
                 <div class="success_folder">
                     <div class="success_folder_row">
                         <div class="success_icons"  id="success_render">
-                            <div class="rendor"></div>
-                            <div class="success_project_name">
+                            <a href="#"><div class="rendor"></div></a>
+                            <a href="#"><div class="success_project_name">
                                 <p>Render networks</p>
                                 <img src="IMAGES/project_success_arrow.svg" alt="">
-                            </div>
+                            </div></a>
                             <div class="success_underline"></div>
                         </div>
                         <div class="success_icons"  id="success_gibbon">
-                            <div class="gibbon"></div>
-                            <div class="success_project_name">
+                            <a href=""><div class="gibbon">
+                                <img src="IMAGES/project_success_2.svg" alt="">
+                            </div></a>
+                            <a href=""><div class="success_project_name">
                                 <p>Gibbon multimedia</p>
                                 <img src="IMAGES/project_success_arrow.svg" alt="">
-                            </div>
+                            </div></a>
                             <div class="success_underline"></div>
                         </div>
                     </div>
@@ -558,13 +601,13 @@ margin-bottom: 80px;
                             <div class="success_underline"></div>
                         </div>
                         <div class="success_icons"  id="success_lets_chat">
-                            <div class="project_lets_chat">
+                            <a href=""><div class="project_lets_chat">
                                 <img src="IMAGES/project_success_4.svg" alt="">
-                            </div>
-                            <div class="success_project_name">
+                            </div></a>
+                            <a href=""><div class="success_project_name">
                                 <p>Talk to us</p>
                                 <img src="IMAGES/project_success_arrow.svg" alt="">
-                            </div>
+                            </div></a>
                             <div class="success_underline"></div>
                         </div>
                     </div>
