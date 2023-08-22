@@ -17,7 +17,7 @@
     height: 100%;
     border-radius: 24px;
     background: linear-gradient(0deg, #000 0%, rgba(63, 63, 63, 0.68) 42.71%, rgba(196, 196, 196, 0.00) 100%);
-    background-image: url("IMAGES/Group 14 (2) copy.jpg");
+    background-image: url("IMAGES/section_4_image_1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -37,7 +37,7 @@
         border-radius: 24px;
         background: linear-gradient(0deg, #000 0%, rgba(63, 63, 63, 0.68) 42.71%, rgba(196, 196, 196, 0.00) 100%);
         /* margin-bottom: 24px; */
-        background-image: url("IMAGES/Group 15 (1) copy.jpg");
+        background-image: url("IMAGES/section_4_image_2.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -61,7 +61,7 @@
     border-radius: 24px;
     background: linear-gradient(0deg, #000 0%, rgba(63, 63, 63, 0.68) 42.71%, rgba(196, 196, 196, 0.00) 100%);
     /* margin-right: 24px; */
-    background-image: url("IMAGES/Group 16 (1) copy.jpg");
+    background-image: url("IMAGES/section_4_image_3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -83,7 +83,7 @@
     border-radius: 24px;
     background: linear-gradient(0deg, #000 0%, rgba(63, 63, 63, 0.68) 42.71%, rgba(196, 196, 196, 0.00) 100%);
 
-    background-image: url("IMAGES/Group 17 (1) copy.jpg");
+    background-image: url("IMAGES/section_4_image_4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
