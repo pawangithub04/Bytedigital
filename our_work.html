@@ -888,13 +888,60 @@ margin-top: 32px;
     
 
 }
+@media (max-width:1250px) {
+        .header {
+            padding-left: 240px;
+            padding-right: 240px;
+        }
+
+        .ourwork_main {
+            padding-left: 240px;
+            padding-right: 240px;
+        }
+
+        .project_success {
+            padding-left: 240px;
+            padding-right: 240px;
+        }
+
+        .footer {
+            padding-left: 240px;
+            padding-right: 240px;
+        }
+        .copy_right ul {
+    flex-direction: column;
+}}
+@media (max-width:1150px) {
+        .header {
+            padding-left: 180px;
+            padding-right: 180px;
+        }
+
+        .ourwork_main {
+            padding-left: 180px;
+            padding-right: 180px;
+        }
+
+        .project_success {
+            padding-left: 180px;
+            padding-right: 180px;
+        }
+
+        .footer {
+            padding-left: 180px;
+            padding-right: 180px;
+        }
+        .copy_right ul {
+    flex-direction: column;
+}}
+    
  /* >>>>>>>>>>>>>>>>>>>>>>>>>>media query for screen with 1100px here i m just decreasing the right lefv padding>>>>>>>>>>>>>>> */
- @media(max-width:1150px) {
+ @media(max-width:1100px) {
 
 /* ..................header.................... */
 .header{align-items: center;
 justify-content: space-between;
-padding: 80px;}
+padding: 80px 150px;}
 .headlinks{display: none;}
 header .hamburger {
 display: block;
@@ -947,11 +994,29 @@ background: #fff;
 /* ,,,,,,,,,,,,,,,,,,,,mainstart,,,,,,,,,,,,,,,,,,, */
 /* .......our_work_main..... */
 .ourwork_main {
-    padding: 80px;
+    padding: 80px 150px;
 }
+.work_h1 h1 {
+            font-size: 32px;
+            letter-spacing: -0.64px;
+        }
+.work_h1 h1  span{
+    font-size: 32px;
+    letter-spacing: -0.64px;
+}
+.work_p1 p {
+            font-size: 16px;
+            letter-spacing: -0.34px;
+            margin-bottom: 40px;
+        }
+        .work_p2 p {
+            font-size: 20px;
+            letter-spacing: -0.4px;
+        }
+
 /* ..............project_success............. */
 .project_success {
-    padding: 80px;
+    padding: 80px 150px;
 }
 
 .rendor {
@@ -959,7 +1024,8 @@ background: #fff;
 }
 
 .rendor img {
-    Width: 275.8px;
+    max-Width: 275.8px;
+    width: 100%;
 
 }
 
@@ -968,7 +1034,8 @@ background: #fff;
 }
 
 .gibbon img {
-    width: 322px;
+    max-width: 322px;
+    width: 100%;
     bottom: -34px;
 }
 
@@ -1005,13 +1072,248 @@ height: 170px;
 
 /* ,,,,,,,,,,,,,,,,,,footer,,,,,,,,,,,,,,,,,,,,,, */
 .footer{
-    padding: 80px;
+    padding: 80px 150px;
 }
 
 
 .copy_right ul {
 flex-direction: column;
 }}
+@media (max-width:900px) {
+        .header {
+            padding: 10px 100px;
+        }
+
+        .ourwork_main {
+          padding: 80px 100px;
+        }
+
+        .project_success {
+           padding: 80px 100px;
+        }
+
+        .footer {
+            padding: 80px 100px;
+        }}
+    
+/* >>>>>>>>>>>>>>>>>>.mediaqueryfor  mobileview>>>>>>>>>>>>>> */
+@media(max-width:790px){
+    .have_project h3 {
+font-size: 24px;
+}
+.have_convo p {
+font-size: 16px;
+margin-top: 8px;
+margin-bottom: 24px;
+
+}
+.header_book a {
+font-size: 15px;
+letter-spacing: -0.3px;
+}
+.add_cmpny-name p {
+font-size: 24px;
+letter-spacing: 1.44px;
+margin-bottom: 8px;
+}
+.cmpny_address p {
+font-size: 14px;
+letter-spacing: 0.84px;
+margin-bottom: 8px;
+
+}
+.cmpny_phn_no a {
+font-size: 20px;
+letter-spacing: 1.2px;
+margin-bottom: 8px;
+display: block;
+
+}
+.cmpny_email a {
+font-size: 20px;
+letter-spacing: 1.2px;
+
+}
+.cmpny_email{
+margin-bottom: 24px;
+}
+.cmpny p {
+font-size: 24px;
+letter-spacing: 1.44px;
+margin-bottom: 24px;
+}
+.service4 {
+font-size: 15px;
+letter-spacing: 0.9px;
+margin-bottom: 0;
+color: #666;
+margin-bottom: 0;
+}
+.service3  {
+font-size: 15px;
+letter-spacing: 0.9px;
+color: #666;
+margin-bottom: 0;
+}
+.service2{
+font-size: 15px;
+letter-spacing: 0.9px;
+color: #666;
+margin-bottom: 0;
+}
+.service1 {
+font-size: 15px;
+letter-spacing: 0.9px;
+color: #666;
+letter-spacing: 0.9px;
+margin-bottom: 0;
+}
+.header_book button {
+margin-bottom: 24px;
+padding: 13px;
+padding-right: 32px;
+padding-left: 32px;
+}
+.hrline {
+margin-bottom: 24px;
+}
+.addrs {
+margin-bottom: 8px;
+width: 100%;
+}
+
+.foot {
+margin-bottom: 24px;
+margin-top: 24px;
+}
+.footer {
+
+padding: 80px;
+}
+.foot {
+height: 2px;
+stroke-width: 4px;
+background: #3D3D3D;
+
+}
+
+.links p {
+display: flex;
+}
+.footer_table_sec {
+flex-direction: column;
+}
+.cmpny{
+display: none;
+}
+.addrs::after{
+content: "Company";
+color: #1F1F1F;
+font-family: IBM Plex Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.44px;
+}
+.copy_right {
+width: 100%;
+color: #3D3D3D;
+font-size: 16px;
+letter-spacing: 0.96px;
+}
+.copyright{
+width: 100%;
+}
+.common_links {
+flex-direction: column-reverse;
+align-items: normal;
+margin-top: 0px;
+gap: 16px;
+}
+.links {
+flex-direction: row;
+justify-content: space-between;
+width: 98%;
+}
+.copy_right ul {
+display: flex;
+gap: 16px;
+flex-wrap: wrap;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+}
+.tndc a{
+width: 40%;
+color: #666;
+font-size: 14px;
+letter-spacing: 0.84px;
+
+
+}
+.tndc{
+width: 25%;
+
+padding-right: 16px;
+}
+
+.privacy-policy a{
+width: 40%;
+color: #666;
+font-size: 14px;
+letter-spacing: 0.84px;
+}
+.privacy-policy{
+width: 40%;
+}
+.book_call_button{
+width: 107px;
+}
+.book_call_button a ::after{
+content: "\003E";
+position: absolute;
+right: 18px;
+}
+.byte-digital{
+display: none;
+}
+
+.gibbon img {
+    max-width: 322px;
+    width: 100%;
+    bottom: -6px;
+    max-width: 423px;
+}
+.project_success {
+    padding: 80px 80px;
+}
+.ourwork_main {
+    padding: 80px 80px;
+}
+.header {
+    padding: 10px 80px;
+}}
+@media(max-width:600px){
+    .success_folder_row {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .success_icons {
+        width: 100%;
+    }
+    .success_project_name {
+        margin-top: 24px;
+    }
+    .rendor {
+        box-sizing: border-box;
+    padding-top: 64px;
+    }
+    .rendor img {
+    
+    position: static;}
+
+}
 
 </style>
 
