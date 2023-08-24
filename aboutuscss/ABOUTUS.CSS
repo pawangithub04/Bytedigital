@@ -5,7 +5,7 @@
     background: linear-gradient(90deg, #232526 0%, #414345 100%);
 }
 .header{
-    padding: 85px;
+    padding: 252px;
     padding-bottom: 24px;
     padding-top: 24px;
     display: flex;
@@ -35,8 +35,8 @@ justify-content: space-between;
 }
 .headlinks{
     display: flex;
-width: 50%;
-justify-content: space-between;
+
+column-gap: 40px;
 align-items: center;
 }
 .hamburger{
@@ -188,9 +188,12 @@ padding-left: 27px;
     margin-top: 32px;
 }
 .footer {
-    padding-right: 120px;
-    padding-left: 120px;
+    padding: 120px 280px;
 }
+.copy_right ul{
+    flex-direction: column;
+}
+
 }
 @media(max-width:1339px){
 .header {
@@ -273,7 +276,7 @@ line-height: normal;
 letter-spacing: -0.8px;
 }
 .rich{
-    padding: 85px;
+    padding: 252px;
 padding-top: 100px;
 padding-bottom: 100px;
 background: #70C1D6;
@@ -536,7 +539,7 @@ line-height: normal;
 letter-spacing: 1.02px;
 }
 .footer{
-padding: 85px;
+padding: 85px 252px;
 background: #98D2E1;
 }
 .footer_table_sec{
@@ -603,6 +606,20 @@ padding: 200px;
 padding-top: 150px;
 padding-bottom: 150px;
 }
+.footer{
+    padding: 120px 200px;
+
+}
+.aboutus_main {
+    padding: 120px 200px ;
+}
+.rich {
+    padding:100px 200px;
+}
+.header{
+    padding:24px 190px
+}
+
 }
 @media(max-width:1666px){
 .about_sec3 {
@@ -624,9 +641,7 @@ padding-bottom: 150px;
 column-gap: 38px;
 
 }
-.header {
-column-gap: 200px;
-}
+
 }
 @media(max-width:1512px){
 .byte {
