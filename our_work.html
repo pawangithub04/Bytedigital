@@ -26,6 +26,7 @@
 
     .logo {
         display: flex;
+        
     }
 
     .byte {
@@ -78,16 +79,8 @@
     .hamburger {
         display: none;
     }
-
-    .headlinks a:hover {
-        color: #8CDFD6;
-        font-family: IBM Plex Sans;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: -0.48px;
-    }
+   
+   
 
     .headlinks a {
         color: #F5F5F5;
@@ -98,10 +91,11 @@
         line-height: normal;
         letter-spacing: -0.48px;
     }
+    
 
-    .project_lets_chat img {
-        padding-left: 50px;
-    }
+   .headlinks a:hover{
+    color: #8CDFD6;
+   }
 
     /* ................mainsection..................... */
 
@@ -560,9 +554,10 @@ letter-spacing: -0.64px;
 
     .copy_right ul {
         display: flex;
-        justify-content: space-around;
+        column-gap: 20px;
         padding-left: 0px;
         list-style: none;
+        flex-wrap: wrap;
 
     }
 
@@ -662,9 +657,7 @@ letter-spacing: -0.64px;
             padding-left: 150px;
             padding-right: 150px;
         }
-        .copy_right ul {
-    flex-direction: column;
-}
+
     }
 
     /* >>>>>>>>>>>>>>>>>>>>>>>>>>media query for screen with 1440px here i m just decreasing the right lefv padding>>>>>>>>>>>>>>> */
@@ -674,7 +667,9 @@ letter-spacing: -0.64px;
         .header {
             padding: 24px 280px;
         }
-
+        .logo img{
+            max-width: 64px;
+        }
 
         .byte {
             font-size: 28px;
@@ -808,9 +803,7 @@ letter-spacing: -0.64px;
         padding: 120px 280px;
     }
 
-    .copy_right ul {
-        flex-direction: column;
-    }
+   
     .have_project h3 {
 font-size: 80px;
 }
@@ -966,15 +959,20 @@ width: 100%;
 
 
 header .headlinks.active {
-top: 100px;
+top: 200px;
 width: -webkit-fill-available;
 padding: 0 120px;
-height: 34.2%;
+height: 57%;
 }
+
+
 header .headlinks.active .no-decoration{
 margin-top: 24px;
 margin-bottom: 24px;
 }
+
+
+
 header .headlinks.active .no-decoration button{
 width: 100%;
 }
@@ -1094,7 +1092,11 @@ flex-direction: column;
 
         .footer {
             padding: 80px 100px;
-        }}
+        }
+        header .headlinks.active {
+    height: 34%;
+    top: 140px;
+}}
     
 /* >>>>>>>>>>>>>>>>>>.mediaqueryfor  mobileview>>>>>>>>>>>>>> */
 @media(max-width:790px){
@@ -1295,6 +1297,11 @@ display: none;
     padding: 10px 80px;
 }}
 @media(max-width:600px){
+    .project_lets_chat {
+    justify-content: center;
+    align-items: center;
+    column-gap: 22px;
+}
     .success_folder_row {
         flex-direction: column;
         row-gap: 30px;
@@ -1337,10 +1344,10 @@ display: none;
     <header>
         <div class="header" id="header">
             <div class="logo" id="logo">
-                <img src="IMAGES/byteLOGO.svg" alt="">
+                <a href="contacusforlive.html"><img src="IMAGES/byteLOGO.svg" alt=""></a>
                 <div class="byte-digital">
-                    <div class="byte">Byte</div>
-                    <div class="digital">Digital</div>
+                    <a href="contacusforlive.html"><div class="byte">Byte</div></a>
+                    <a href="contacusforlive.html"><div class="digital">Digital</div></a>
                 </div>
             </div>
             <div class="headlinks" id="headerlinks">
@@ -1351,13 +1358,13 @@ display: none;
                 <a href="#">
                     <div class="no-decoration">Services </div>
                 </a>
-                <a href="#">
+                <a href="our_work.html">
                     <div class="no-decoration">Our work </div>
                 </a>
                 <a href="#">
                     <div class="no-decoration">Blog </div>
                 </a>
-                <a href="#">
+                <a href="contacusforlive.html">
                     <div class="no-decoration"><button>Book a call</button> </div>
                 </a>
 
@@ -1396,12 +1403,12 @@ display: none;
                 <div class="success_folder">
                     <div class="success_folder_row">
                         <div class="success_icons" id="success_render">
-                            <a href="#">
+                            <a href="rendor.html">
                                 <div class="rendor">
                                     <img src="IMAGES/project_success_1.png" alt="">
                                 </div>
                             </a>
-                            <a href="#">
+                            <a href="rendor.html">
                                 <div class="success_project_name">
                                     <p>Render networks</p>
                                     <img src="IMAGES/project_success_arrow.svg" alt="">
@@ -1410,12 +1417,12 @@ display: none;
                             <div class="success_underline"></div>
                         </div>
                         <div class="success_icons" id="success_gibbon">
-                            <a href="rendor.html">
+                            <a href="gibbon.html">
                                 <div class="gibbon">
                                     <img src="IMAGES/project_success_2.svg" alt="">
                                 </div>
                             </a>
-                            <a href="rendor.html">
+                            <a href="gibbon.html">
                                 <div class="success_project_name">
                                     <p>Gibbon multimedia</p>
                                     <img src="IMAGES/project_success_arrow.svg" alt="">
@@ -1436,7 +1443,7 @@ display: none;
                             <div class="success_underline"></div>
                         </div>
                         <div class="success_icons" id="success_lets_chat">
-                            <a href="">
+                            <a href="contacusforlive.html">
                                 <div class="project_lets_chat">
                                     <img src="IMAGES/project_success_4.svg" alt="">
                                     <div>
@@ -1478,7 +1485,7 @@ display: none;
                     <div class="cmpny_address">
                         <p>Ground floor, 470, St. Kilda Road,Melbourne, VIC 3004, Australia</p>
                     </div>
-                    <div class="cmpny_phn_no"><a href="">+61 - 452515004</a></div>
+                    <div class="cmpny_phn_no"><a href="tel:+61452515004">+61 - 452515004</a></div>
                     <div class="cmpny_email"><a
                             href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new">hello@byte-digital.com.au</a>
                     </div>
@@ -1489,7 +1496,7 @@ display: none;
                     </div>
                     <a href="about_us8aug.html" class="service1">About us</a>
                     <a href="#" class="service2">Services</a>
-                    <a href="#" class="service3">Our work</a>
+                    <a href="our_work.html" class="service3">Our work</a>
                     <a href="#" class="service4"> Our Blog</a>
                 </div>
 
@@ -1519,6 +1526,13 @@ display: none;
 
         </div>
     </footer>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector(".headlinks");
+        hamburger.onclick = function() {
+            nav.classList.toggle("active");
+        }
+    </script>
 </body>
 
 </html>

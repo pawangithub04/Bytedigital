@@ -25,12 +25,15 @@
     justify-content: flex-start;
     box-sizing: border-box;
 }
+.logo img{
+    max-width: 64px;
+    min-height: 64px;
+}
 
 #active{
     color: #8CDFD6;
     font-weight: 700;
 }
-
 
 .byte {
     color: #F5F5F5;
@@ -64,8 +67,10 @@
     box-sizing: border-box;
 }
 
+  
 .no-decoration button:hover {
     cursor: pointer;
+
 }
 
 .no-decoration button {
@@ -96,6 +101,9 @@
     line-height: normal;
     letter-spacing: -0.32px;
     box-sizing: border-box;
+}
+.headlinks a:hover{
+    color: #8CDFD6;;
 }
 
 .headlinks a {
@@ -156,6 +164,9 @@
         .headlinks{display: none;}
         header .hamburger {
         display: block;
+        }
+        .logo img{
+            max-width: 40px;
         }
         
         header .headlinks {
@@ -993,7 +1004,8 @@ letter-spacing: 1.02px;
 }
 .copy_right ul {
     display: flex;
-    justify-content: space-around;
+    column-gap: 20px;
+    flex-wrap: wrap;
     padding-left: 0px;
     list-style: none;
 
@@ -1188,10 +1200,7 @@ margin-bottom: 80px;
     .footer {
         padding: 80px ;
     }
-    .copy_right ul {
-        flex-direction: column;
-        width: 60%;
-    }
+    
     .logo_links {
         column-gap: 10px;
     }
@@ -1200,9 +1209,11 @@ margin-bottom: 80px;
     }
 }
 @media(max-width:650px){
+    header .headlinks.active {
+        padding: 0;
+    }
     .header {
-        padding-right: 16px;
-        padding-left: 16px;
+        padding:16px;
         }
         .have_project h3 {
         font-size: 24px;
