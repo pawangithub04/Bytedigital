@@ -396,43 +396,27 @@
     #image1 {
         width: 49%;
         margin: 0;
-        padding-right: 24px;
-        padding-left: 24px;
         margin-bottom: 16px;
-        
-        height: 290px;
-        padding-top: 175px;
+        min-height: 290px;
     }
     #image2 {
         width: 49%;
-        padding-top: 250px;
-        padding-right: 24px;
-        padding-left: 24px;
         margin: 0;
         margin-bottom: 16px;
-        height: 290px;
-    padding-top: 175px;
+        min-height: 290px;
     }
 
     #image3{
         width: 49%;
-        padding-top: 250px;
-        padding-right: 24px;
-        padding-left: 24px;
         margin: 0;
         margin-bottom: 16px;
-        height: 290px;
-    padding-top: 175px;
+        min-height: 290px;
     }
 
     #image4 {
         width: 49%;
         margin: 0;
-        margin-bottom: 16px;
-        padding-right: 24px;
-        padding-left: 24px;
-        height: 290px;
-    padding-top: 175px;
+        min-height: 290px;
     }
     .casestudy {
     font-size: 24px;}
@@ -476,7 +460,7 @@
     margin-bottom: 10px;
 }
 .accordion:after{
-    font-size: 24px;
+    font-size: 30px;
 }
 .addrs {
     width: 45%;
@@ -523,12 +507,15 @@ width: 100px;
        padding: 16px;
        padding-top: 80px;
        padding-bottom: 80px;
-        background: none;
+       
 
+    }
+    .unloking {
+        max-width: 450px;
     }
     #c1 h1
      {
-        
+        margin-bottom: 16px;
         font-size: 24px;
         letter-spacing: -0.48px;
     }
@@ -621,18 +608,22 @@ letter-spacing: -0.3px;
     #image1{
         width: 100%;
     margin-right: 0;
+    height: 240px;
     }
     #image2{
         width: 100%;
-    margin-right: 0;       
+    margin-right: 0; 
+    height: 240px;      
     }
     #image3{
         width: 100%;
     margin-right: 0; 
+    height: 240px;
     }
     #image4{
         width: 100%;
-    margin-right: 0;          
+    margin-right: 0;
+    height: 240px;          
     }
     .section_4 {
         padding: 16px;
@@ -980,5 +971,14 @@ justify-content: flex-start;}
         content: "\003E";
         position: absolute;
     right: 18px;
+    }
+}
+@media(max-width:550px){
+    #container1 {
+        background-image: none;
+
+    }
+    .unloking {
+        width: 100%;
     }
 }

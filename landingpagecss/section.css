@@ -12,25 +12,13 @@
     background-size: cover;
     height: 100%;
 }
-
-/* Use media queries to adjust the background image height at different screen sizes */
-@media (max-width: 768px) {
-    body {
-        /* Adjust the background image height for screens with a maximum width of 768px */
-        height: 50vh;
-        /* You can adjust the percentage as needed */
-    }
-}
-
-/* Add more media queries if you want to handle other screen sizes */
-
-
 #c3 {
     display: flex;
     flex-direction: row;
     display: flex;
     align-items: flex-start;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 
