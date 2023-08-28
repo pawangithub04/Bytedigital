@@ -25,13 +25,13 @@
     background: #70C1D6;
     flex-wrap: wrap;
     align-content: flex-start;
-    padding: 85px;
+    padding: 85px 252px;
         }
 #content2 span{
     color: #1F1F1F;
     text-align: center;
     font-family: IBM Plex Sans;
-    font-size: 64px;
+    font-size: 48px;
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
@@ -40,7 +40,7 @@
 #content2 {
     color: #1F1F1F;
     font-family: IBM Plex Sans;
-    font-size: 64px;
+    font-size: 48px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%;

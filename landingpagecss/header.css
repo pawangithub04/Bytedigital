@@ -72,8 +72,4 @@ letter-spacing: -0.52px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 85px;
-    padding-right: 85px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
+   padding: 16px 252px;}

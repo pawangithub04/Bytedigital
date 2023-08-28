@@ -83,141 +83,6 @@ padding-left: 30px;
     text-decoration: none;
 }
 
-@media(max-width:1654px){
-.header {
-padding: 252px;
-padding-bottom: 24px;
-padding-top: 24px;
-column-gap: 189px;
-}
-.headlinks {
-column-gap: 48px;
-width: auto;
-}
-.byte {
-font-size: 28px;
-letter-spacing: -0.56px;
-}
-.digital {
-font-size: 20px;
-letter-spacing: -0.4px;
-}
-.headlinks a {
-font-size: 16px;
-letter-spacing: -0.32px;
-}
-.no-decoration button {
-font-size: 17px;
-letter-spacing: -0.34px;
-padding: 11px;
-padding-right: 27px;
-padding-left: 27px;
-}
-/* .............footer................. */
-.have_project h3 {
-    font-size: 80px;
-}
-.have_convo p {
-    font-size: 32px;
-    margin-top: 8px;
-    margin-bottom: 24px;
-
-}
-.header_book a {
-    font-size: 17px;
-    letter-spacing: -0.34px;
-}
-.add_cmpny-name p {
-    font-size: 32px;
-    letter-spacing: 1.92px;
-    margin-bottom: 16px;
-}
-.cmpny_address p {
-    font-size: 16px;
-    letter-spacing: 0.96px;
-    margin-bottom: 16px;
-
-}
-.cmpny_phn_no a {
-    font-size: 24px;
-    letter-spacing: 1.44px;
-    margin-bottom: 16px;
-    display: block;
-    margin-bottom: 16px;
-}
-.cmpny_email a {
-    font-size: 24px;
-    letter-spacing: 1.44px;
-}
-.cmpny p {
-    font-size: 32px;
-    letter-spacing: 1.92px;
-    margin-bottom: 24px;
-}
- .service4 {
-    font-size: 16px;
-    letter-spacing: 0.96px;
-    margin-bottom: 0;
-}
-.service3  {
-    font-size: 16px;
-    letter-spacing: 0.96px;
-}
- .service2{
-    font-size: 16px;
-    letter-spacing: 0.96px;
-}
-.service1 {
-    font-size: 16px;
-    letter-spacing: 0.96px;
-}
-.header_book button {
-    margin-bottom: 40px;
-    padding: 13px;
-    padding-right: 32px;
-    padding-left: 32px;
-}
-.hrline {
-    margin-bottom: 40px;
-}
-.addrs {
-    margin-bottom: 0px;
-}
-.foot {
-    margin-bottom: 40px;
-    margin-top: 32px;
-}
-.footer {
-    padding: 120px 280px;
-}
-.copy_right ul{
-    flex-direction: column;
-}
-
-}
-@media(max-width:1339px){
-.header {
-    padding: 24px 200px;
-
-}
-
-}
-@media(max-width:1227px){
-.header {
-    padding: 24px 150px;
-
-}
-.copy_right ul{
-flex-direction: column;
-}
-.logo_links img {
-margin-right: 10px;
-}
-}
-
-
-/* header */
-/*main*/
 
 .aboutus_child{
     /* Adding a background image */
@@ -228,7 +93,7 @@ text-align: center;
 }
 .aboutus_main{
 
-background-image: url("IMAGES/ABOUTMAIN.jpg");
+background-image: url("../IMAGES/ABOUTMAIN.jpg");
 background-repeat: no-repeat;
 background-position: center center;
 
@@ -310,13 +175,14 @@ letter-spacing: -1.28px;
     display: flex;
     padding-bottom: 296px;
     column-gap: 25px;
+    align-items: center;
 }
 #how_do_we{
     padding-bottom: 0px;
 }
 .who_we{
-    width: 100%;
-max-width: 696px;
+    width: 40%;
+
 }
 .who_we h3{
     color: #E0E0E0;
@@ -352,18 +218,28 @@ margin: 0;
 }
 
 .about_image{
+    display: flex;
+    justify-content: space-around;
     border-radius: 24px;
 border: 1px solid #B0DDE8;
 background: #DFF8EB;
-max-width: 695px;
-width: 100%;
-max-height: 400px;
-height: 100%;
-flex-shrink: 0;
+width: 60%;
+min-height: 400px;
 }
 .about_image img{
-    display: block;
-    margin: auto;
+    box-sizing: border-box;
+    position: relative;
+    top: 60px;
+    width: 18.75vw; /* 360px (width) / 1920px (screen width) * 100vw (viewport width) */
+    height: 23.75vw; /* 456px (height) / 1920px (screen width) * 100vw (viewport width) */
+    max-width: 360px; /* Set the maximum width for the image */
+    max-height: 456px; 
+}
+#laptop{
+    width: 33.85416667vw; /* 650px (width) / 1920px (screen width) * 100vw (viewport width) */
+    height: 23.75vw; /* 456px (height) / 1920px (screen width) * 100vw (viewport width) */
+    max-width: 650px; /* Set the maximum width for the image */
+    max-height: 456px;
 }
 /* footer */
 
@@ -555,21 +431,20 @@ align-items: center;
 }
 .copy_right ul {
 display: flex;
-justify-content: space-around;
+column-gap: 25px;
 padding-left: 0px;
 list-style: none;
+flex-wrap: wrap;
 
 }
 .logo_links{
 display: flex;
 width: 180px;
-justify-content: space-between;
+column-gap: 20px;
 
 }
 
-.copy_right{
-width: 800px;
-}
+
 .links{
 display: flex;
 flex-direction: column;
@@ -597,53 +472,10 @@ background: #3D3D3D;
 margin-bottom: 80px;
 }
 
-@media(max-width:1766px){
-.header {
-column-gap: 321px;
-}
-.about_sec3 {
-padding: 200px;
-padding-top: 150px;
-padding-bottom: 150px;
-}
-.footer{
-    padding: 120px 200px;
-
-}
-.aboutus_main {
-    padding: 120px 200px ;
-}
-.rich {
-    padding:100px 200px;
-}
-.header{
-    padding:24px 190px
-}
-
-}
-@media(max-width:1666px){
-.about_sec3 {
-padding: 150px;
-padding-top: 150px;
-padding-bottom: 150px;
-}
-.header {
-column-gap: 221px;
-}
-}
-@media(max-width:1566px){
-.about_sec3 {
-padding: 150px;
-padding-top: 150px;
-padding-bottom: 150px;
-}
-.headlinks {
-column-gap: 38px;
-
-}
-
-}
 @media(max-width:1512px){
+    .header{
+        padding: 24px 150px;
+    }
 .byte {
 font-size: 28px;
 letter-spacing: -0.56px;}
@@ -669,6 +501,9 @@ margin: 0;
 font-size: 32px;
 letter-spacing: -0.64px;
 }
+.who_we {
+    width: 50%;
+}
 .who_we h3 {
 font-size: 32px;
 letter-spacing: -0.48px;
@@ -690,30 +525,20 @@ padding-left: 27px;
 }
 .about_image {
 border-radius: 24px;
-max-width: 432px;
-width: 100%;
-max-height: 278px;
-height: 100%;
-flex-shrink: 0;
-}.about_image img {
-width: 218px;
-height: 276px;
-margin-top: 40px;
+width:60%;
+min-height: 278px;
+
 }
-#laptop{
-width: 388px;
-height: 271px;
-flex-shrink: 0;
-}
+
+
 .logo img{
 width: 64px;
 height: 64px;
 }
 .about_sec3 {
-padding: 80px 280px;
+padding: 80px 150px;
 }
 .who_we_are {
-justify-content: space-around;
 padding-bottom: 98px;
 align-items: center;
 }
@@ -721,9 +546,7 @@ align-items: center;
 display: none;
 }
 .aboutus_main {
-padding: 120px;
-padding-right: 280px;
-padding-left: 280px;
+padding: 85px 150px;
 }
 /* ...................footer.............. */
 .have_project h3 {
@@ -800,65 +623,12 @@ padding-left: 280px;
     margin-top: 32px;
 }
 .footer {
-    padding-right: 120px;
-    padding-left: 120px;
+   padding: 85px  150px;
 }
 }
-@media(max-width:1410px){
-.aboutus_main {
-padding: 120px;
-padding-right: 230px;
-padding-left: 230px;
-}
-.about_sec3 { padding-right: 230px;
-padding-left: 230px;}
-.header{
-    padding-right: 230px;
-padding-left: 230px;
-}
-}
-@media(max-width:1370px){
-.aboutus_main {
-padding: 120px;
-padding-right: 180px;
-padding-left: 180px;
 
-}
-.about_sec3 { padding-right: 180px;
-padding-left: 180px;}
-.header{
-    padding-right: 180px;
-padding-left: 180px;
-}
-}
-@media(max-width:1240px){
-.aboutus_main {
-padding: 120px;
-padding-right: 130px;
-padding-left: 130px;
 
-}
-.about_sec3 { padding-right: 130px;
-padding-left: 130px;}
-.header{
-    padding-right: 130px;
-padding-left: 130px;
-}
-}
-@media(max-width:1088px){
-.aboutus_main {
-padding: 100px;
-padding-right: 100px;
-padding-left: 100px;
 
-}
-.about_sec3 { padding-right: 100px;
-padding-left: 100px;}
-.header{
-    padding-right: 100px;
-padding-left: 100px;
-}
-}
 @media only screen and (max-width: 1146px) {
 .header{align-items: center;
 justify-content: space-between;}
@@ -909,8 +679,22 @@ margin: 6px 0;
 background: #fff;
 }
 }
+@media(max-width:900px){
+    .header{
+        padding: 16px 110px;
+    }
+    .footer{
+        padding: 80px 110px;
+    }
+    .aboutus_main {
+        padding: 50px 110px 50px 110px;
+    }
+    .about_sec3 {
+        padding: 50px 110px 80px 110px ;
+    }
+}
 
-@media(max-width:950px){
+@media(max-width:780px){
 .about_us {
 max-width: 364px;
 }
@@ -927,6 +711,11 @@ margin: 0;
 .about_us p span {
 font-size: 16px;
 letter-spacing: -0.32px;
+}
+.who_we_are {
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 32px;
 }
 .who_we h3 {
 
@@ -948,29 +737,14 @@ padding: 11px;
 padding-right: 27px;
 padding-left: 27px;
 }
-.about_image {
-border-radius: 24px;
-max-width: 282px;
-width: 100%;
-max-height: 200px;
-height: 100%;
-flex-shrink: 0;
-}.about_image img {
-width: 149px;
-height: 188px;
-margin-top: 32px;
-}
-#laptop{
-width: 268px;
-height: 187px;
-flex-shrink: 0;
-}
+
+
 .logo img{
 width: 40px;
 height: 40px;
 }
 .about_sec3 {
-padding: 80px 
+padding: 40px 85px 40px 85px 
 }
 .who_we_are {
 justify-content: space-around;
@@ -981,12 +755,16 @@ align-items: center;
 display: none;
 }
 .aboutus_main {
-padding: 80px;
-padding-right: 80px;
-padding-left: 80px;
+    padding: 80px 85px 80px 85px 
 }
-.byte-digital{
-display: none;
+.header {
+    padding: 16px 85px; 
+}
+.byte{
+    font-size: 16px;
+}
+.digital{
+    font-size: 12px;
 }
 /* ...................footer.............. */
 .have_project h3 {
@@ -1046,47 +824,42 @@ display: none;
     margin-top: 24px;
 }
 .footer {
-   padding: 80px;
+  padding: 80px 85px;
 }
 .addrs {
 width: 45%;
 }
 }
-@media(max-width:786px){
+@media(max-width:780px){
 .copyright{
     width: 70%;
 }
 }
 @media(max-width:780px){
-.who_we_are{
-    flex-direction: column;
-}
-#speaking{
-    flex-direction: column-reverse;
-}
-.aboutus_main {
-padding: 80px;
-padding-right: 16px;
-padding-left: 16px;
-background: none;
-}
-.about_sec3 {
-padding: 80px 16px;
-}
-.about_image {
-max-width: 535px;
-}
-.who_we {max-width: 535px;}
 .about_image {
 margin-bottom: 36px;
+width: 100%;
 }
 .who_we_are {
 padding-bottom: 40px;
 }
-.header {
-padding-right: 16px;
-padding-left: 16px;
+.who_we {
+    width: 100%;
 }
+.about_image img {
+    width: 60%;
+    height: auto;
+    top: 40px;
+}
+#laptop{
+    width: 70%;
+    height: auto;
+    row-gap: 32px;
+}
+#speaking{
+    flex-direction: column-reverse;
+}
+
 .have_project h3 {
 font-size: 24px;
 }
@@ -1175,11 +948,7 @@ margin-bottom: 0;
     margin-bottom: 24px;
     margin-top: 24px;
 }
-.footer {
-    padding-right: 16px;
-    padding-left: 16px;
-    padding: 32px;
-}
+
 
 .links p {
     display: flex;
@@ -1270,4 +1039,34 @@ header .headlinks.active {
     height: 75.2%;
 }
 }
+@media(max-width:550px){
+    .header{
+        padding: 16px 40px;
+    }
+    .footer{
+        padding: 32px 40px;
+    }
+    .aboutus_main {
+        padding: 80px 40px;
+        background-image: none;
+    }
+    .about_sec3 {
+        padding: 80px 40px;
+    }
+}
+@media(max-width:380px){
+    .header{
+        padding: 16px 16px;
+    }
+    .footer{
+        padding: 32px 16px;
+    }
+    .aboutus_main {
+        padding: 80px 16px;
+    }
+    .about_sec3 {
+        padding: 80px 16px;
+    }
+}
+
 
