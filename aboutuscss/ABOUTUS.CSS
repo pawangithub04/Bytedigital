@@ -655,15 +655,14 @@ header .headlinks {
 header .headlinks.active {
     top: 87px;
     width: -webkit-fill-available;
-    padding: 0 120px;
-    height: 112.2%;
+    min-height: 49.2%;
 }
 header .headlinks.active .no-decoration{
     margin-top: 24px;
     margin-bottom: 24px;
 }
 header .headlinks.active .no-decoration button{
-    width: 100%;
+    width: 80%;
 }
 header .headlinks  {
     display: block;
@@ -1023,19 +1022,12 @@ letter-spacing: -0.64px;
 .about_us {
     width: 100%;
 }
-header .headlinks.active .no-decoration button{
-    width: 100%;
-}
+
 header .headlinks.active {
-    padding: 0;
+  top: 65px;
 }
 }
-@media only screen and (max-width: 962px){
-header .headlinks.active {
-    
-    height: 75.2%;
-}
-}
+
 @media(max-width:550px){
     .header{
         padding: 16px 40px;

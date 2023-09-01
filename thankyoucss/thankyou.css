@@ -586,15 +586,14 @@ margin-right: 10px;
     header .headlinks.active {
     top: 100px;
     width: -webkit-fill-available;
-    padding: 0 120px;
-    height: 34.2%;
+    height: 54%;
     }
     header .headlinks.active .no-decoration{
     margin-top: 24px;
     margin-bottom: 24px;
     }
     header .headlinks.active .no-decoration button{
-    width: 100%;
+    width: 80%;
     }
     header .headlinks  {
     display: block;
@@ -666,7 +665,7 @@ padding-top: 24px;
 @media(max-width:795px){
     header .headlinks.active {
         top: 100px;
-        height: 65.2%;
+       
     }
    
 .thankyouImage{
@@ -850,8 +849,14 @@ content: "\003E";
 position: absolute;
 right: 18px;
 }
-.byte-digital{
-display: none;
+.byte{
+    font-size: 16px;
+}
+.digital{
+    font-size: 12px;
+}
+.logo img{
+    height: 40px;
 }
 
 .thankyou h1{
