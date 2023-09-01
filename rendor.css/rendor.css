@@ -523,7 +523,7 @@
     flex-direction: column;
     box-sizing: border-box;
     width: 40%;
-    min-height: 1243px;
+    min-height: 1090px;
     padding: 80px 252px 0 80px;
     background: #F5F5F5;
 }
@@ -560,7 +560,7 @@
     .gib_multimedia {
         width: 40%;
        
-        min-height: 1243px;
+        min-height: 1090px;
         padding: 80px 150px 0 50px;
     }
 }
@@ -625,6 +625,9 @@
     flex-direction: column;
     row-gap: 16px;
     
+}
+.service_img{
+    width: 50%;
 }
 
 .design_service img {
