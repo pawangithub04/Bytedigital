@@ -611,6 +611,9 @@ margin-top: 64px;
 display: flex;
 padding-bottom: 178px;
 }
+.contact-info a{
+    text-decoration: none;
+}
 .contact-info h3{
 color: #292929;
 margin: 0;
@@ -628,6 +631,7 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 letter-spacing: -0.64px;
+text-decoration: none;
 }
 
 .contact-info p{
