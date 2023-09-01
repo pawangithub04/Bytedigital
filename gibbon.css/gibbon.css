@@ -7,7 +7,7 @@
 
 
 .header {
-    padding: 24px 280px;
+    padding: 24px 252px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -132,9 +132,9 @@
     padding: 32px 56px 120px 56px;
     row-gap: 80px;
 }
-@media (max-width: 1500px){
+@media (max-width: 1512px){
     .header {
-        padding: 24px 56px;
+        padding: 24px 150px;
     }
 
 
@@ -157,8 +157,12 @@
         font-size: 16px;
         letter-spacing: -0.34px;
     }}
+    @media (max-width: 1300px){
+        .header {
+            padding: 24px 100px;
+        }}
 
-@media(max-width:1040px){
+@media(max-width:1100px){
     .header{align-items: center;
         justify-content: space-between;}
         .headlinks{display: none;}
@@ -243,7 +247,7 @@
 .gib_sec1_top_left .active{
     color: var(--primary, #8CDFD6);
 }
-@media(max-width:1040px){
+@media(max-width:1100px){
     .gib_sec1_top_left p {
         font-size: 15px;
         letter-spacing:-0.3px ;
@@ -320,7 +324,17 @@
     min-height: 530px;
     margin-top: 40px;
 }
-@media(max-width:1040px){ 
+@media(max-width:1512px){ 
+    #gib_sec1 {
+        row-gap: 32px;
+        padding: 32px 150px 32px 150px;
+    }}
+    @media(max-width:1300px){ 
+        #gib_sec1 {
+            row-gap: 32px;
+            padding: 32px 100px 32px 100px;
+        }}
+@media(max-width:1100px){ 
     #gib_sec1 {
         row-gap: 32px;
         padding: 32px 80px 32px 80px;
@@ -342,7 +356,7 @@
     margin-top: 24px;
     }
 }
-@media(max-width:1040px){ 
+@media(max-width:650px){ 
     #gib_sec1 {
         row-gap: 32px;
         padding: 41px 16px 32px 16px;
@@ -434,9 +448,18 @@
     width: 100%;
     padding-left: 10px;
 }
+@media(max-width:1500px){
+    .gib_overview {
+        padding: 80px 24px 80px 150px;
+    }
+}
+@media(max-width:1300px){
+    .gib_overview {
+        padding: 80px 24px 80px 100px;
+    }
+}
 
-
-@media(max-width:1040px){
+@media(max-width:1100px){
     .gib_overview h3 {
         margin: 0px;
         margin-bottom: 24px;
@@ -546,7 +569,21 @@
 .gib_multimedia_P1 {
     padding-bottom: 20px;
 }
-@media(max-width:1040px){
+@media(max-width:1500px){
+    .gib_multimedia {
+        padding: 80px 150px 0 50px;
+        width: 40%;
+        min-height: 850px;
+    }
+}
+@media(max-width:1300px){
+    .gib_multimedia {
+        padding: 80px 100px 0 50px;
+        width: 40%;
+        min-height: 850px;
+    }
+}
+@media(max-width:1100px){
     .gib_multimedia {
         padding: 80px 80px 0 25px;
         width: 40%;
@@ -644,7 +681,19 @@
     
     
 }
-@media(max-width:1040px){
+@media(max-width:1512px){
+    #gib_sec3 {
+        padding: 80px 150px ;
+       
+    }
+}
+@media(max-width:1300px){
+    #gib_sec3 {
+        padding: 80px 100px ;
+       
+    }
+}
+@media(max-width:1100px){
     .design_service h3 {
         font-size: 24px;
         letter-spacing: -0.48px;
@@ -658,7 +707,7 @@
         max-height: 300px;
     }
     #gib_sec3 {
-        padding: 80px 80px ;
+        padding: 80px 85px ;
        
     }
     
@@ -785,7 +834,21 @@ line-height: normal;
 letter-spacing: -0.32px;
 box-sizing: border-box;
 }
-@media(max-width:1040px){
+@media(max-width:1512px){
+    #gib_sec4{
+        padding: 80px 150px ;
+        row-gap: 40px;
+    
+    }
+}
+@media(max-width:1300px){
+    #gib_sec4{
+        padding: 80px 100px ;
+        row-gap: 40px;
+    
+    }
+}
+@media(max-width:1100px){
     #gib_sec4 {
         row-gap: 24px;
     }
@@ -1122,10 +1185,10 @@ margin-bottom: 80px;
         margin-top: 32px;
     }
     .footer {
-        padding: 80px 56px;
+        padding: 80px 150px;
     }
 }
-@media(max-width:1040px){
+@media(max-width:1100px){
     .have_project h3 {
         font-size: 40px;
     }
@@ -1198,7 +1261,7 @@ margin-bottom: 80px;
         margin-top: 24px;
     }
     .footer {
-        padding: 80px ;
+        padding: 85px ;
     }
     
     .logo_links {

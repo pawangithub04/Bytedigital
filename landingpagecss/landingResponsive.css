@@ -591,10 +591,12 @@
     .class2 img {
         height: 40px;
     }
-
-    .class3 {
-        display: none;
+    .class1 {
+        align-items: normal;
     }
+
+    .class3 b {font-size: 16px;}
+    .digital{font-size: 12px;}
 
     .book_call_button a button {
         color: var(--primary, #8CDFD6);
@@ -605,10 +607,19 @@
         background: none;
         padding: 0;
         width: 100px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+   
+
     }
 
-    .book_call_button a button ::after {
-        content: ">";
+    .book_call_button a ::after {
+        content: "\003E";
+        position: absolute;
+        right: -8px;
+        padding-right: 8px;
     }
 
     #container1 {
@@ -1151,11 +1162,7 @@
         width: 107px;
     }
 
-    .book_call_button a ::after {
-        content: "\003E";
-        position: absolute;
-        right: 18px;
-    }
+  
 }
 
 @media(max-width:550px) {

@@ -140,17 +140,14 @@
         font-size: 16px;
         letter-spacing: -0.34px;
     }}
-    @media (max-width: 1100px){
+    @media (max-width: 1300px){
     
         .header {
             padding: 24px 100px;
         }}
 
-@media(max-width:790px){
-    .logo img{
-        width: 40px;
-        height: 40px;
-    }
+@media(max-width:1100px){
+    
     .header{align-items: center;
         justify-content: space-between;}
         .headlinks{display: none;}
@@ -174,9 +171,7 @@
         .headlinks .active{
         width: 100%;
         }
-        .byte-digital{
-            display: none;
-        }
+        
         
         
         header .headlinks.active {
@@ -252,12 +247,12 @@
         padding: 32px 150px 120px 150px;;
     }
 }
-@media(max-width:1100px){
+@media(max-width:1300px){
     #gib_sec1 {
         padding: 32px 100px 120px 100px;;
     }
 }
-@media(max-width:790px){
+@media(max-width:1100px){
     .gib_sec1_top_left p {
         font-size: 15px;
         letter-spacing:-0.3px ;
@@ -348,13 +343,13 @@
         min-height: 530px;
     }
 }
-@media(max-width:1100px){
+@media(max-width:1300px){
     .gib_sec_1_img {
         max-width: 1328px;
         min-height: 530px;
     }
 }
-@media(max-width:790px){ 
+@media(max-width:1100px){ 
     #gib_sec1 {
         row-gap: 32px;
         padding: 32px 80px 32px 80px;
@@ -452,7 +447,7 @@
     background-color: #666;
 }
 }
-@media(max-width:1100px){
+@media(max-width:1300px){
 
     .gib_overview {
         padding: 80px 50px 80px 100px;
@@ -460,7 +455,7 @@
         background-color: #666;
     }
     }
-@media(max-width:790px){
+@media(max-width:1100px){
     .gib_overview h3 {
         margin: 0px;
         margin-bottom: 24px;
@@ -569,7 +564,7 @@
         padding: 80px 150px 0 50px;
     }
 }
-@media(max-width:1100px){
+@media(max-width:1300px){
     .gib_multimedia {
         width: 40%;
        
@@ -577,7 +572,7 @@
         padding: 80px 100px 0 50px;
     }
 }
-@media(max-width:790px){
+@media(max-width:1100px){
     .gib_multimedia {
         padding: 80px 80px 0 25px;
         width: 40%;
@@ -693,7 +688,7 @@
     
     }
 }
-@media(max-width:1512px){
+@media(max-width:1300px){
     #gib_sec3 {
         display: flex;
         flex-direction: column;
@@ -703,7 +698,7 @@
         padding: 80px 100px;
         row-gap: 80px;
     }}
-@media(max-width:790px){
+@media(max-width:1100px){
     .design_service h3 {
         font-size: 24px;
         letter-spacing: -0.48px;
@@ -857,7 +852,7 @@ box-sizing: border-box;
     
     }
 }
-@media(max-width:1512px){
+@media(max-width:1300px){
     #gib_sec4{
         box-sizing: border-box;
         width: 100%;
@@ -870,7 +865,7 @@ box-sizing: border-box;
     
     }
 }
-@media(max-width:790px){
+@media(max-width:1100px){
     #gib_sec4 {
         row-gap: 24px;
         padding: 85px;
@@ -1214,13 +1209,14 @@ margin-bottom: 80px;
         padding: 80px 150px;
     }
 }
-@media(max-width:1100px){
+
+@media(max-width:1300px){
     .footer {
         padding: 80px 150px;
     }
 }
 
-@media(max-width:790px){
+@media(max-width:1100px){
     .have_project h3 {
         font-size: 40px;
     }
@@ -1311,6 +1307,16 @@ margin-bottom: 80px;
         padding-right: 16px;
         padding-left: 16px;
         }
+    .logo img{
+        height: 40px;
+        width: 40px;
+    }
+    .byte{
+        font-size: 16px;
+    }
+    .digital{
+        font-size: 12px;
+    }
         .have_project h3 {
         font-size: 24px;
         }
@@ -1538,7 +1544,7 @@ letter-spacing: -0.48px;
     
     }
 }
-@media(max-width:1100px){
+@media(max-width:1300px){
     #sec_4_design_thinking{
         padding: 80px 100px;
         display: flex;
@@ -1548,7 +1554,7 @@ letter-spacing: -0.48px;
     
     }
 }
-@media(max-width:790px){
+@media(max-width:1100px){
     #sec_4_design_thinking{
         padding: 80px;
     }
@@ -1723,7 +1729,7 @@ box-sizing: border-box;
         padding: 80px 150px;
    }
 }
-@media(max-width:1100px){
+@media(max-width:300px){
     #sec_4_styleguid{
         display: flex;
         flex-direction: column;
@@ -1731,7 +1737,7 @@ box-sizing: border-box;
         padding: 80px 100px;
    }
 }
-@media(max-width:790px){
+@media(max-width:1100px){
     #sec_4_styleguid{
         padding: 80px;
     }
