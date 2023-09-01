@@ -177,15 +177,15 @@
         header .headlinks.active {
         top: 100px;
         width: -webkit-fill-available;
-        padding: 0 120px;
-        height: 34.2%;
+        padding: 24px 120px;
+        min-height: 29.2%;
         }
         header .headlinks.active .no-decoration{
         margin-top: 24px;
         margin-bottom: 24px;
         }
         header .headlinks.active .no-decoration button{
-        width: 100%;
+        width: 80%;
         }
         header .headlinks  {
         display: block;
