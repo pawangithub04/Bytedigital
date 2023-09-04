@@ -653,9 +653,8 @@ header .headlinks {
 
 
 header .headlinks.active {
-    top: 87px;
+    top: 85px;
     width: -webkit-fill-available;
-    min-height: 49.2%;
 }
 header .headlinks.active .no-decoration{
     margin-top: 24px;
@@ -761,6 +760,10 @@ display: none;
 }
 .digital{
     font-size: 12px;
+}
+header .headlinks.active {
+    top: 70px;
+    width: -webkit-fill-available;
 }
 /* ...................footer.............. */
 .have_project h3 {
@@ -1012,9 +1015,7 @@ justify-content: flex-start;}
 .privacy-policy{
     width: 40%;
 }
-header .headlinks.active {
-    height: 58.2%;
-}
+
 .about_us h1 {
 font-size: 32px;
 letter-spacing: -0.64px;
@@ -1023,9 +1024,6 @@ letter-spacing: -0.64px;
     width: 100%;
 }
 
-header .headlinks.active {
-  top: 65px;
-}
 }
 
 @media(max-width:550px){
