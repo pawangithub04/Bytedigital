@@ -189,16 +189,18 @@
         .headlinks .active{
         width: 100%;
         }
-        .byte-digital{
-            display: none;
+        .byte{
+            font-size: 16px;
+        }
+        .digital{
+            font-size: 12px;
         }
         
         
         header .headlinks.active {
         top: 100px;
         width: -webkit-fill-available;
-        padding: 0 120px;
-        height: 29.2%;
+        height: 55%;
         }
         header .headlinks.active .no-decoration{
         margin-top: 24px;
