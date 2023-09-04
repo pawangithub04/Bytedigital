@@ -374,7 +374,7 @@
 @media(max-width:650px){ 
     #gib_sec1 {
         row-gap: 32px;
-        padding: 41px 16px 32px 16px;
+        padding: 41px 40px 32px 40px;
     }
     .gib_sec1_h1 {
         font-size: 24px;
@@ -508,7 +508,7 @@
         letter-spacing: -0.32px;
     }
     .gib_overview {
-        padding: 32px 16px 32px 16px;
+        padding: 32px 40px 32px 40px;
         width: 100%;
         
     }
@@ -590,7 +590,7 @@
 }
 @media(max-width:650px){
     .gib_multimedia {
-        padding: 32px 16px 32px 16px;
+        padding: 32px 40px 32px 40px;
         width: 100%;
         min-height: 400px;
        
@@ -723,7 +723,7 @@
     min-height: 0px;
     justify-content: center;}
 }
-@media(max-width:600px){
+@media(max-width:650px){
     
    
     .service_img img {
@@ -732,7 +732,7 @@
       max-height: 600px;
     }
     #gib_sec3 {
-        padding: 32px 16px ;
+        padding: 32px 40px ;
        
     }
     .gibbon_third_image_section {
@@ -894,7 +894,7 @@ box-sizing: border-box;
 @media(max-width:650px){
     #gib_sec4 {
         row-gap: 24px;
-        padding: 32px 16px 32px 16px;
+        padding: 32px 40px 32px 40px;
     }
     
 
@@ -1307,8 +1307,8 @@ margin-bottom: 80px;
         padding: 0;
     }
     .header {
-        padding-right: 16px;
-        padding-left: 16px;
+        padding-right: 40px;
+        padding-left: 40px;
         }
     .logo img{
         height: 40px;
@@ -1409,9 +1409,10 @@ margin-bottom: 80px;
             margin-top: 24px;
         }
         .footer {
-            padding-right: 16px;
-            padding-left: 16px;
             padding: 32px;
+            padding-right: 40px;
+            padding-left: 40px;
+            
         }
         
         .links p {
@@ -1571,7 +1572,7 @@ letter-spacing: -0.48px;
         letter-spacing: -0.32;
     }
 }
-@media(max-width:600px){
+@media(max-width:650px){
     .sec_4_design_thinking_h3 {
         font-size: 24px;
         letter-spacing: -0.48px;
@@ -1587,6 +1588,9 @@ letter-spacing: -0.48px;
     .design_bold_para{
         font-size: 16px;
         letter-spacing: -0.32;
+    }
+    #sec_4_design_thinking {
+        padding: 80px 40px;
     }
 }
    
@@ -1765,9 +1769,9 @@ box-sizing: border-box;
     .typography_child {
         width: 100%;}
 }
-@media(max-width:600px){
+@media(max-width:650px){
     #sec_4_styleguid{
-        padding: 32px 16px;
+        padding: 32px 40px;
     }
   #Secondary {
     width: 100%;
@@ -1784,3 +1788,36 @@ box-sizing: border-box;
 .frame_primary {
     min-height: 40px;
 }}
+
+@media (max-width:390px){
+.header {
+    padding-right: 16px;
+    padding-left: 16px;
+    }
+    #gib_sec1 {
+        padding: 41px 16px 32px 16px;
+    }
+    .gib_multimedia {
+        padding: 32px 16px 32px 16px;
+    }
+    .gib_overview {
+        padding: 32px 16px 32px 16px;
+    }
+    #sec_4_design_thinking {
+        padding: 40px 16px;
+    }
+    #sec_4_styleguid{
+        padding: 32px 16px;
+    }
+    #gib_sec4 {
+        padding: 32px 16px 32px 16px;
+    }
+    .footer {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    #gib_sec3 {
+        padding: 32px 16px;
+    }
+    
+}
