@@ -2149,7 +2149,7 @@ background: #75F0E2;
 
 
 
-@media (max-width:390px) {
+@media (max-width:650px) {
     .header {
         padding-right: 16px;
         padding-left: 16px;
