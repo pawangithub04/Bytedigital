@@ -121,12 +121,7 @@
         /* 40px */
     }
 
-    #image1 {
-        height: 397.5px;
-        padding-top: 249px;
-        margin-bottom: 18px;
-        margin-right: 18px;
-    }
+   
 
     #image2 {
         height: 397.5px;
@@ -259,7 +254,7 @@
         font-size: 32px;
         letter-spacing: -0.64px;
         padding-top: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 12px;
     }
 
     .panel p {
@@ -737,6 +732,9 @@
     .casestudy {
         font-size: 24px;
     }
+    #image1::before {
+        content: '';
+        background-image: url("/IMAGES/section_4_image_1540px.svg");}
 
     #image1 {
         width: 100%;
@@ -895,7 +893,7 @@
     }
 
     .section6 {
-        padding: 80ps 85px;
+        padding: 80px 85px;
     }
 
     .download-icon {

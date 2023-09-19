@@ -109,7 +109,7 @@
     .project_success {
 
         padding: 252px;
-        padding-bottom: 80px;
+        padding-bottom: 120px;
         padding-top: 120px;
         background: #3D3D3D;
     }
@@ -198,9 +198,9 @@
     }
 
     .project_success h3 {
-        color: var(--secondary, #70C1D6);
+        color: var(--secondary, #e7eef0);
         font-family: IBM Plex Mono;
-        font-size: 24px;
+        font-size: 40px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -208,6 +208,12 @@
         text-transform: uppercase;
         margin: 0;
         margin-bottom: 8px;
+    }
+    .hr{
+        max-width: 448px;
+        height: 4px;
+        background: #70C1D6;
+        margin-bottom: 80px;
     }
 
     .project_success p {
@@ -286,6 +292,16 @@
         height: 400px;
         display: flex;
         align-items: center;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .project_comming_up img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    position: absolute;
+    right: 80px;
+
     }
     .project_comming_up p{
         margin: 0;
@@ -311,6 +327,9 @@ margin: auto;
         height: 400px;
         display: flex;
         align-items: center;
+        column-gap: 32px;
+        padding: 0px 0px 0px 72px;
+        box-sizing: border-box;
 
     }
     .project_lets_chat img {
@@ -1416,8 +1435,9 @@ right: 18px;
             </div>
 
             <div class="project_success">
-                <h3>Our previous success</h3>
-                <p>See what we have done</p>
+                <h3>Our success stories</h3>
+                <div class="hr"></div>
+                
                 <div class="success_folder">
                     <div class="success_folder_row">
                         <div class="success_icons" id="success_render">
@@ -1452,10 +1472,10 @@ right: 18px;
                     <div class="success_folder_row">
                         <div class="success_icons" id="sucess_comming_up">
                             <div class="project_comming_up">
-                                <p>Comming Soon</p>
+                                <img src="IMAGES/Happy Hour 1.svg" alt="">
                             </div>
                             <div class="success_project_name">
-                                <p>Coming soon</p>
+                                <p>Happy Hour</p>
                                 <img src="IMAGES/project_success_arrow.svg" alt="">
                             </div>
                             <div class="success_underline"></div>

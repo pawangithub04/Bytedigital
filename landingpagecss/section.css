@@ -45,7 +45,7 @@
 
 #c1 h1{color: #EBEBEB;
     font-family: IBM Plex Sans;
-    font-size: 72px;
+    font-size: 64px;
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
@@ -147,6 +147,7 @@ padding-left: 32px;
 
 
 #c32 button {
+    display: none;
 
     padding: 15px 32px;
     justify-content: center;

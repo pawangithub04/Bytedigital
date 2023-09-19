@@ -11,18 +11,6 @@
     padding: 48px;
     margin-bottom: 24px;
 }
-#rectangle-wrapper5 {
-    
-    
-    border: 2px dashed #B0DDE8;
-    
-}
-
-/* .frame-parent1 {
-    max-width: 295px;
-    width: 100%;
-} */
-
 .web-fill0-wght400-grad0-opsz48-icon {
     /* position: relative; */
     width: 48px;
@@ -209,7 +197,7 @@ left: 252px; */
 }
 
 .uxui-design-and {
-    color: #E0E0E0;
+        color: #E0E0E0;
     font-family: IBM Plex Sans;
     font-size: 24px;
     font-style: normal;

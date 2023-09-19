@@ -189,7 +189,7 @@ letter-spacing: 1.02px;
 }
 .copy_right ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-left: 0px;
     list-style: none;
 

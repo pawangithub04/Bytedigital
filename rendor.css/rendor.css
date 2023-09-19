@@ -231,11 +231,7 @@
 
 /*topleft*/
 .gib_sec1_top_left {
-    display: flex;
-
-    box-sizing: border-box;
-
-
+    display: none;
 }
 
 
