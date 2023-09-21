@@ -29,7 +29,10 @@
 }
 .header_book{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+.header_book button:hover{
+    cursor: pointer;
 }
 .header_book button{
     border-radius: 8px;
@@ -40,9 +43,16 @@
     padding-top:24px ;
     padding-bottom:24px ;
     text-align: center;
+    margin-bottom: 48px;
+    font-family: IBM Plex Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.48px;
     margin-bottom: 48px;}
 
-    .header_book a {color: #000;
+    /* .header_book a {color: #000;
 font-family: IBM Plex Sans;
 font-size: 24px;
 font-style: normal;
@@ -50,7 +60,7 @@ font-weight: 700;
 line-height: normal;
 letter-spacing: -0.48px;
 margin-bottom: 48px;
-}
+} */
 
 .add_cmpny-name p {
     color: #1F1F1F;
