@@ -9,7 +9,7 @@
     background: #3D3D3D;
 
 }
-#image1::before{
+/* #image1::before{
     content: "";
     background-image: url("../IMAGES/section_4_image_1.png");
     background-size: cover cover;
@@ -30,7 +30,7 @@
 
     border-radius: 24px;
     
-}
+} */
 
 
 #image1 {
@@ -45,6 +45,7 @@
     min-height: 447px;
     position: relative;
     z-index: 2;
+    background: #BEF2EE;
   
   
     
