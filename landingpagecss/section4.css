@@ -9,6 +9,28 @@
     background: #3D3D3D;
 
 }
+#image1::before{
+    content: "";
+    background-image: url("../IMAGES/section_4_image_1.png");
+    background-size: cover cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    min-height: 447px;
+    z-index: -1;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 2px solid #B0DDE8;
+
+    border-radius: 24px;
+    
+}
 
 
 #image1 {
@@ -23,9 +45,10 @@
     padding: 40px;
     min-height: 447px;
     position: relative;
-    background: #BEF2EE;
-    display: flex;
-    flex-direction: row;
+    z-index: 2;
+  
+  
+    
 
    
 }
@@ -35,10 +58,10 @@
     width: 37%;
     border-radius: 24px;
     background: linear-gradient(0deg, #000 0%, rgba(63, 63, 63, 0.68) 42.71%, rgba(196, 196, 196, 0.00) 100%);
-    background-image: url("../IMAGES/section_4_image_2.jpg");
+    /* background-image: url("../IMAGES/section_4_image_2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
     margin-bottom: 24px;
     border: 2px solid #B0DDE8;
     margin-right: 6px;
@@ -57,10 +80,10 @@
     width: 37%;
     border-radius: 24px;
     background: linear-gradient(0deg, #000 0%, rgba(63, 63, 63, 0.68) 42.71%, rgba(196, 196, 196, 0.00) 100%);
-    background-image: url("../IMAGES/section_4_image_3.jpg");
+    /* background-image: url("../IMAGES/section_4_image_3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
     margin-right: 24px;
     border: 2px solid #B0DDE8;
     box-sizing: border-box;
@@ -74,10 +97,10 @@
     width: 60%;
     border-radius: 24px;
     background: linear-gradient(0deg, #000 0%, rgba(63, 63, 63, 0.68) 42.71%, rgba(196, 196, 196, 0.00) 100%);
-    background-image: url("../IMAGES/section_4_image_4.jpg");
+    /* background-image: url("../IMAGES/section_4_image_4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
     border: 2px solid #B0DDE8;
     box-sizing: border-box;
     display: flex;
