@@ -31,9 +31,12 @@
     border-radius: 24px;
     
 } */
-
+.workimg{
+    display: contents;
+}
 
 #image1 {
+    position: relative;
     width: 60%;
     border-radius: 24px;
     margin-right: 24px;
@@ -41,28 +44,20 @@
     box-sizing: border-box;
     display: flex;
     align-items: flex-end;
-    padding: 40px;
-    min-height: 447px;
-    position: relative;
     z-index: 2;
     background: #BEF2EE;
-  
-  
-    
-
-   
+    padding: 40px;
+    box-sizing: border-box;
+    min-height: 240px;
 }
 
 
 
 #image2 {
+    position: relative;
     width: 37%;
     border-radius: 24px;
     background: linear-gradient(0deg, #000 0%, rgba(63, 63, 63, 0.68) 42.71%, rgba(196, 196, 196, 0.00) 100%);
-    /* background-image: url("../IMAGES/section_4_image_2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
     background: #FBFADA;
     margin-bottom: 24px;
     border: 2px solid #B0DDE8;
@@ -71,7 +66,8 @@
     display: flex;
     align-items: flex-end;
     padding: 40px;
-    min-height: 447px;
+    box-sizing: border-box;
+    min-height: 240px;
 }
 
 
@@ -79,38 +75,34 @@
 
 
 #image3 {
+    position: relative;
     width: 37%;
     border-radius: 24px;
     background: linear-gradient(0deg, #000 0%, rgba(63, 63, 63, 0.68) 42.71%, rgba(196, 196, 196, 0.00) 100%);
-    /* background-image: url("../IMAGES/section_4_image_3.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
     margin-right: 24px;
     border: 2px solid #B0DDE8;
     box-sizing: border-box;
     display: flex;
     align-items: flex-end;
-    padding: 40px;
-    min-height: 447px;
     background: #BEF2EE;
+    padding: 40px;
+    box-sizing: border-box;
+    min-height: 240px;
 }
 
 #image4 {
+    position: relative;
     width: 60%;
     border-radius: 24px;
     background: linear-gradient(0deg, #000 0%, rgba(63, 63, 63, 0.68) 42.71%, rgba(196, 196, 196, 0.00) 100%);
-    /* background-image: url("../IMAGES/section_4_image_4.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
     border: 2px solid #B0DDE8;
     box-sizing: border-box;
     display: flex;
     align-items: flex-end;
-    padding: 40px;
-    min-height: 447px;
     background: #FBFADA;
+    padding: 40px;
+    box-sizing: border-box;
+    min-height: 240px;
 }
 
 
@@ -126,6 +118,11 @@
     padding-bottom: 24px;
 
 
+}
+.arrow{
+    position: absolute;
+    right: 32px;
+    top: 21px;
 }
 
 .ourwork {

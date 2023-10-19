@@ -123,7 +123,7 @@
 
    
 
-    #image2 {
+    /* #image2 {
         height: 397.5px;
         padding-top: 254px;
         margin-bottom: 18px;
@@ -138,7 +138,7 @@
     #image4 {
         height: 397.5px;
         padding-top: 254px;
-    }
+    } */
 
     .section_4 {
         padding: 85px 150px;
@@ -372,15 +372,7 @@
     }
 }
 
-@media (max-width: 1430px) {
-    #image2 {
-        padding-top: 226px;
-    }
 
-    #image3 {
-        padding-top: 226px;
-    }
-}
 
 @media (max-width: 1419px) {
     .uxui-design-and span {
@@ -388,15 +380,7 @@
     }
 }
 
-@media (max-width: 1245px) {
-    #image2 {
-        padding-top: 190px;
-    }
 
-    #image3 {
-        padding-top: 190px;
-    }
-}
 
 @media (max-width: 1205px) {
 
@@ -477,27 +461,27 @@
         width: 49%;
         margin: 0;
         margin-bottom: 16px;
-        min-height: 290px;
+   
     }
 
     #image2 {
         width: 49%;
         margin: 0;
         margin-bottom: 16px;
-        min-height: 290px;
+
     }
 
     #image3 {
         width: 49%;
         margin: 0;
         margin-bottom: 16px;
-        min-height: 290px;
+
     }
 
     #image4 {
         width: 49%;
         margin: 0;
-        min-height: 290px;
+
     }
 
     .casestudy {
@@ -732,32 +716,30 @@
     .casestudy {
         font-size: 24px;
     }
-    #image1::before {
-        content: '';
-        background-image: url("/IMAGES/section_4_image_1540px.svg");}
+   
 
     #image1 {
         width: 100%;
         margin-right: 0;
-        height: 240px;
+      
     }
 
     #image2 {
         width: 100%;
         margin-right: 0;
-        height: 240px;
+
     }
 
     #image3 {
         width: 100%;
         margin-right: 0;
-        height: 240px;
+
     }
 
     #image4 {
         width: 100%;
         margin-right: 0;
-        height: 240px;
+
     }
 
     .section_4 {
