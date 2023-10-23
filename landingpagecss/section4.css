@@ -84,7 +84,7 @@
     box-sizing: border-box;
     display: flex;
     align-items: flex-end;
-    background: #BEF2EE;
+    background: #FBFADA;
     padding: 40px;
     box-sizing: border-box;
     min-height: 240px;
@@ -99,7 +99,8 @@
     box-sizing: border-box;
     display: flex;
     align-items: flex-end;
-    background: #FBFADA;
+   
+    background: #BEF2EE;
     padding: 40px;
     box-sizing: border-box;
     min-height: 240px;
