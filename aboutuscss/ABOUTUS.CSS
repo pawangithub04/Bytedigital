@@ -178,7 +178,7 @@ letter-spacing: -1.28px;
     padding-bottom: 0px;
 }
 .who_we{
-    width: 40%;
+    width: 50%;
 
 }
 .who_we h3{
@@ -220,13 +220,13 @@ margin: 0;
     border-radius: 24px;
 border: 1px solid #B0DDE8;
 background: #DFF8EB;
-width: 60%;
+width: 50%;
 min-height: 400px;
 }
 .about_image img{
     box-sizing: border-box;
     position: relative;
-    top: 60px;
+    top: 35px;
     width: 18.75vw; /* 360px (width) / 1920px (screen width) * 100vw (viewport width) */
     height: 23.75vw; /* 456px (height) / 1920px (screen width) * 100vw (viewport width) */
     max-width: 360px; /* Set the maximum width for the image */
@@ -522,7 +522,7 @@ padding-left: 27px;
 }
 .about_image {
 border-radius: 24px;
-width:60%;
+width:50%;
 min-height: 278px;
 
 }
@@ -536,7 +536,7 @@ height: 64px;
 padding: 80px 150px;
 }
 .who_we_are {
-padding-bottom: 98px;
+padding-bottom: 90px;
 align-items: center;
 }
 .rich{
@@ -1034,8 +1034,9 @@ letter-spacing: -0.64px;
         padding: 32px 40px;
     }
     .aboutus_main {
-        padding: 80px 40px;
+        padding: 40px 40px;
         background-image: none;
+        padding-bottom: 0px;
     }
     .about_sec3 {
         padding: 80px 40px;
