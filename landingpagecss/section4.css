@@ -120,10 +120,15 @@
 
 
 }
+.sec_image img{
+    display: block;
+}
 .arrow{
     position: absolute;
     right: 32px;
     top: 21px;
+    margin-bottom: 15px;
+    display: inline-block;
 }
 
 .ourwork {
