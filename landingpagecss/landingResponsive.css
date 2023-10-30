@@ -1152,6 +1152,12 @@
 }
 
 @media(max-width:550px) {
+    .prev{
+        display: none;
+    }
+    .next{
+        display: none;
+    }
     #container1 {
         background-image: none;
 
