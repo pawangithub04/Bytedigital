@@ -333,9 +333,8 @@ margin: auto;
 
     }
     .project_lets_chat img {
-        width: 156px;
-        height: 285px
-
+        max-width: 100%;
+        height: 350px;
     }
 
     .project_lets_chat p {
@@ -824,7 +823,15 @@ letter-spacing: -0.64px;
             font-size: 32px;
             letter-spacing: -0.64px;
         }
-   
+        
+
+        .project_comming_up img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        position: absolute;
+        right: 98px;
+}
 
 
 
@@ -1329,7 +1336,11 @@ right: 18px;
     padding: 80px 80px;
 }
 .header {
-    padding: 10px 80px;
+     padding: 10px 80px;
+}
+.project_comming_up img {
+    
+    right: 10px;
 }
 }
 @media(max-width:600px){
@@ -1478,24 +1489,21 @@ right: 18px;
                             </a>
                             <a href="happyhour.html">
                                 <div class="success_project_name">
-                                    <p>Happy Hour</p>
+                                    <p>Food and Drink</p>
                                     <img src="IMAGES/project_success_arrow.svg" alt="">
                                 </div>
                             </a>
                             <div class="success_underline"></div>
                         </div>
                         <div class="success_icons" id="success_lets_chat">
-                            <a href="contacusforlive.html">
+                            <a href="lifestyle.html">
                                 <div class="project_lets_chat">
-                                    <img src="IMAGES/project_success_4.svg" alt="">
-                                    <div>
-                                        <p>Your Project here!</p>
-                                        <h3>Let’s Chat.</h3>
-                                    </div>
+                                    <img src="IMAGES/worklifestyle.svg" alt="">
+                                   
                                 </div>
                             </a>
 
-                            <a href="">
+                            <a href="lifestyle.html">
                                 <div class="success_project_name">
                                     <p>Talk to us</p>
                                     <img src="IMAGES/project_success_arrow.svg" alt="">
@@ -1525,7 +1533,7 @@ right: 18px;
                         <p>BYTE DIGITAL</p>
                     </div>
                     <div class="cmpny_address">
-                        <a href="https://www.google.com/maps/place/470+St+Kilda+Rd,+Melbourne+VIC+3004,+Australia/@-37.8412405,144.9741949,17z/data=!3m1!4b1!4m6!3m5!1s0x6ad6693aa464baf9:0xbd7c4b011b939aeb!8m2!3d-37.8412448!4d144.9767698!16s%2Fg%2F11t46sgpgt?entry=ttu"><p>Ground floor, 470, St. Kilda Road,Melbourne, VIC 3004, Australia</p></a>
+                        <a href="https://www.google.com/maps/place/470+St+Kilda+Rd,+Melbourne+VIC+3004,+Australia/@-37.8412405,144.9741949,17z/data=!3m1!4b1!4m6!3m5!1s0x6ad6693aa464baf9:0xbd7c4b011b939aeb!8m2!3d-37.8412448!4d144.9767698!16s%2Fg%2F11t46sgpgt?entry=ttu"><p>Ground floor, 470, St. Kilda Road, <br>Melbourne, VIC 3004, Australia</p></a>
                     </div>
                     <div class="cmpny_phn_no"><a href="tel:+61452515004">+61 - 452515004</a></div>
                     <div class="cmpny_email"><a
@@ -1534,7 +1542,7 @@ right: 18px;
                 </div>
                 <div class="links">
                     <div class="cmpny">
-                        <p>Company</p>
+                        
                     </div>
                     <a href="about_us8aug.html" class="service1">About us</a>
                     <a href="index.html#section5" class="service2">Services</a>

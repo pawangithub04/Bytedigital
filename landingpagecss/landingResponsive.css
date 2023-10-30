@@ -563,6 +563,12 @@
 }
 
 @media (max-width: 780px) {
+    .prev {
+        left: -55px;
+    }
+    .next{
+        right: -55px;
+    }
     .class {
         padding: 12px 85px;
     }
