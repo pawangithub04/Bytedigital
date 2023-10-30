@@ -2,7 +2,7 @@
     display: flex;
     row-gap: 40px;  
     flex-direction: column;  
-    padding: 80px 252px; 
+    padding: 80px 299px; 
     box-sizing: border-box;             
 }
 .pageimg img{
@@ -101,7 +101,7 @@ h3{
 }
 @media screen and (max-width: 1512px) {
     .main{ 
-        padding: 80px 150px;  
+        padding: 80px 290px;  
         box-sizing: border-box;            
     }
    
@@ -131,7 +131,7 @@ h3{
   }
   @media screen and (max-width: 900px) {
     .main{ 
-        padding: 80px 110px;  
+        padding: 80px 190px;  
         box-sizing: border-box;            
     }
    
@@ -161,7 +161,7 @@ h3{
   }
   @media screen and (max-width: 780px) {
     .main{ 
-        padding: 80px 85px;  
+        padding: 80px 150px;  
         box-sizing: border-box;            
     } 
     .main h1{
