@@ -2001,6 +2001,7 @@ letter-spacing: -0.48px;
 /* ......................user reserch.......... */
 .user_research {
     padding: 80px 252px;
+    background: #3D3D3D;
 }
 .user_reserch_main{
     display: flex;
