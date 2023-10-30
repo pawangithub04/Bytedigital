@@ -187,7 +187,7 @@ letter-spacing: -0.8px;
 }
 #blogone::before{
     content: '';
-    background-image: url(./IMAGES/blogone.svg);
+    background-image: url(../IMAGES/blogone.svg);
     position: absolute;
     top: 0;
     left: 0;
@@ -204,7 +204,7 @@ letter-spacing: -0.8px;
 }
 #blogtwo::before{
     content: '';
-    background-image: url(./IMAGES/blogtwo.svg);
+    background-image: url(../IMAGES/blogtwo.svg);
     position: absolute;
     top: 0;
     left: 0;
@@ -220,7 +220,7 @@ letter-spacing: -0.8px;
 }
 #blogthree::before{
     content: '';
-    background-image: url(./IMAGES/blogthree.svg);
+    background-image: url(../IMAGES/blogthree.svg);
     position: absolute;
     top: 0;
     left: 0;
@@ -236,7 +236,7 @@ letter-spacing: -0.8px;
 }
 #blogfour::before{
     content: '';
-    background-image: url(./IMAGES/blogfour.svg);
+    background-image: url(../IMAGES/blogfour.svg);
     position: absolute;
     top: 0;
     left: 0;
