@@ -933,11 +933,7 @@ header .headlinks.active {
 width: 45%;
 }
 }
-@media(max-width:780px){
-.copyright{
-    width: 70%;
-}
-}
+
 @media(max-width:780px){
 .about_image {
 margin-bottom: 36px;
@@ -1079,7 +1075,7 @@ margin-bottom: 0;
     letter-spacing: 0.96px;
 }
 .copyright{
-    width: 100%;
+    width: 70%;
 }
 .common_links {
     flex-direction: column-reverse;
@@ -1128,6 +1124,10 @@ letter-spacing: -0.64px;
     width: 100%;
 }
 
+.blogcontent h3 {
+    font-size: 32px;
+}
+
 }
 @media(max-width:600px){
     .blogs{
@@ -1138,7 +1138,7 @@ letter-spacing: -0.64px;
         width: 100%;
     }
 }
-@media(max-width:550px){
+/* @media(max-width:550px){
     .blogcontent{
         padding:80px 40px;
     }
@@ -1155,8 +1155,8 @@ letter-spacing: -0.64px;
     .about_sec3 {
         padding: 80px 40px;
     }
-}
-@media(max-width:380px){
+} */
+@media(max-width:550px){
     .blogcontent{
         padding:80px 16px;
     }

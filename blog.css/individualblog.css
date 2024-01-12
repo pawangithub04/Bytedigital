@@ -183,7 +183,7 @@ h3{
   }
   @media screen and (max-width: 550px) {
     .main{ 
-        padding: 40px 40px;  
+        padding: 40px 16px;  
         row-gap: 20px;           
     }
     .maintext{
@@ -206,11 +206,4 @@ h3{
     }
    
   }
-  @media screen and (max-width: 550px) {
-    .main{ 
-        padding: 40px 16px;
-                  
-    }
-  }
-  
   
