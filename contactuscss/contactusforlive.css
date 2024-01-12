@@ -57,28 +57,15 @@ align-items: flex-start;
 
 .boook {
 padding: 40px;
-
-
-
-
-
 background: #8CDFD6;
 border-radius: 24px;
-width: 43%;
-height: 100%;
-
-
-
-
-
-
+width: 80%;
+height: 60%;
+align-content: center;
 }
 
 .form {
 width: 43%;
-
-
-
 }
 
 .content-box{

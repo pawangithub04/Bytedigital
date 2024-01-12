@@ -38,7 +38,7 @@
     right: 0;
     border-radius: 3px 0 0 3px;
     position: absolute;
-    top: 0;
+    top: 10%;
     right: -78px;
     font-size: xx-large;
     }
@@ -46,7 +46,7 @@
         right: 0;
         border-radius: 3px 0 0 3px;
         position: absolute;
-        top: 0;
+        top: 10%;
         left: -78px;
         font-size: xx-large;
         display:  inline-table;;
@@ -102,6 +102,7 @@
     .fade {
     animation-name: fade;
     animation-duration: 0.5s;
+    height: 500px;
     }
     
     @keyframes fade {
@@ -166,7 +167,7 @@
     font-family: IBM Plex Sans;
     font-size: 40px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 80;
     line-height: normal;
     letter-spacing: -0.8px;
     margin-bottom: 48px;
@@ -210,6 +211,9 @@
     .dots{
         text-align: center;
         padding-top: 48px;
+        position: absolute;
+        right: 50%;
+        bottom: 0px;
     }
 
 
