@@ -4,7 +4,7 @@ showSlides(slideIndex);
 // Automatically advance the slides every 5 seconds
 let slideInterval = setInterval(() => {
     plusSlides(1);
-}, 5000);
+}, 10000);
 
 // Rest of your JavaScript code (slider.js) for handling slides and dots
 function plusSlides(n) {
@@ -15,7 +15,7 @@ function plusSlides(n) {
     // Set a new interval to continue automatic slide transitions
     slideInterval = setInterval(() => {
         plusSlides(1);
-    }, 5000);
+    }, 10000);
 }
 
 function currentSlide(n) {
@@ -26,7 +26,7 @@ function currentSlide(n) {
     // Set a new interval to continue automatic slide transitions
     slideInterval = setInterval(() => {
         plusSlides(1);
-    }, 5000);
+    }, 10000);
 }
 
 
