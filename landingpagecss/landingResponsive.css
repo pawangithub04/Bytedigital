@@ -235,7 +235,10 @@
     .section6 {
         padding: 85px 150px;
     }
-
+    .fade {
+        height: 350px;
+        min-height: 350px;
+    }
 
 
 
@@ -909,9 +912,7 @@
     }
 
     .accordion {
-
-        font-size: 24px;
-
+        font-size: x-large;
         letter-spacing: -0.48px;
         padding-top: 40px;
         padding-bottom: 40px;
@@ -926,12 +927,14 @@
         width: 100%;
         max-width: 270px;
         text-align: left;
+        font-size: 20px;
+    }
+    .accordion.active:after {
+        font-size: x-large;
     }
 
     .panel p {
-
         font-size: 20px;
-
         letter-spacing: -0.4px;
         margin-bottom: 16px;
     }
@@ -951,7 +954,9 @@
 
     .dr {
         padding: 80px 85px;
-
+    }
+    .faq2 {
+        font-size: 16px;
     }
 
     /* ...........................................footer............................................ */
