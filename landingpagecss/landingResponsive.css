@@ -235,13 +235,6 @@
     .section6 {
         padding: 85px 150px;
     }
-    .fade {
-        height: 350px;
-        min-height: 350px;
-    }
-
-
-
     /* ...............................................sectin7......................................................... */
     .FAQs {
         font-size: 36px;
@@ -542,7 +535,7 @@
     }
 
     .accordion:after {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .addrs {
@@ -881,6 +874,7 @@
 
     .dots {
         padding-top: 24px;
+        left: 38%;
     }
 
     .section6 {
@@ -941,7 +935,6 @@
 
     .faqcontent {
         font-size: 20px;
-
         letter-spacing: -0.4px;
     }
 
@@ -961,7 +954,7 @@
 
     /* ...........................................footer............................................ */
     .have_project h3 {
-        font-size: 24px;
+        font-size: 32px;
     }
 
     .have_convo p {
@@ -1208,7 +1201,7 @@
     }
 
     .footer {
-        padding: 80px 40px;
+        padding: 80px 16px;
 
     }
 } 
