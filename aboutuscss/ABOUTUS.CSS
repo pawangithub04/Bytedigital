@@ -873,7 +873,7 @@ font-size: 24px;
     letter-spacing: -0.3px;
 }
 .add_cmpny-name p {
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 1.44px;
     margin-bottom: 8px;
 }
@@ -962,7 +962,7 @@ margin-bottom: 0;
     content: "Company";
     color: #1F1F1F;
     font-family: IBM Plex Sans;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
