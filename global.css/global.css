@@ -2141,15 +2141,6 @@ background: #75F0E2;
     }
 }
 
-@media(max-width:650px) {
-    .mapview {
-        padding: 32px 40px;
-    }
-}
-
-
-
-
 @media (max-width:650px) {
     .header {
         padding-right: 16px;

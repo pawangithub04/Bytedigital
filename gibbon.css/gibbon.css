@@ -319,6 +319,7 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
+    list-style-position: inside;
 }
 
 .sec1_main_main li {
@@ -372,20 +373,6 @@
 .gib_sec_1_img_p{
     display: none;
 }
-
-
-
-
-
-
-@media(max-width:1512px) {
-   
-}
-
-@media(max-width:1300px) {
-    
-}
-
 @media(max-width:1100px) {
     #gib_sec1 {
         row-gap: 32px;
@@ -410,7 +397,7 @@
 @media(max-width:650px) {
     #gib_sec1 {
         row-gap: 32px;
-        padding: 41px 40px 32px 40px;
+        padding: 41px 16px 32px 16px;
     }
     .sec_main_main_content {
         row-gap: 8px;
@@ -574,7 +561,7 @@
         letter-spacing: -0.32px;
     }
     .gib_overview {
-        padding: 32px 40px 32px 40px;
+        padding: 32px 16px 32px 16px;
         width: 100%;
         
     }
@@ -654,7 +641,7 @@
 }
 @media(max-width:650px){
     .gib_multimedia {
-        padding: 32px 40px 32px 40px;
+        padding: 32px 16px 32px 16px;
         width: 100%;
         min-height: 400px;
        
@@ -774,7 +761,7 @@
       max-height: 600px;
     }
     #gib_sec3 {
-        padding: 32px 40px ;
+        padding: 32px 16px ;
        
     }
     .gibbon_third_image_section {
@@ -924,7 +911,7 @@ box-sizing: border-box;
 @media(max-width:650px){
     #gib_sec4 {
         row-gap: 24px;
-        padding: 32px 40px 32px 40px;
+        padding: 32px 16px 32px 16px;
     }
     
 
@@ -1332,7 +1319,7 @@ margin-bottom: 80px;
         padding: 0;
     }
     .header {
-        padding: 16px 40px ;
+        padding: 16px 16px ;
         }
         .have_project h3 {
         font-size: 24px;
@@ -1424,8 +1411,8 @@ margin-bottom: 80px;
         }
         .footer {
             padding: 32px;
-            padding-right: 40px;
-            padding-left: 40px;
+            padding-right: 16px;
+            padding-left: 16px;
         }
         
         .links p {
@@ -1496,7 +1483,7 @@ margin-bottom: 80px;
        
         }
 }
-@media(max-width:395px){
+/* @media(max-width:395px){
     .header {
         padding: 16px;
     }
@@ -1522,5 +1509,5 @@ margin-bottom: 80px;
     }
 
 
-}
+} */
 

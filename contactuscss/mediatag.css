@@ -406,11 +406,11 @@
     
 }
     .class{
-        padding: 12px 40px;
+        padding: 12px 16px;
 
     }
     .classm1{
-        padding: 24px 40px;
+        padding: 24px 16px;
     }
     .boook{
         padding: 16px;
@@ -485,7 +485,7 @@ font-size: 16px;
 
 
 } 
-@media (max-width: 380px){
+/* @media (max-width: 380px){
   .classm1{
     padding: 24px 16px;
 }
@@ -493,4 +493,4 @@ font-size: 16px;
   padding: 12px 16px;
 
 }
-}
+} */
