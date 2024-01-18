@@ -6,7 +6,7 @@
 
 .section_4 {
     padding: 85px 252px;
-    background: #3D3D3D;
+    background: var(--secondary, #70C1D6);
 
 }
 /* #image1::before{
@@ -150,7 +150,7 @@
 }
 
 #our_work1 {
-    color: #F5F5F5;
+    color: black;
     font-family: IBM Plex Sans;
     font-size: 40px;
     font-style: normal;
@@ -160,7 +160,7 @@
 }
 
 #our_work2 {
-    color: #F5F5F5;
+    color: black;
     font-family: IBM Plex Sans;
     font-size: 48px;
     font-style: normal;
@@ -196,7 +196,7 @@
 }
 
 .line {
-
+    display: none;
     height: 8px;
     background: #70C1D6;
     width: 100%;
