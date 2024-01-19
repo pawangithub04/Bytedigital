@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byte Digital | About Us</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=IBM Plex Sans:wght@400;500;700&display=swap" />
+    <link rel="stylesheet" href="newpagecss/newpage.css">
+    <link rel="shortcut icon" href="IMAGES/byteLOGO.svg" type="image/x-icon">
+</head>
+<script>// Get all anchor tags with the class "change-on-click"
+    const anchorTags = document.querySelectorAll('.change-on-click');
+
+    // Add a click event listener to each anchor tag
+    anchorTags.forEach(anchor => {
+        anchor.addEventListener('click', () => {
+            anchor.classList.add('clicked'); // Add the "clicked" class
+        });
+    });</script>
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .about_sec3 {
+        display: flex;
+        padding: 120px 0px;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    #vertical1 {
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 48px;
+    }
+
+    #vertical1 .textcontent {
+        padding: 0;
+        padding-left: 252px;
+        padding-right: 0;
+       
+    }
+
+    #vertical2 .textcontent {
+        padding: 0;
+        padding-right: 252px;
+        padding-left: 0;
+    }
+
+    #vertical2 {
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 80px;
+    }
+
+    .textcontent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 48px;
+        padding: 120px;
+        padding-left: 252px;
+        ;
+    }
+
+    .textcontent h3 {
+        color: #FFF;
+        font-family: "IBM Plex Sans";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.8px;
+    }
+
+    .textcontent p {
+        color: #CCC;
+        font-family: "IBM Plex Sans";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.48px;
+    }
+
+    .textcontent h3::after {
+        content: "";
+        width: 305px;
+        height: 4px;
+        background: #70C1D6;
+    }
+
+    .smallscreenvisible {
+        display: none;
+    }
+
+    .recognition {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px 0px 0px 8px;
+        max-width: 813px;
+        max-height: 421px;
+
+    }
+
+    .ourcustomers {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px 0px 0px 8px;
+        max-width: 595px;
+        max-height: 669px;
+    }
+
+    .majorexhibitions {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px 0px 0px 8px;
+        max-Width: 595px;
+        max-Height: 669px;
+    }
+
+    .majorexhibitions2 {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px 0px 0px 8px;
+        max-Width: 595px;
+        max-Height: 850px;
+    }
+
+    .list {
+        color: #CCC;
+
+        font-family: "IBM Plex Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 200%;
+        /* 40px */
+        letter-spacing: -0.4px;
+    }
+
+    .listcolor {
+        color: var(--Primary, #8CDFD6);
+        font-family: "IBM Plex Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 200%;
+        letter-spacing: -0.4px;
+        text-decoration-line: underline;
+    }
+
+
+    @media (max-width: 1512px) {
+        #vertical1 .textcontent {
+            padding-left: 150px;
+        }
+
+        #vertical2 .textcontent {
+            padding-right: 150px;
+        }
+
+        .about_sec3 {
+            padding: 85px 0px;
+        }
+    }
+    @media (max-width: 900px){
+    #vertical1 .textcontent {
+            padding-left: 110px;
+        }
+
+        #vertical2 .textcontent {
+            padding-right: 110px;
+        }
+
+        .about_sec3 {
+            padding: 50px 0px;
+        }
+}
+@media (max-width: 780px){
+    #vertical1 .textcontent {
+            padding-left: 0px;
+        }
+
+        #vertical2 .textcontent {
+            padding-right: 0px;
+        }
+
+        .about_sec3 {
+            padding: 40px 85px;
+        }
+        .about_sec3{
+            flex-direction: column;
+        }
+        #vertical1{
+            width: 100%;
+        }
+        #vertical2{
+            width: 100%;
+        }
+        .img{
+            display: none;
+        }
+        .smallscreenvisible{
+            display: block;
+        }
+
+
+}
+@media (max-width: 550px){
+    .about_sec3 {
+    padding: 80px 16px;
+}}
+
+</style>
+
+<body>
+    <header>
+        <div class="header" id="header" style="background: black;">
+            <div class="logo" id="logo">
+                <a href="index.html"><img src="IMAGES/byteLOGO.svg" alt=""></a>
+                <div class="byte-digital">
+                    <a href="index.html">
+                        <div class="byte">Byte</div>
+                    </a>
+                    <a href="index.html">
+                        <div class="digital">Digital</div>
+                    </a>
+                </div>
+            </div>
+            <div class="headlinks" id="headerlinks">
+
+                <a href="aboutus.html">
+                    <div class="no-decoration" >About us </div>
+                </a>
+                <a href="index.html#section5">
+                    <div class="no-decoration">Services </div>
+                </a>
+                <a href="our_work.html">
+                    <div class="no-decoration" id="active">Our work </div>
+                </a>
+                <a href="blog.html">
+                    <div class="no-decoration">Blog </div>
+                </a>
+                <a href="contact.html" target="_blank">
+                    <div class="no-decoration"><button>Get in touch</button> </div>
+                </a>
+
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main" id="main">
+            <div class="aboutus_main" id="about_us" style="min-height: 450px;">
+                <div class="aboutus_child">
+                    
+                </div>
+            </div>
+            
+            <div class="about_sec3">
+                <div class="vertical" id="vertical1">
+                    <div class="textcontent">
+                        <h3>Our Customers...</h3>
+                        <div class="underline"></div>
+                        <p>Byte Digital Projects: Elevating Digital Excellence with Innovative Solutions, Transformative
+                            Strategies, and Unparalleled Client Success Stories.</p>
+                        <ul>
+                            <li class="listcolor">DigitalBoost360: Transformative Digital Solutions for Growth.</li>
+                            <li class="list">ByteXperienceHub: Elevating User Experiences Digitally.</li>
+                            <li class="listcolor">TechHarbor Solutions: Harbouring Innovation in Tech Solutions.</li>
+                            <li class="listcolor">DataCraft Innovations: Crafting Intelligent Data-driven Solutions.
+                            </li>
+                            <li class="list">PulseDrive Digital: Driving Digital Innovation with Pulse.</li>
+                            <li class="listcolor">ByteSprint Labs: Sprinting Ahead in Digital Innovation.</li>
+                            <li class="listcolor">QuantumByte Dynamics: Dynamic Solutions in Quantum Tech.</li>
+                            <li class="list">PixelVibe Creations: Vibrant Digital Creations with Pixels.</li>
+                            <li class="listcolor">ByteSync Tech Ventures: Venturing into Tech Synchronisation.</li>
+                            <li class="listcolor">CodeSphere Solutions: Spherical Solutions in the Code.</li>
+                            <li class="list">ByteFusion Analytics: Fusing Insights with Byte Analytics.</li>
+                            <li class="listcolor">EchoByte Digital Solutions: Digital Resonance with EchoByte.</li>
+                            <li class="list">SwiftVista Technologies: Swift Visionary Technologies Unleashed.</li>
+                            <li class="listcolor">MetaByte Interactive: Interactive Digital Magic with MetaByte.</li>
+                            <li class="list">SparkByte Studios: Creative Sparks in Digital Studios.</li>
+                            <li class="listcolor">ByteGenius Innovations: Innovating Genius Solutions Digitally.</li>
+                            <li class="list">StreamByte Media Solutions: Streaming Media Solutions with Byte.</li>
+                            <li class="listcolor">ByteWave AI Ventures: Venturing into AI Waves.</li>
+                            <li class="list">QuantumLeap Digital: Digital Leaps into Quantum Innovations.</li>
+                            <li class="listcolor">ByteMatrix Dynamics: Dynamic Solutions in Byte Matrix.</li>
+                        </ul>
+                    </div>
+                    <div class="img"><img class="recognition" src="IMAGES/recognition.svg" alt=""></div>
+                    <div class="smallscreenvisible"><img class="ourcustomers" src="IMAGES/ourcustomers.svg" alt="">
+                    </div>
+                    <div class="textcontent">
+                        <h3>Our Customers...</h3>
+                        <p>Byte Digital Projects: Elevating Digital Excellence with Innovative Solutions, Transformative
+                            Strategies, and Unparalleled Client Success Stories.</p>
+                        <ul>
+                            <li class="listcolor">DigitalBoost360: Transformative Digital Solutions for Growth.</li>
+                            <li class="list">ByteXperienceHub: Elevating User Experiences Digitally.</li>
+                            <li class="listcolor">TechHarbor Solutions: Harbouring Innovation in Tech Solutions.</li>
+                            <li class="listcolor">DataCraft Innovations: Crafting Intelligent Data-driven Solutions.
+                            </li>
+                            <li class="list">PulseDrive Digital: Driving Digital Innovation with Pulse.</li>
+                            <li class="listcolor">ByteSprint Labs: Sprinting Ahead in Digital Innovation.</li>
+                            <li class="listcolor">QuantumByte Dynamics: Dynamic Solutions in Quantum Tech.</li>
+                            <li class="list">PixelVibe Creations: Vibrant Digital Creations with Pixels.</li>
+                            <li class="listcolor">ByteSync Tech Ventures: Venturing into Tech Synchronisation.</li>
+                            <li class="listcolor">CodeSphere Solutions: Spherical Solutions in the Code.</li>
+                            <li class="list">ByteFusion Analytics: Fusing Insights with Byte Analytics.</li>
+                            <li class="listcolor">EchoByte Digital Solutions: Digital Resonance with EchoByte.</li>
+                            <li class="list">SwiftVista Technologies: Swift Visionary Technologies Unleashed.</li>
+                            <li class="listcolor">MetaByte Interactive: Interactive Digital Magic with MetaByte.</li>
+                            <li class="list">SparkByte Studios: Creative Sparks in Digital Studios.</li>
+                            <li class="listcolor">ByteGenius Innovations: Innovating Genius Solutions Digitally.</li>
+                            <li class="list">StreamByte Media Solutions: Streaming Media Solutions with Byte.</li>
+                            <li class="listcolor">ByteWave AI Ventures: Venturing into AI Waves.</li>
+                            <li class="list">QuantumLeap Digital: Digital Leaps into Quantum Innovations.</li>
+                            <li class="listcolor">ByteMatrix Dynamics: Dynamic Solutions in Byte Matrix.</li>
+                        </ul>
+
+                    </div>
+                    <div class="smallscreenvisible"><img class="majorexhibitions" src="IMAGES/majorexhibitions.svg"
+                            alt="">
+                    </div>
+                    <div class="textcontent">
+                        <h3>Our Customers...</h3>
+                        <p>Byte Digital Projects: Elevating Digital Excellence with Innovative Solutions, Transformative
+                            Strategies, and Unparalleled Client Success Stories.</p>
+                        <ul>
+                            <li class="listcolor">DigitalBoost360: Transformative Digital Solutions for Growth.</li>
+                            <li class="list">ByteXperienceHub: Elevating User Experiences Digitally.</li>
+                            <li class="listcolor">TechHarbor Solutions: Harbouring Innovation in Tech Solutions.</li>
+                            <li class="listcolor">DataCraft Innovations: Crafting Intelligent Data-driven Solutions.
+                            </li>
+                            <li class="list">PulseDrive Digital: Driving Digital Innovation with Pulse.</li>
+                            <li class="listcolor">ByteSprint Labs: Sprinting Ahead in Digital Innovation.</li>
+                            <li class="listcolor">QuantumByte Dynamics: Dynamic Solutions in Quantum Tech.</li>
+                            <li class="list">PixelVibe Creations: Vibrant Digital Creations with Pixels.</li>
+                            <li class="listcolor">ByteSync Tech Ventures: Venturing into Tech Synchronisation.</li>
+                            <li class="listcolor">CodeSphere Solutions: Spherical Solutions in the Code.</li>
+                            <li class="list">ByteFusion Analytics: Fusing Insights with Byte Analytics.</li>
+                            <li class="listcolor">EchoByte Digital Solutions: Digital Resonance with EchoByte.</li>
+                            <li class="list">SwiftVista Technologies: Swift Visionary Technologies Unleashed.</li>
+                            <li class="listcolor">MetaByte Interactive: Interactive Digital Magic with MetaByte.</li>
+                            <li class="list">SparkByte Studios: Creative Sparks in Digital Studios.</li>
+                            <li class="listcolor">ByteGenius Innovations: Innovating Genius Solutions Digitally.</li>
+                            <li class="list">StreamByte Media Solutions: Streaming Media Solutions with Byte.</li>
+                            <li class="listcolor">ByteWave AI Ventures: Venturing into AI Waves.</li>
+                            <li class="list">QuantumLeap Digital: Digital Leaps into Quantum Innovations.</li>
+                            <li class="listcolor">ByteMatrix Dynamics: Dynamic Solutions in Byte Matrix.</li>
+                        </ul>
+
+                    </div>
+                    <div class="smallscreenvisible"><img class="majorexhibitions2" src="IMAGES/majorexhibitions2.svg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="vertical" id="vertical2">
+                    <div class="img"><img class="ourcustomers" src="IMAGES/ourcustomers.svg" alt=""></div>
+                    <div class="textcontent">
+                        <h3>Our Customers...</h3>
+                        <p>Byte Digital Projects: Elevating Digital Excellence with Innovative Solutions, Transformative
+                            Strategies, and Unparalleled Client Success Stories.</p>
+                        <ul>
+                            <li class="listcolor">DigitalBoost360: Transformative Digital Solutions for Growth.</li>
+                            <li class="list">ByteXperienceHub: Elevating User Experiences Digitally.</li>
+                            <li class="listcolor">TechHarbor Solutions: Harbouring Innovation in Tech Solutions.</li>
+                            <li class="listcolor">DataCraft Innovations: Crafting Intelligent Data-driven Solutions.
+                            </li>
+                            <li class="list">PulseDrive Digital: Driving Digital Innovation with Pulse.</li>
+                            <li class="listcolor">ByteSprint Labs: Sprinting Ahead in Digital Innovation.</li>
+                            <li class="listcolor">QuantumByte Dynamics: Dynamic Solutions in Quantum Tech.</li>
+                            <li class="list">PixelVibe Creations: Vibrant Digital Creations with Pixels.</li>
+                            <li class="listcolor">ByteSync Tech Ventures: Venturing into Tech Synchronisation.</li>
+                            <li class="listcolor">CodeSphere Solutions: Spherical Solutions in the Code.</li>
+                            <li class="list">ByteFusion Analytics: Fusing Insights with Byte Analytics.</li>
+                            <li class="listcolor">EchoByte Digital Solutions: Digital Resonance with EchoByte.</li>
+                            <li class="list">SwiftVista Technologies: Swift Visionary Technologies Unleashed.</li>
+                            <li class="listcolor">MetaByte Interactive: Interactive Digital Magic with MetaByte.</li>
+                            <li class="list">SparkByte Studios: Creative Sparks in Digital Studios.</li>
+                            <li class="listcolor">ByteGenius Innovations: Innovating Genius Solutions Digitally.</li>
+                            <li class="list">StreamByte Media Solutions: Streaming Media Solutions with Byte.</li>
+                            <li class="listcolor">ByteWave AI Ventures: Venturing into AI Waves.</li>
+                            <li class="list">QuantumLeap Digital: Digital Leaps into Quantum Innovations.</li>
+                            <li class="listcolor">ByteMatrix Dynamics: Dynamic Solutions in Byte Matrix.</li>
+                        </ul>
+
+                    </div>
+                    <div class="img"><img class="majorexhibitions" src="IMAGES/majorexhibitions.svg" alt=""></div>
+                    <div class="img"><img class="majorexhibitions2" src="IMAGES/majorexhibitions2.svg" alt=""></div>
+                    <div class="smallscreenvisible"><img class="recognition" src="IMAGES/recognition.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="have_project">
+                <h3>Have a project</h3>
+            </div>
+            <div class="have_convo">
+                <p>We should start a conversation ✋</p>
+
+            </div>
+            <div class="header_book"><button><a href="contact.html" target="_blank">Get in touch</a></button></div>
+            <div class="hrline"></div>
+            <div class="footer_table_sec">
+                <div class="addrs">
+                    <div class="add_cmpny-name">
+                        <p>BYTE DIGITAL</p>
+                    </div>
+                    <div class="cmpny_address"><a
+                            href="https://www.google.com/maps/place/470+St+Kilda+Rd,+Melbourne+VIC+3004,+Australia/@-37.8412405,144.9741949,17z/data=!3m1!4b1!4m6!3m5!1s0x6ad6693aa464baf9:0xbd7c4b011b939aeb!8m2!3d-37.8412448!4d144.9767698!16s%2Fg%2F11t46sgpgt?entry=ttu">
+                            <p>Ground floor, 470, St. Kilda Road,<br> Melbourne, VIC 3004, Australia</p>
+                        </a></div>
+                    <div class="cmpny_phn_no"><a href="tel:+61452515004">+61 - 452515004</a></div>
+
+                    <div class="cmpny_email">
+                        <a href="mailto:sharma@byte-digital.com.au?subject=New%20Query%20from%20website"
+                            style="color: #008080; text-decoration: underline;">Email us</a>
+                    </div>
+                </div>
+                <div class="links">
+                    <div class="cmpny">
+
+                    </div>
+                    <a href="aboutus.html" class="service1">About us</a>
+                    <a href="index.html#section5" class="service2">Services</a>
+                    <a href="our_work.html" class="service3">Our work</a>
+                    <a href="blog.html" class="service4"> Our Blog</a>
+                </div>
+
+            </div>
+            <div class="foot"></div>
+            <div class="common_links">
+                <div class="copy_right">
+                    <ul>
+                        <li class="copyright"><a href="#">© Copyright 2023 Byte Digital Consulting Pty Ltd.</a></li>
+                        <li class="tndc"><a href="terms_of_condition.html" target="_blank">Terms & conditions</a></li>
+                        <li class="privacy-policy"><a href="privacy_policy.html" target="_blank">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="logo_links">
+
+                    <div class="linkdin"><a href="https://www.linkedin.com/company/byte-digital-solutions/"
+                            target="_blank"><img src="IMAGES/linkdin.svg" alt="LinkedIn"></a></div>
+                    <div class="facebook"><a
+                            href="https://www.facebook.com/people/Byte-Digital/61550311131920/?is_tour_dismissed=true"
+                            target="_blank"><img src="IMAGES/FACEBOOK.svg" alt="Facebook"></a></div>
+                    <div class="twitter"><a href="https://twitter.com/i/flow/login?redirect_after_login=%2FByteDigital_"
+                            target="_blank"><img src="IMAGES/TWITTER.svg" alt="Twitter"></a></div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector(".headlinks");
+        hamburger.onclick = function () {
+            nav.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>
