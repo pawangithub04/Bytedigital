@@ -400,9 +400,11 @@ letter-spacing: -0.34px;
             .imagesection,
             #imagesection {
                 flex-direction: column;
+                gap: 40px;
             }
             #column1{
             flex-direction: column;
+            
         }
 
             #column1,
@@ -411,6 +413,7 @@ letter-spacing: -0.34px;
             #row1coulmn2,
             .columncontent {
                 width: 100%;
+                gap: 40px;
             }
 
             .welcome p {
@@ -434,7 +437,21 @@ letter-spacing: -0.34px;
             #project2 {
                 width: 100%;
             }
+            .welcome h1 {
+                font-size: 40px;
+            }
+            .welcome p {
+                font-size: 24px;
         }
+        .projectnamebox h3 {
+            font-size: 24px;
+        }
+        .projectnamebox p {
+            font-size: 20px;
+        }
+        .columncontent p {
+            font-size: 20px;
+        }}
     </style>
 
 </head>
@@ -470,12 +487,16 @@ letter-spacing: -0.34px;
             <div class="content" id="container1">
                 <div class="unloking">
                     <div class="content" id="c1"><b><strong>
-                                <h1><span>Transforming ideas into digital realities </span></h1>
+                                <h1><span>Crafting Digital Excellence:  </span>
+                                    Your Partner in Innovative Software Solutions</h1>
                             </strong></b></div>
-                    <div class="content" id="c2">
-                        <p>with expertise, innovation, and
-                            unwavering commitment to
-                            client success.</p>
+                    <div class="content" id="c2" style="display: flex; gap: 24px; flex-direction: row;flex-wrap: wrap;">
+                        <p>case studies</p>
+                        <img src="IMAGES/point.png" alt="">
+                        <p>Services</p>
+                        <img src="IMAGES/point.png" alt="">
+                        <p>Customers</p>
+                            
 
 
                     </div>
@@ -484,8 +505,8 @@ letter-spacing: -0.34px;
                         <div class="c3" id="c32">
                             <button>
                                 <div class="cta1">
-                                    <a href="#"><b class="Free_E_book"> Free E book</b></a>
-                                    <a href="#"><img class="download-icon" alt="Downloading icon"
+                                    <a href="#"><b class="Free_E_book" style="color: black;"> View our work </b></a>
+                                    <a href="#"><img style="display: none;" class="download-icon" alt="Downloading icon"
                                             src="IMAGES/download.svg" /></a>
                                 </div>
                             </button>
