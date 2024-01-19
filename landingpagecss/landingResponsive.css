@@ -618,6 +618,9 @@
         font-size: 24px;
         letter-spacing: -0.48px;
     }
+    #c1 span {
+        font-size: 24px;
+    }
 
     #c2 {
         margin-bottom: 24px;
@@ -926,18 +929,32 @@
     .accordion.active:after {
         font-size: x-large;
     }
+    .faq2 {
+        font-size: 16px;
+    }
 
     .panel p {
-        font-size: 20px;
+        font-size: 16px;
         letter-spacing: -0.4px;
         margin-bottom: 16px;
     }
 
     .faqcontent {
-        font-size: 20px;
+        font-size: 18px;
         letter-spacing: -0.4px;
     }
-
+    .faqlist li {
+        font-size: 16px;
+    }
+    .faq4 h3 {
+        font-size: 18px;
+    }
+    .faq4 h2 {
+        font-size: 18px;
+    }
+    .faq5 h5 {
+        font-size: 16px;
+    }
     .frame-child18 {
         margin-bottom: 40px;
         height: 4px;
