@@ -1393,10 +1393,18 @@ right: 18px;
     }
 
     .cardsec {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-perspective: 1000px;
         perspective: 1000px;
+        -webkit-transform-style: preserve-3d;
         transform-style: preserve-3d;
         position: relative;
         background-color: #111;
@@ -1412,11 +1420,12 @@ right: 18px;
     }
 
     .container {
-        min-width: 456px;
-        /* Adjust as needed */
+        width: 33%;
+        height: 100%;
         min-height: 350px;
         border-radius: 20px;
         position: relative;
+        -webkit-transition: 1.5s ease-in-out;
         transition: 1.5s ease-in-out;
         transform-style: preserve-3d;
 
@@ -1434,10 +1443,10 @@ right: 18px;
 
     }
 
-    .content {
+    /* .content {
         transform: translatez(70px) scale(0.);
         line-height: 1.5em;
-    }
+    } */
 
     .contentb {
         transform: translatez(70px) scale(0.);
@@ -1453,7 +1462,7 @@ right: 18px;
         display: flex;
         padding: 34.5px 32px;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
 
     }
 
@@ -1505,6 +1514,7 @@ inside csss for row and wrapper and cardsec
         flex-direction: column;
         row-gap: 40px;
         flex-wrap: wrap;
+        width: 100%;
     }
 
     .wrapper {
@@ -1584,17 +1594,13 @@ inside csss for row and wrapper and cardsec
         display: none;
     }
 
-    @media(max-width:1820px) {
+    @media (max-width: 1690px) {
         .container {
-            min-width: 425px;
+            min-height: 400px;
         }
     }
 
-    @media(max-width:1720px) {
-        .container {
-            min-width: 390px;
-        }
-    }
+
 
     @media (max-width: 1650px) {
         .cardsec {
@@ -1603,15 +1609,11 @@ inside csss for row and wrapper and cardsec
         }
 
         .container {
-            min-width: 430px;
+            min-height: 400px;
         }
     }
 
-    @media(max-width:1520px) {
-        .container {
-            min-width: 400px;
-        }
-    }
+
 
 
     @media (max-width: 1440px) {
@@ -1619,15 +1621,14 @@ inside csss for row and wrapper and cardsec
             padding: 120px 150px;
         }
 
-        .container {
-            min-width: 370px;
+        .content h1 {
+            font-size: 24px;
         }
-    }
 
-    @media(max-width:1320px) {
-        .container {
-            min-width: 320px;
+        .content p {
+            font-size: 18px;
         }
+
     }
 
 
@@ -1641,19 +1642,6 @@ inside csss for row and wrapper and cardsec
             font-size: 24px;
         }
 
-        .container {
-            min-width: 245px;
-            min-height: 390px;
-        }
-
-    }
-
-    @media (max-width: 1150px) {
-        .cardsec {
-            padding-left: 180px;
-            padding-right: 180px;
-        }
-
         .content p {
             font-size: 16px;
         }
@@ -1663,13 +1651,25 @@ inside csss for row and wrapper and cardsec
         }
 
         .container {
-            min-width: 372px;
-            min-height: 350px;
+            width: 50%;
+            min-height: 335px;
         }
+
 
         #wrapperhidden {
             display: flex;
         }
+
+
+    }
+
+    @media (max-width: 1150px) {
+        .cardsec {
+            padding-left: 180px;
+            padding-right: 180px;
+        }
+
+
     }
 
     @media (max-width: 1100px) {
@@ -1678,18 +1678,9 @@ inside csss for row and wrapper and cardsec
             padding-right: 150px;
         }
 
-        .container {
-            min-width: 388px;
-
-        }
 
     }
-    @media(max-width:1000px){
-        .container {
-            min-width: 336px;
 
-        }
-    }
 
     @media (max-width: 900px) {
         .cardsec {
@@ -1706,55 +1697,253 @@ inside csss for row and wrapper and cardsec
             padding: 20px;
         }
 
+        .container {
+            width: 100%;
+        }
+
         .back {
             padding: 20px;
         }
-        .container {
-            min-width: 303px;
 
-        }
     }
-    @media(max-width:750px){
-        .container {
-            min-width: 283px;
 
-        }
-    }
-    @media(max-width:700px){
-        .container {
-            min-width: 258px;
 
-        }
-}
-@media(max-width:650px){
-    .container {
-            min-width: 235px;
 
-        }
-}
-
-    @media (max-width: 600px) {
+    @media (max-width: 550px) {
         .cardsec {
             padding: 40px 16px;
             flex-direction: column;
             row-gap: 24px;
         }
-        .row{
+
+        .row {
             width: 100%;
         }
-        .container {
-            min-width: none;
-            width: 100%;
-        height: 100%;
-        }
-        .wrapper{
+
+        .wrapper {
             flex-direction: column;
             row-gap: 40px;
         }
 
+        .container {
+            min-height: 280px;
+        }
 
-        
+
+
     }
+
+
+
+    /*for new page section*/
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .about_sec3 {
+        display: flex;
+        padding: 120px 0px;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    #vertical1 {
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 48px;
+    }
+
+    #vertical1 .textcontent {
+        padding: 0;
+        padding-left: 252px;
+        padding-right: 0;
+       
+    }
+
+    #vertical2 .textcontent {
+        padding: 0;
+        padding-right: 252px;
+        padding-left: 0;
+    }
+
+    #vertical2 {
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 80px;
+    }
+
+    .textcontent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 48px;
+        padding: 120px;
+        padding-left: 252px;
+        ;
+    }
+
+    .textcontent h3 {
+        color: #FFF;
+        font-family: "IBM Plex Sans";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.8px;
+    }
+
+    .textcontent p {
+        color: #CCC;
+        font-family: "IBM Plex Sans";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.48px;
+    }
+
+    .textcontent h3::after {
+        content: "";
+        width: 305px;
+        height: 4px;
+        background: #70C1D6;
+    }
+
+    .smallscreenvisible {
+        display: none;
+    }
+
+    .recognition {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px 0px 0px 8px;
+        max-width: 813px;
+        max-height: 421px;
+
+    }
+
+    .ourcustomers {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px 0px 0px 8px;
+        max-width: 595px;
+        max-height: 669px;
+    }
+
+    .majorexhibitions {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px 0px 0px 8px;
+        max-Width: 595px;
+        max-Height: 669px;
+    }
+
+    .majorexhibitions2 {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px 0px 0px 8px;
+        max-Width: 595px;
+        max-Height: 850px;
+    }
+
+    .list {
+        color: #CCC;
+
+        font-family: "IBM Plex Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 200%;
+        /* 40px */
+        letter-spacing: -0.4px;
+    }
+
+    .listcolor {
+        color: var(--Primary, #8CDFD6);
+        font-family: "IBM Plex Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 200%;
+        letter-spacing: -0.4px;
+        text-decoration-line: underline;
+    }
+
+
+    @media (max-width: 1512px) {
+        #vertical1 .textcontent {
+            padding-left: 150px;
+        }
+
+        #vertical2 .textcontent {
+            padding-right: 150px;
+        }
+
+        .about_sec3 {
+            padding: 85px 0px;
+        }
+        .textcontent h3 {
+        font-size: 40px;
+
+    }
+
+    .textcontent p {
+        font-size: 24px;
+    }
+    }
+    @media (max-width: 900px){
+    #vertical1 .textcontent {
+            padding-left: 110px;
+        }
+
+        #vertical2 .textcontent {
+            padding-right: 110px;
+        }
+
+        .about_sec3 {
+            padding: 50px 0px;
+        }
+}
+@media (max-width: 780px){
+    #vertical1 .textcontent {
+            padding-left: 0px;
+        }
+
+        #vertical2 .textcontent {
+            padding-right: 0px;
+        }
+
+        .about_sec3 {
+            padding: 40px 85px;
+        }
+        .about_sec3{
+            flex-direction: column;
+        }
+        #vertical1{
+            width: 100%;
+        }
+        #vertical2{
+            width: 100%;
+        }
+        .img{
+            display: none;
+        }
+        .smallscreenvisible{
+            display: block;
+        }
+
+
+}
+@media (max-width: 550px){
+    .about_sec3 {
+    padding: 80px 16px;
+}}
+
 </style>
 
 <body>
@@ -1817,552 +2006,142 @@ inside csss for row and wrapper and cardsec
                 </div>
                 <div class="project_underline1"></div>
             </div>
-            <div class="cardsec">
-                <div class="row">
-                    <div class="wrapper">
-                        <div class="container" id="container1" >
-                            <div class="front side">
-                                <div class="content">
-                                    <h1>Gibbon Multimedia</h1>
-                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
-                                        interface
-                                        and
-                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
-                                        birding
-                                        community.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="back side">
-                                <div class="contentb">
-                                    <div class="rotaionCardImges">
-                                        <img src="IMAGES/roationcard1.svg" alt="">
-                                        <img src="IMAGES/roationcard2.svg" alt="">
-                                        <img src="IMAGES/roationcard3.svg" alt="">
-                                        <img src="IMAGES/roationcard4.svg" alt="">
-                                        <img src="IMAGES/roationcard5.svg" alt="">
-                                    </div>
-                                    <div class="knowmore">
-                                        <p>Know more</p>
-                                        <img src="IMAGES/arrow_forward.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container" id="container2">
-                            <div class="front side" style="background:#FFF;">
-                                <div class="content">
-                                    <h1>Gibbon Multimedia</h1>
-                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
-                                        interface
-                                        and
-                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
-                                        birding
-                                        community.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="back side">
-                                <div class="contentb">
-                                    <div class="rotaionCardImges">
-                                        <img src="IMAGES/roationcard1.svg" alt="">
-                                        <img src="IMAGES/roationcard2.svg" alt="">
-                                        <img src="IMAGES/roationcard3.svg" alt="">
-                                        <img src="IMAGES/roationcard4.svg" alt="">
-                                        <img src="IMAGES/roationcard5.svg" alt="">
-                                    </div>
-                                    <div class="knowmore">
-                                        <p>Know more</p>
-                                        <img src="IMAGES/arrow_forward.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container" id="container3">
-                            <div class="front side"
-                                style="background:linear-gradient(270deg, #98D2E1 0%, #FEFEFE 100%);">
-                                <div class="content">
-                                    <h1>Gibbon Multimedia</h1>
-                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
-                                        interface
-                                        and
-                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
-                                        birding
-                                        community.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="back side">
-                                <div class="contentb">
-                                    <div class="rotaionCardImges">
-                                        <img src="IMAGES/roationcard1.svg" alt="">
-                                        <img src="IMAGES/roationcard2.svg" alt="">
-                                        <img src="IMAGES/roationcard3.svg" alt="">
-                                        <img src="IMAGES/roationcard4.svg" alt="">
-                                        <img src="IMAGES/roationcard5.svg" alt="">
-                                    </div>
-                                    <div class="knowmore">
-                                        <p>Know more</p>
-                                        <img src="IMAGES/arrow_forward.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="about_sec3">
+                <div class="vertical" id="vertical1">
+                    <div class="textcontent">
+                        <h3>Our Customers...</h3>
+                        <div class="underline"></div>
+                        <p>Byte Digital Projects: Elevating Digital Excellence with Innovative Solutions, Transformative
+                            Strategies, and Unparalleled Client Success Stories.</p>
+                        <ul>
+                            <li class="listcolor">DigitalBoost360: Transformative Digital Solutions for Growth.</li>
+                            <li class="list">ByteXperienceHub: Elevating User Experiences Digitally.</li>
+                            <li class="listcolor">TechHarbor Solutions: Harbouring Innovation in Tech Solutions.</li>
+                            <li class="listcolor">DataCraft Innovations: Crafting Intelligent Data-driven Solutions.
+                            </li>
+                            <li class="list">PulseDrive Digital: Driving Digital Innovation with Pulse.</li>
+                            <li class="listcolor">ByteSprint Labs: Sprinting Ahead in Digital Innovation.</li>
+                            <li class="listcolor">QuantumByte Dynamics: Dynamic Solutions in Quantum Tech.</li>
+                            <li class="list">PixelVibe Creations: Vibrant Digital Creations with Pixels.</li>
+                            <li class="listcolor">ByteSync Tech Ventures: Venturing into Tech Synchronisation.</li>
+                            <li class="listcolor">CodeSphere Solutions: Spherical Solutions in the Code.</li>
+                            <li class="list">ByteFusion Analytics: Fusing Insights with Byte Analytics.</li>
+                            <li class="listcolor">EchoByte Digital Solutions: Digital Resonance with EchoByte.</li>
+                            <li class="list">SwiftVista Technologies: Swift Visionary Technologies Unleashed.</li>
+                            <li class="listcolor">MetaByte Interactive: Interactive Digital Magic with MetaByte.</li>
+                            <li class="list">SparkByte Studios: Creative Sparks in Digital Studios.</li>
+                            <li class="listcolor">ByteGenius Innovations: Innovating Genius Solutions Digitally.</li>
+                            <li class="list">StreamByte Media Solutions: Streaming Media Solutions with Byte.</li>
+                            <li class="listcolor">ByteWave AI Ventures: Venturing into AI Waves.</li>
+                            <li class="list">QuantumLeap Digital: Digital Leaps into Quantum Innovations.</li>
+                            <li class="listcolor">ByteMatrix Dynamics: Dynamic Solutions in Byte Matrix.</li>
+                        </ul>
                     </div>
-                    <div class="wrapper">
-                        <div class="container" id="container1" >
-                            <div class="front side">
-                                <div class="content">
-                                    <h1>Gibbon Multimedia</h1>
-                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
-                                        interface
-                                        and
-                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
-                                        birding
-                                        community.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="back side">
-                                <div class="contentb">
-                                    <div class="rotaionCardImges">
-                                        <img src="IMAGES/roationcard1.svg" alt="">
-                                        <img src="IMAGES/roationcard2.svg" alt="">
-                                        <img src="IMAGES/roationcard3.svg" alt="">
-                                        <img src="IMAGES/roationcard4.svg" alt="">
-                                        <img src="IMAGES/roationcard5.svg" alt="">
-                                    </div>
-                                    <div class="knowmore">
-                                        <p>Know more</p>
-                                        <img src="IMAGES/arrow_forward.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container" id="container2" >
-                            <div class="front side" style="background:#FFF;">
-                                <div class="content">
-                                    <h1>Gibbon Multimedia</h1>
-                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
-                                        interface
-                                        and
-                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
-                                        birding
-                                        community.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="back side">
-                                <div class="contentb">
-                                    <div class="rotaionCardImges">
-                                        <img src="IMAGES/roationcard1.svg" alt="">
-                                        <img src="IMAGES/roationcard2.svg" alt="">
-                                        <img src="IMAGES/roationcard3.svg" alt="">
-                                        <img src="IMAGES/roationcard4.svg" alt="">
-                                        <img src="IMAGES/roationcard5.svg" alt="">
-                                    </div>
-                                    <div class="knowmore">
-                                        <p>Know more</p>
-                                        <img src="IMAGES/arrow_forward.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container" id="container3">
-                            <div class="front side"
-                                style="background: linear-gradient(270deg, #98D2E1 0%, #FEFEFE 100%);">
-                                <div class="content">
-                                    <h1>Gibbon Multimedia</h1>
-                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
-                                        interface
-                                        and
-                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
-                                        birding
-                                        community.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="back side">
-                                <div class="contentb">
-                                    <div class="rotaionCardImges">
-                                        <img src="IMAGES/roationcard1.svg" alt="">
-                                        <img src="IMAGES/roationcard2.svg" alt="">
-                                        <img src="IMAGES/roationcard3.svg" alt="">
-                                        <img src="IMAGES/roationcard4.svg" alt="">
-                                        <img src="IMAGES/roationcard5.svg" alt="">
-                                    </div>
-                                    <div class="knowmore">
-                                        <p>Know more</p>
-                                        <img src="IMAGES/arrow_forward.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="img"><img class="recognition" src="IMAGES/recognition.svg" alt=""></div>
+                    <div class="smallscreenvisible"><img class="ourcustomers" src="IMAGES/ourcustomers.svg" alt="">
                     </div>
-                    <div class="wrapper">
-                        <div class="container" id="container1" >
-                            <div class="front side">
-                                <div class="content">
-                                    <h1>Gibbon Multimedia</h1>
-                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
-                                        interface
-                                        and
-                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
-                                        birding
-                                        community.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="back side">
-                                <div class="contentb">
-                                    <div class="rotaionCardImges">
-                                        <img src="IMAGES/roationcard1.svg" alt="">
-                                        <img src="IMAGES/roationcard2.svg" alt="">
-                                        <img src="IMAGES/roationcard3.svg" alt="">
-                                        <img src="IMAGES/roationcard4.svg" alt="">
-                                        <img src="IMAGES/roationcard5.svg" alt="">
-                                    </div>
-                                    <div class="knowmore">
-                                        <p>Know more</p>
-                                        <img src="IMAGES/arrow_forward.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container" id="container2" >
-                            <div class="front side" style="background:#FFF;">
-                                <div class="content">
-                                    <h1>Gibbon Multimedia</h1>
-                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
-                                        interface
-                                        and
-                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
-                                        birding
-                                        community.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="back side">
-                                <div class="contentb">
-                                    <div class="rotaionCardImges">
-                                        <img src="IMAGES/roationcard1.svg" alt="">
-                                        <img src="IMAGES/roationcard2.svg" alt="">
-                                        <img src="IMAGES/roationcard3.svg" alt="">
-                                        <img src="IMAGES/roationcard4.svg" alt="">
-                                        <img src="IMAGES/roationcard5.svg" alt="">
-                                    </div>
-                                    <div class="knowmore">
-                                        <p>Know more</p>
-                                        <img src="IMAGES/arrow_forward.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container" id="container3">
-                            <div class="front side"
-                                style="background-: linear-gradient(270deg, #98D2E1 0%, #FEFEFE 100%);">
-                                <div class="content">
-                                    <h1>Gibbon Multimedia</h1>
-                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
-                                        interface
-                                        and
-                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
-                                        birding
-                                        community.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="back side">
-                                <div class="contentb">
-                                    <div class="rotaionCardImges">
-                                        <img src="IMAGES/roationcard1.svg" alt="">
-                                        <img src="IMAGES/roationcard2.svg" alt="">
-                                        <img src="IMAGES/roationcard3.svg" alt="">
-                                        <img src="IMAGES/roationcard4.svg" alt="">
-                                        <img src="IMAGES/roationcard5.svg" alt="">
-                                    </div>
-                                    <div class="knowmore">
-                                        <p>Know more</p>
-                                        <img src="IMAGES/arrow_forward.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wrapper">
-                        <div class="container" id="container1" >
-                            <div class="front side">
-                                <div class="content">
-                                    <h1>Gibbon Multimedia</h1>
-                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
-                                        interface
-                                        and
-                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
-                                        birding
-                                        community.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="back side">
-                                <div class="contentb">
-                                    <div class="rotaionCardImges">
-                                        <img src="IMAGES/roationcard1.svg" alt="">
-                                        <img src="IMAGES/roationcard2.svg" alt="">
-                                        <img src="IMAGES/roationcard3.svg" alt="">
-                                        <img src="IMAGES/roationcard4.svg" alt="">
-                                        <img src="IMAGES/roationcard5.svg" alt="">
-                                    </div>
-                                    <div class="knowmore">
-                                        <p>Know more</p>
-                                        <img src="IMAGES/arrow_forward.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container" id="container2" >
-                            <div class="front side" style="background:#FFF;">
-                                <div class="content">
-                                    <h1>Gibbon Multimedia</h1>
-                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
-                                        interface
-                                        and
-                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
-                                        birding
-                                        community.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="back side">
-                                <div class="contentb">
-                                    <div class="rotaionCardImges">
-                                        <img src="IMAGES/roationcard1.svg" alt="">
-                                        <img src="IMAGES/roationcard2.svg" alt="">
-                                        <img src="IMAGES/roationcard3.svg" alt="">
-                                        <img src="IMAGES/roationcard4.svg" alt="">
-                                        <img src="IMAGES/roationcard5.svg" alt="">
-                                    </div>
-                                    <div class="knowmore">
-                                        <p>Know more</p>
-                                        <img src="IMAGES/arrow_forward.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container" id="container3">
-                            <div class="front side"
-                                style="background: linear-gradient(270deg, #98D2E1 0%, #FEFEFE 100%);">
-                                <div class="content">
-                                    <h1>Gibbon Multimedia</h1>
-                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
-                                        interface
-                                        and
-                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
-                                        birding
-                                        community.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="back side">
-                                <div class="contentb">
-                                    <div class="rotaionCardImges">
-                                        <img src="IMAGES/roationcard1.svg" alt="">
-                                        <img src="IMAGES/roationcard2.svg" alt="">
-                                        <img src="IMAGES/roationcard3.svg" alt="">
-                                        <img src="IMAGES/roationcard4.svg" alt="">
-                                        <img src="IMAGES/roationcard5.svg" alt="">
-                                    </div>
-                                    <div class="knowmore">
-                                        <p>Know more</p>
-                                        <img src="IMAGES/arrow_forward.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="textcontent">
+                        <h3>Our Customers...</h3>
+                        <p>Byte Digital Projects: Elevating Digital Excellence with Innovative Solutions, Transformative
+                            Strategies, and Unparalleled Client Success Stories.</p>
+                        <ul>
+                            <li class="listcolor">DigitalBoost360: Transformative Digital Solutions for Growth.</li>
+                            <li class="list">ByteXperienceHub: Elevating User Experiences Digitally.</li>
+                            <li class="listcolor">TechHarbor Solutions: Harbouring Innovation in Tech Solutions.</li>
+                            <li class="listcolor">DataCraft Innovations: Crafting Intelligent Data-driven Solutions.
+                            </li>
+                            <li class="list">PulseDrive Digital: Driving Digital Innovation with Pulse.</li>
+                            <li class="listcolor">ByteSprint Labs: Sprinting Ahead in Digital Innovation.</li>
+                            <li class="listcolor">QuantumByte Dynamics: Dynamic Solutions in Quantum Tech.</li>
+                            <li class="list">PixelVibe Creations: Vibrant Digital Creations with Pixels.</li>
+                            <li class="listcolor">ByteSync Tech Ventures: Venturing into Tech Synchronisation.</li>
+                            <li class="listcolor">CodeSphere Solutions: Spherical Solutions in the Code.</li>
+                            <li class="list">ByteFusion Analytics: Fusing Insights with Byte Analytics.</li>
+                            <li class="listcolor">EchoByte Digital Solutions: Digital Resonance with EchoByte.</li>
+                            <li class="list">SwiftVista Technologies: Swift Visionary Technologies Unleashed.</li>
+                            <li class="listcolor">MetaByte Interactive: Interactive Digital Magic with MetaByte.</li>
+                            <li class="list">SparkByte Studios: Creative Sparks in Digital Studios.</li>
+                            <li class="listcolor">ByteGenius Innovations: Innovating Genius Solutions Digitally.</li>
+                            <li class="list">StreamByte Media Solutions: Streaming Media Solutions with Byte.</li>
+                            <li class="listcolor">ByteWave AI Ventures: Venturing into AI Waves.</li>
+                            <li class="list">QuantumLeap Digital: Digital Leaps into Quantum Innovations.</li>
+                            <li class="listcolor">ByteMatrix Dynamics: Dynamic Solutions in Byte Matrix.</li>
+                        </ul>
 
                     </div>
-                    <div class="wrapper" id="wrapperhidden">
-                        <div class="container" id="container1" >
-                            <div class="front side">
-                                <div class="content">
-                                    <h1>Gibbon Multimedia</h1>
-                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
-                                        interface
-                                        and
-                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
-                                        birding
-                                        community.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="back side">
-                                <div class="contentb">
-                                    <div class="rotaionCardImges">
-                                        <img src="IMAGES/roationcard1.svg" alt="">
-                                        <img src="IMAGES/roationcard2.svg" alt="">
-                                        <img src="IMAGES/roationcard3.svg" alt="">
-                                        <img src="IMAGES/roationcard4.svg" alt="">
-                                        <img src="IMAGES/roationcard5.svg" alt="">
-                                    </div>
-                                    <div class="knowmore">
-                                        <p>Know more</p>
-                                        <img src="IMAGES/arrow_forward.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container" id="container2" >
-                            <div class="front side" style="background:#FFF;">
-                                <div class="content">
-                                    <h1>Gibbon Multimedia</h1>
-                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
-                                        interface
-                                        and
-                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
-                                        birding
-                                        community.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="back side">
-                                <div class="contentb">
-                                    <div class="rotaionCardImges">
-                                        <img src="IMAGES/roationcard1.svg" alt="">
-                                        <img src="IMAGES/roationcard2.svg" alt="">
-                                        <img src="IMAGES/roationcard3.svg" alt="">
-                                        <img src="IMAGES/roationcard4.svg" alt="">
-                                        <img src="IMAGES/roationcard5.svg" alt="">
-                                    </div>
-                                    <div class="knowmore">
-                                        <p>Know more</p>
-                                        <img src="IMAGES/arrow_forward.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container" id="container3">
-                            <div class="front side"
-                                style="background: linear-gradient(270deg, #98D2E1 0%, #FEFEFE 100%);">
-                                <div class="content">
-                                    <h1>Gibbon Multimedia</h1>
-                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
-                                        interface
-                                        and
-                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
-                                        birding
-                                        community.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="back side">
-                                <div class="contentb">
-                                    <div class="rotaionCardImges">
-                                        <img src="IMAGES/roationcard1.svg" alt="">
-                                        <img src="IMAGES/roationcard2.svg" alt="">
-                                        <img src="IMAGES/roationcard3.svg" alt="">
-                                        <img src="IMAGES/roationcard4.svg" alt="">
-                                        <img src="IMAGES/roationcard5.svg" alt="">
-                                    </div>
-                                    <div class="knowmore">
-                                        <p>Know more</p>
-                                        <img src="IMAGES/arrow_forward.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="smallscreenvisible"><img class="majorexhibitions" src="IMAGES/majorexhibitions.svg"
+                            alt="">
                     </div>
-                    <div class="wrapper" id="wrapperhidden">
-                        <div class="container" id="container1" >
-                            <div class="front side">
-                                <div class="content">
-                                    <h1>Gibbon Multimedia</h1>
-                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
-                                        interface
-                                        and
-                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
-                                        birding
-                                        community.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="back side">
-                                <div class="contentb">
-                                    <div class="rotaionCardImges">
-                                        <img src="IMAGES/roationcard1.svg" alt="">
-                                        <img src="IMAGES/roationcard2.svg" alt="">
-                                        <img src="IMAGES/roationcard3.svg" alt="">
-                                        <img src="IMAGES/roationcard4.svg" alt="">
-                                        <img src="IMAGES/roationcard5.svg" alt="">
-                                    </div>
-                                    <div class="knowmore">
-                                        <p>Know more</p>
-                                        <img src="IMAGES/arrow_forward.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container" id="container2" >
-                            <div class="front side" style="background:#FFF;">
-                                <div class="content">
-                                    <h1>Gibbon Multimedia</h1>
-                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
-                                        interface
-                                        and
-                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
-                                        birding
-                                        community.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="back side">
-                                <div class="contentb">
-                                    <div class="rotaionCardImges">
-                                        <img src="IMAGES/roationcard1.svg" alt="">
-                                        <img src="IMAGES/roationcard2.svg" alt="">
-                                        <img src="IMAGES/roationcard3.svg" alt="">
-                                        <img src="IMAGES/roationcard4.svg" alt="">
-                                        <img src="IMAGES/roationcard5.svg" alt="">
-                                    </div>
-                                    <div class="knowmore">
-                                        <p>Know more</p>
-                                        <img src="IMAGES/arrow_forward.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container" id="container3">
-                            <div class="front side"
-                                style="background: linear-gradient(270deg, #98D2E1 0%, #FEFEFE 100%);">
-                                <div class="content">
-                                    <h1>Gibbon Multimedia</h1>
-                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
-                                        interface
-                                        and
-                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
-                                        birding
-                                        community.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="back side">
-                                <div class="contentb">
-                                    <div class="rotaionCardImges">
-                                        <img src="IMAGES/roationcard1.svg" alt="">
-                                        <img src="IMAGES/roationcard2.svg" alt="">
-                                        <img src="IMAGES/roationcard3.svg" alt="">
-                                        <img src="IMAGES/roationcard4.svg" alt="">
-                                        <img src="IMAGES/roationcard5.svg" alt="">
-                                    </div>
-                                    <div class="knowmore">
-                                        <p>Know more</p>
-                                        <img src="IMAGES/arrow_forward.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="textcontent">
+                        <h3>Our Customers...</h3>
+                        <p>Byte Digital Projects: Elevating Digital Excellence with Innovative Solutions, Transformative
+                            Strategies, and Unparalleled Client Success Stories.</p>
+                        <ul>
+                            <li class="listcolor">DigitalBoost360: Transformative Digital Solutions for Growth.</li>
+                            <li class="list">ByteXperienceHub: Elevating User Experiences Digitally.</li>
+                            <li class="listcolor">TechHarbor Solutions: Harbouring Innovation in Tech Solutions.</li>
+                            <li class="listcolor">DataCraft Innovations: Crafting Intelligent Data-driven Solutions.
+                            </li>
+                            <li class="list">PulseDrive Digital: Driving Digital Innovation with Pulse.</li>
+                            <li class="listcolor">ByteSprint Labs: Sprinting Ahead in Digital Innovation.</li>
+                            <li class="listcolor">QuantumByte Dynamics: Dynamic Solutions in Quantum Tech.</li>
+                            <li class="list">PixelVibe Creations: Vibrant Digital Creations with Pixels.</li>
+                            <li class="listcolor">ByteSync Tech Ventures: Venturing into Tech Synchronisation.</li>
+                            <li class="listcolor">CodeSphere Solutions: Spherical Solutions in the Code.</li>
+                            <li class="list">ByteFusion Analytics: Fusing Insights with Byte Analytics.</li>
+                            <li class="listcolor">EchoByte Digital Solutions: Digital Resonance with EchoByte.</li>
+                            <li class="list">SwiftVista Technologies: Swift Visionary Technologies Unleashed.</li>
+                            <li class="listcolor">MetaByte Interactive: Interactive Digital Magic with MetaByte.</li>
+                            <li class="list">SparkByte Studios: Creative Sparks in Digital Studios.</li>
+                            <li class="listcolor">ByteGenius Innovations: Innovating Genius Solutions Digitally.</li>
+                            <li class="list">StreamByte Media Solutions: Streaming Media Solutions with Byte.</li>
+                            <li class="listcolor">ByteWave AI Ventures: Venturing into AI Waves.</li>
+                            <li class="list">QuantumLeap Digital: Digital Leaps into Quantum Innovations.</li>
+                            <li class="listcolor">ByteMatrix Dynamics: Dynamic Solutions in Byte Matrix.</li>
+                        </ul>
 
+                    </div>
+                    <div class="smallscreenvisible"><img class="majorexhibitions2" src="IMAGES/majorexhibitions2.svg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="vertical" id="vertical2">
+                    <div class="img"><img class="ourcustomers" src="IMAGES/ourcustomers.svg" alt=""></div>
+                    <div class="textcontent">
+                        <h3>Our Customers...</h3>
+                        <p>Byte Digital Projects: Elevating Digital Excellence with Innovative Solutions, Transformative
+                            Strategies, and Unparalleled Client Success Stories.</p>
+                        <ul>
+                            <li class="listcolor">DigitalBoost360: Transformative Digital Solutions for Growth.</li>
+                            <li class="list">ByteXperienceHub: Elevating User Experiences Digitally.</li>
+                            <li class="listcolor">TechHarbor Solutions: Harbouring Innovation in Tech Solutions.</li>
+                            <li class="listcolor">DataCraft Innovations: Crafting Intelligent Data-driven Solutions.
+                            </li>
+                            <li class="list">PulseDrive Digital: Driving Digital Innovation with Pulse.</li>
+                            <li class="listcolor">ByteSprint Labs: Sprinting Ahead in Digital Innovation.</li>
+                            <li class="listcolor">QuantumByte Dynamics: Dynamic Solutions in Quantum Tech.</li>
+                            <li class="list">PixelVibe Creations: Vibrant Digital Creations with Pixels.</li>
+                            <li class="listcolor">ByteSync Tech Ventures: Venturing into Tech Synchronisation.</li>
+                            <li class="listcolor">CodeSphere Solutions: Spherical Solutions in the Code.</li>
+                            <li class="list">ByteFusion Analytics: Fusing Insights with Byte Analytics.</li>
+                            <li class="listcolor">EchoByte Digital Solutions: Digital Resonance with EchoByte.</li>
+                            <li class="list">SwiftVista Technologies: Swift Visionary Technologies Unleashed.</li>
+                            <li class="listcolor">MetaByte Interactive: Interactive Digital Magic with MetaByte.</li>
+                            <li class="list">SparkByte Studios: Creative Sparks in Digital Studios.</li>
+                            <li class="listcolor">ByteGenius Innovations: Innovating Genius Solutions Digitally.</li>
+                            <li class="list">StreamByte Media Solutions: Streaming Media Solutions with Byte.</li>
+                            <li class="listcolor">ByteWave AI Ventures: Venturing into AI Waves.</li>
+                            <li class="list">QuantumLeap Digital: Digital Leaps into Quantum Innovations.</li>
+                            <li class="listcolor">ByteMatrix Dynamics: Dynamic Solutions in Byte Matrix.</li>
+                        </ul>
+
+                    </div>
+                    <div class="img"><img class="majorexhibitions" src="IMAGES/majorexhibitions.svg" alt=""></div>
+                    <div class="img"><img class="majorexhibitions2" src="IMAGES/majorexhibitions2.svg" alt=""></div>
+                    <div class="smallscreenvisible"><img class="recognition" src="IMAGES/recognition.svg" alt=""></div>
                 </div>
             </div>
+            
             <div class="project_success">
                 <h3>Our success stories</h3>
                 <div class="hr"></div>
@@ -2430,6 +2209,549 @@ inside csss for row and wrapper and cardsec
                             <div class="success_underline"></div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="cardsec">
+                <div class="row">
+                    <div class="wrapper" id="wrapper1">
+                        <div class="container" id="container1">
+                            <div class="front side">
+                                <div class="content">
+                                    <h1>Gibbon Multimedia</h1>
+                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
+                                        interface
+                                        and
+                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
+                                        birding
+                                        community.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="back side">
+                                <div class="contentb">
+                                    <div class="rotaionCardImges">
+                                        <img src="IMAGES/roationcard1.svg" alt="">
+                                        <img src="IMAGES/roationcard2.svg" alt="">
+                                        <img src="IMAGES/roationcard3.svg" alt="">
+                                        <img src="IMAGES/roationcard4.svg" alt="">
+                                        <img src="IMAGES/roationcard5.svg" alt="">
+                                    </div>
+                                    <div class="knowmore">
+                                        <p>Know more</p>
+                                        <img src="IMAGES/arrow_forward.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container" id="container2">
+                            <div class="front side" style="background:#FFF;">
+                                <div class="content">
+                                    <h1>Global Network SAAS company</h1>
+                                    <p>Byte Digital transformed Network's iOS and Android apps, boosting user engagement
+                                        by 40%. Through innovative redesigns, they achieved a 25% increase in downloads
+                                        and growth.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="back side">
+                                <div class="contentb">
+                                    <div class="rotaionCardImges">
+                                        <img src="IMAGES/roationcard1.svg" alt="">
+                                        <img src="IMAGES/roationcard2.svg" alt="">
+                                        <img src="IMAGES/roationcard3.svg" alt="">
+                                        <img src="IMAGES/roationcard4.svg" alt="">
+                                        <img src="IMAGES/roationcard5.svg" alt="">
+                                    </div>
+                                    <div class="knowmore">
+                                        <p>Know more</p>
+                                        <img src="IMAGES/arrow_forward.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container" id="container3">
+                            <div class="front side"
+                                style="background:linear-gradient(270deg, #98D2E1 0%, #FEFEFE 100%);">
+                                <div class="content">
+                                    <h1>Food and Drink</h1>
+                                    <p>Our strategic improvements yielded exceptional results, with a remarkable 40%
+                                        surge
+                                        in user satisfaction and a substantial 25% increase in daily transactions. By
+                                        introducing advanced features and optimizing user experiences, we not only
+                                        elevated
+                                        the app's performance but also solidified its market presence.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="back side">
+                                <div class="contentb">
+                                    <div class="rotaionCardImges">
+                                        <img src="IMAGES/roationcard1.svg" alt="">
+                                        <img src="IMAGES/roationcard2.svg" alt="">
+                                        <img src="IMAGES/roationcard3.svg" alt="">
+                                        <img src="IMAGES/roationcard4.svg" alt="">
+                                        <img src="IMAGES/roationcard5.svg" alt="">
+                                    </div>
+                                    <div class="knowmore">
+                                        <p>Know more</p>
+                                        <img src="IMAGES/arrow_forward.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper" id="wrapper2">
+                        <div class="container" id="container1">
+                            <div class="front side">
+                                <div class="content">
+                                    <h1>Gibbon Multimedia</h1>
+                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
+                                        interface
+                                        and
+                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
+                                        birding
+                                        community.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="back side">
+                                <div class="contentb">
+                                    <div class="rotaionCardImges">
+                                        <img src="IMAGES/roationcard1.svg" alt="">
+                                        <img src="IMAGES/roationcard2.svg" alt="">
+                                        <img src="IMAGES/roationcard3.svg" alt="">
+                                        <img src="IMAGES/roationcard4.svg" alt="">
+                                        <img src="IMAGES/roationcard5.svg" alt="">
+                                    </div>
+                                    <div class="knowmore">
+                                        <p>Know more</p>
+                                        <img src="IMAGES/arrow_forward.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container" id="container2">
+                            <div class="front side" style="background:#FFF;">
+                                <div class="content">
+                                    <h1>Gibbon Multimedia</h1>
+                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
+                                        interface
+                                        and
+                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
+                                        birding
+                                        community.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="back side">
+                                <div class="contentb">
+                                    <div class="rotaionCardImges">
+                                        <img src="IMAGES/roationcard1.svg" alt="">
+                                        <img src="IMAGES/roationcard2.svg" alt="">
+                                        <img src="IMAGES/roationcard3.svg" alt="">
+                                        <img src="IMAGES/roationcard4.svg" alt="">
+                                        <img src="IMAGES/roationcard5.svg" alt="">
+                                    </div>
+                                    <div class="knowmore">
+                                        <p>Know more</p>
+                                        <img src="IMAGES/arrow_forward.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container" id="container3">
+                            <div class="front side"
+                                style="background: linear-gradient(270deg, #98D2E1 0%, #FEFEFE 100%);">
+                                <div class="content">
+                                    <h1>Gibbon Multimedia</h1>
+                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
+                                        interface
+                                        and
+                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
+                                        birding
+                                        community.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="back side">
+                                <div class="contentb">
+                                    <div class="rotaionCardImges">
+                                        <img src="IMAGES/roationcard1.svg" alt="">
+                                        <img src="IMAGES/roationcard2.svg" alt="">
+                                        <img src="IMAGES/roationcard3.svg" alt="">
+                                        <img src="IMAGES/roationcard4.svg" alt="">
+                                        <img src="IMAGES/roationcard5.svg" alt="">
+                                    </div>
+                                    <div class="knowmore">
+                                        <p>Know more</p>
+                                        <img src="IMAGES/arrow_forward.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper" id="wrapper3">
+                        <div class="container" id="container1">
+                            <div class="front side">
+                                <div class="content">
+                                    <h1>Gibbon Multimedia</h1>
+                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
+                                        interface
+                                        and
+                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
+                                        birding
+                                        community.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="back side">
+                                <div class="contentb">
+                                    <div class="rotaionCardImges">
+                                        <img src="IMAGES/roationcard1.svg" alt="">
+                                        <img src="IMAGES/roationcard2.svg" alt="">
+                                        <img src="IMAGES/roationcard3.svg" alt="">
+                                        <img src="IMAGES/roationcard4.svg" alt="">
+                                        <img src="IMAGES/roationcard5.svg" alt="">
+                                    </div>
+                                    <div class="knowmore">
+                                        <p>Know more</p>
+                                        <img src="IMAGES/arrow_forward.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container" id="container2">
+                            <div class="front side" style="background:#FFF;">
+                                <div class="content">
+                                    <h1>Gibbon Multimedia</h1>
+                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
+                                        interface
+                                        and
+                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
+                                        birding
+                                        community.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="back side">
+                                <div class="contentb">
+                                    <div class="rotaionCardImges">
+                                        <img src="IMAGES/roationcard1.svg" alt="">
+                                        <img src="IMAGES/roationcard2.svg" alt="">
+                                        <img src="IMAGES/roationcard3.svg" alt="">
+                                        <img src="IMAGES/roationcard4.svg" alt="">
+                                        <img src="IMAGES/roationcard5.svg" alt="">
+                                    </div>
+                                    <div class="knowmore">
+                                        <p>Know more</p>
+                                        <img src="IMAGES/arrow_forward.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container" id="container3">
+                            <div class="front side"
+                                style="background-: linear-gradient(270deg, #98D2E1 0%, #FEFEFE 100%);">
+                                <div class="content">
+                                    <h1>Gibbon Multimedia</h1>
+                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
+                                        interface
+                                        and
+                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
+                                        birding
+                                        community.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="back side">
+                                <div class="contentb">
+                                    <div class="rotaionCardImges">
+                                        <img src="IMAGES/roationcard1.svg" alt="">
+                                        <img src="IMAGES/roationcard2.svg" alt="">
+                                        <img src="IMAGES/roationcard3.svg" alt="">
+                                        <img src="IMAGES/roationcard4.svg" alt="">
+                                        <img src="IMAGES/roationcard5.svg" alt="">
+                                    </div>
+                                    <div class="knowmore">
+                                        <p>Know more</p>
+                                        <img src="IMAGES/arrow_forward.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper" id="wrapper4">
+                        <div class="container" id="container1">
+                            <div class="front side">
+                                <div class="content">
+                                    <h1>Gibbon Multimedia</h1>
+                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
+                                        interface
+                                        and
+                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
+                                        birding
+                                        community.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="back side">
+                                <div class="contentb">
+                                    <div class="rotaionCardImges">
+                                        <img src="IMAGES/roationcard1.svg" alt="">
+                                        <img src="IMAGES/roationcard2.svg" alt="">
+                                        <img src="IMAGES/roationcard3.svg" alt="">
+                                        <img src="IMAGES/roationcard4.svg" alt="">
+                                        <img src="IMAGES/roationcard5.svg" alt="">
+                                    </div>
+                                    <div class="knowmore">
+                                        <p>Know more</p>
+                                        <img src="IMAGES/arrow_forward.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container" id="container2">
+                            <div class="front side" style="background:#FFF;">
+                                <div class="content">
+                                    <h1>Gibbon Multimedia</h1>
+                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
+                                        interface
+                                        and
+                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
+                                        birding
+                                        community.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="back side">
+                                <div class="contentb">
+                                    <div class="rotaionCardImges">
+                                        <img src="IMAGES/roationcard1.svg" alt="">
+                                        <img src="IMAGES/roationcard2.svg" alt="">
+                                        <img src="IMAGES/roationcard3.svg" alt="">
+                                        <img src="IMAGES/roationcard4.svg" alt="">
+                                        <img src="IMAGES/roationcard5.svg" alt="">
+                                    </div>
+                                    <div class="knowmore">
+                                        <p>Know more</p>
+                                        <img src="IMAGES/arrow_forward.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container" id="container3">
+                            <div class="front side"
+                                style="background: linear-gradient(270deg, #98D2E1 0%, #FEFEFE 100%);">
+                                <div class="content">
+                                    <h1>Gibbon Multimedia</h1>
+                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
+                                        interface
+                                        and
+                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
+                                        birding
+                                        community.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="back side">
+                                <div class="contentb">
+                                    <div class="rotaionCardImges">
+                                        <img src="IMAGES/roationcard1.svg" alt="">
+                                        <img src="IMAGES/roationcard2.svg" alt="">
+                                        <img src="IMAGES/roationcard3.svg" alt="">
+                                        <img src="IMAGES/roationcard4.svg" alt="">
+                                        <img src="IMAGES/roationcard5.svg" alt="">
+                                    </div>
+                                    <div class="knowmore">
+                                        <p>Know more</p>
+                                        <img src="IMAGES/arrow_forward.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="wrapper" id="wrapperhidden">
+                        <div class="container" id="container1">
+                            <div class="front side">
+                                <div class="content">
+                                    <h1>Gibbon Multimedia</h1>
+                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
+                                        interface
+                                        and
+                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
+                                        birding
+                                        community.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="back side">
+                                <div class="contentb">
+                                    <div class="rotaionCardImges">
+                                        <img src="IMAGES/roationcard1.svg" alt="">
+                                        <img src="IMAGES/roationcard2.svg" alt="">
+                                        <img src="IMAGES/roationcard3.svg" alt="">
+                                        <img src="IMAGES/roationcard4.svg" alt="">
+                                        <img src="IMAGES/roationcard5.svg" alt="">
+                                    </div>
+                                    <div class="knowmore">
+                                        <p>Know more</p>
+                                        <img src="IMAGES/arrow_forward.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container" id="container2">
+                            <div class="front side" style="background:#FFF;">
+                                <div class="content">
+                                    <h1>Gibbon Multimedia</h1>
+                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
+                                        interface
+                                        and
+                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
+                                        birding
+                                        community.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="back side">
+                                <div class="contentb">
+                                    <div class="rotaionCardImges">
+                                        <img src="IMAGES/roationcard1.svg" alt="">
+                                        <img src="IMAGES/roationcard2.svg" alt="">
+                                        <img src="IMAGES/roationcard3.svg" alt="">
+                                        <img src="IMAGES/roationcard4.svg" alt="">
+                                        <img src="IMAGES/roationcard5.svg" alt="">
+                                    </div>
+                                    <div class="knowmore">
+                                        <p>Know more</p>
+                                        <img src="IMAGES/arrow_forward.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container" id="container3">
+                            <div class="front side"
+                                style="background: linear-gradient(270deg, #98D2E1 0%, #FEFEFE 100%);">
+                                <div class="content">
+                                    <h1>Gibbon Multimedia</h1>
+                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
+                                        interface
+                                        and
+                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
+                                        birding
+                                        community.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="back side">
+                                <div class="contentb">
+                                    <div class="rotaionCardImges">
+                                        <img src="IMAGES/roationcard1.svg" alt="">
+                                        <img src="IMAGES/roationcard2.svg" alt="">
+                                        <img src="IMAGES/roationcard3.svg" alt="">
+                                        <img src="IMAGES/roationcard4.svg" alt="">
+                                        <img src="IMAGES/roationcard5.svg" alt="">
+                                    </div>
+                                    <div class="knowmore">
+                                        <p>Know more</p>
+                                        <img src="IMAGES/arrow_forward.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper" id="wrapperhidden">
+                        <div class="container" id="container1">
+                            <div class="front side">
+                                <div class="content">
+                                    <h1>Gibbon Multimedia</h1>
+                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
+                                        interface
+                                        and
+                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
+                                        birding
+                                        community.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="back side">
+                                <div class="contentb">
+                                    <div class="rotaionCardImges">
+                                        <img src="IMAGES/roationcard1.svg" alt="">
+                                        <img src="IMAGES/roationcard2.svg" alt="">
+                                        <img src="IMAGES/roationcard3.svg" alt="">
+                                        <img src="IMAGES/roationcard4.svg" alt="">
+                                        <img src="IMAGES/roationcard5.svg" alt="">
+                                    </div>
+                                    <div class="knowmore">
+                                        <p>Know more</p>
+                                        <img src="IMAGES/arrow_forward.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container" id="container2">
+                            <div class="front side" style="background:#FFF;">
+                                <div class="content">
+                                    <h1>Gibbon Multimedia</h1>
+                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
+                                        interface
+                                        and
+                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
+                                        birding
+                                        community.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="back side">
+                                <div class="contentb">
+                                    <div class="rotaionCardImges">
+                                        <img src="IMAGES/roationcard1.svg" alt="">
+                                        <img src="IMAGES/roationcard2.svg" alt="">
+                                        <img src="IMAGES/roationcard3.svg" alt="">
+                                        <img src="IMAGES/roationcard4.svg" alt="">
+                                        <img src="IMAGES/roationcard5.svg" alt="">
+                                    </div>
+                                    <div class="knowmore">
+                                        <p>Know more</p>
+                                        <img src="IMAGES/arrow_forward.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container" id="container3">
+                            <div class="front side"
+                                style="background: linear-gradient(270deg, #98D2E1 0%, #FEFEFE 100%);">
+                                <div class="content">
+                                    <h1>Gibbon Multimedia</h1>
+                                    <p>We revolutionised the bird-watching experience with their app. Redesigned
+                                        interface
+                                        and
+                                        enhanced features led to a 30% surge in user retention, fostering a vibrant
+                                        birding
+                                        community.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="back side">
+                                <div class="contentb">
+                                    <div class="rotaionCardImges">
+                                        <img src="IMAGES/roationcard1.svg" alt="">
+                                        <img src="IMAGES/roationcard2.svg" alt="">
+                                        <img src="IMAGES/roationcard3.svg" alt="">
+                                        <img src="IMAGES/roationcard4.svg" alt="">
+                                        <img src="IMAGES/roationcard5.svg" alt="">
+                                    </div>
+                                    <div class="knowmore">
+                                        <p>Know more</p>
+                                        <img src="IMAGES/arrow_forward.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -2507,201 +2829,131 @@ inside csss for row and wrapper and cardsec
         }
     </script>
 
- <script>
-    window.addEventListener('DOMContentLoaded', (event) => {
-        // Get all container elements
-        const containers = document.querySelectorAll('.container');
 
-        // Function to rotate the container
-        const rotateContainer = (container) => {
-            container.style.transform = container.style.transform.includes('rotateY(180deg)') ?
-                'rotateY(0deg)' : 'rotateY(180deg)';
-        };
 
-        // Function to rotate all containers back to front
-        const rotateAllContainersToFront = () => {
-            containers.forEach(container => {
-                container.style.transform = 'rotateY(0deg)';
-            });
-        };
 
-        // Check if screen width is less than or equal to 600px
-        const isNarrowScreen = () => window.innerWidth <= 600;
 
-        // Add event listeners for automatic rotation and click rotation
-        const addEventListeners = () => {
-            containers.forEach(container => {
-                container.addEventListener('click', () => {
-                    rotateAllContainersToFront();
-                    rotateContainer(container);
-                });
-            });
-        };
+    <!-- <script>
+    //this is working code  imd it // 
+    document.addEventListener('DOMContentLoaded', function () {
+        let containers = document.querySelectorAll('.container');
+        let wrappers = document.querySelectorAll('.wrapper');
+        let screenWidth = window.innerWidth;
 
-        // Rotate containers automatically every 10 seconds
-        const rotateAutomatically = () => {
-            setInterval(() => {
-                const rotatedContainer = document.querySelector('.container[style*="rotateY(180deg)"]');
-                if (rotatedContainer) {
-                    rotateAllContainersToFront();
-                } else {
-                    rotateContainer(containers[0]);
-                }
-            }, 10000);
-        };
+        let currentWrapperIndex = 0;
 
-        // Check screen width and add event listeners and automatic rotation accordingly
-        if (isNarrowScreen()) {
-            addEventListeners();
-            rotateAutomatically();
-        }
-
-        // Listen for screen width changes and update event listeners and automatic rotation
-        window.addEventListener('resize', () => {
-            if (isNarrowScreen()) {
-                addEventListeners();
-                rotateAutomatically();
-            }
-        });
-    });
-</script>     
- <!-- <script>
-    window.addEventListener('DOMContentLoaded', (event) => {
-        // Get all container elements
-        const containers = document.querySelectorAll('.container');
-
-        // Function to rotate the container
-        const rotateContainer = (container) => {
+        function rotateContainer(container) {
             container.style.transform = 'rotateY(180deg)';
-        };
-
-        // Function to rotate all containers back to front one after the other
-        const rotateAllContainersOneAfterOther = () => {
-            let index = 0;
-            const rotateNextContainer = () => {
-                if (index < containers.length) {
-                    rotateContainer(containers[index]);
-                    index++;
-                    setTimeout(rotateNextContainer, 500); // Adjust the delay as needed
-                }
-            };
-            rotateNextContainer();
-        };
-
-        // Check if screen width is less than or equal to 600px
-        const isNarrowScreen = () => window.innerWidth <= 600;
-
-        // Add event listeners for automatic rotation and click rotation
-        const addEventListeners = () => {
-            containers.forEach(container => {
-                container.addEventListener('click', () => {
-                    rotateAllContainersOneAfterOther();
-                });
-            });
-        };
-
-        // Rotate containers automatically every 10 seconds
-        const rotateAutomatically = () => {
-            setInterval(() => {
-                rotateAllContainersOneAfterOther();
-            }, 10000);
-        };
-
-        // Check screen width and add event listeners and automatic rotation accordingly
-        if (isNarrowScreen()) {
-            addEventListeners();
-            rotateAutomatically();
+            setTimeout(function () {
+                container.style.transform = 'rotateY(0deg)';
+            }, 10000); // 10 seconds
         }
 
-        // Listen for screen width changes and update event listeners and automatic rotation
-        window.addEventListener('resize', () => {
-            if (isNarrowScreen()) {
-                addEventListeners();
-                rotateAutomatically();
+        function handleClick(container) {
+            if (screenWidth <= 550) {
+                rotateContainer(container);
+            } else {
+                containers.forEach(function (c) {
+                    c.style.pointerEvents = 'none';
+                });
+
+                rotateContainer(container);
+
+                setTimeout(function () {
+                    containers.forEach(function (c) {
+                        c.style.pointerEvents = 'auto';
+                    });
+                }, 10000); // 10 seconds
             }
+        }
+
+        function rotateContainersInOrder() {
+            let wrapper = wrappers[currentWrapperIndex];
+            let container = wrapper.querySelector('.container');
+
+            handleClick(container);
+
+            currentWrapperIndex = (currentWrapperIndex + 1) % wrappers.length;
+
+            setTimeout(function () {
+                rotateContainersInOrder();
+            }, 10000); // 10 seconds
+        }
+
+        // Initial call to start rotation
+        rotateContainersInOrder();
+
+        containers.forEach(function (container) {
+            container.addEventListener('click', function () {
+                handleClick(container);
+            });
         });
     });
 </script>  -->
-<!-- <script>
-    window.addEventListener('DOMContentLoaded', (event) => {
-        // Get all container elements
-        const containers = document.querySelectorAll('.container');
+<script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        let containers = document.querySelectorAll('.container');
+        let wrappers = document.querySelectorAll('.wrapper');
+        let screenWidth = window.innerWidth;
 
-        // Function to rotate the container
-        const rotateContainer = (container) => {
+        let currentWrapperIndex = 0;
+
+        function rotateContainer(container) {
             container.style.transform = 'rotateY(180deg)';
-        };
-
-        // Function to rotate all containers back to front one after the other
-        const rotateAllContainersOneAfterOther = () => {
-            let index = 0;
-            const rotateNextContainer = () => {
-                if (index < containers.length) {
-                    rotateContainer(containers[index]);
-                    index++;
-                    setTimeout(rotateNextContainer, 500); // Adjust the delay as needed
-                } else {
-                    // If all containers have rotated, reset index to start again
-                    index = 0;
-                }
-            };
-            rotateNextContainer();
-        };
-
-        // Check if screen width is less than or equal to 600px
-        const isNarrowScreen = () => window.innerWidth <= 600;
-
-        // Add event listeners for automatic rotation and click rotation
-        const addEventListeners = () => {
-            containers.forEach(container => {
-                container.addEventListener('click', () => {
-                    rotateAllContainersOneAfterOther();
-                });
-            });
-        };
-
-        // Rotate containers automatically every 10 seconds
-        const rotateAutomatically = () => {
-            setInterval(() => {
-                rotateAllContainersOneAfterOther();
-            }, 10000);
-        };
-
-        // Check screen width and add event listeners and automatic rotation accordingly
-        if (isNarrowScreen()) {
-            addEventListeners();
-            rotateAutomatically();
+            setTimeout(function () {
+                container.style.transform = 'rotateY(0deg)';
+            }, 10000); // 10 seconds
         }
 
-        // Listen for screen width changes and update event listeners and automatic rotation
-        window.addEventListener('resize', () => {
-            if (isNarrowScreen()) {
-                addEventListeners();
-                rotateAutomatically();
+        function handleClick(container) {
+            if (screenWidth <= 550) {
+                rotateContainer(container);
+            } else {
+                containers.forEach(function (c) {
+                    c.style.pointerEvents = 'none';
+                });
+
+                // Toggle between front and back sides
+                if (container.style.transform === 'rotateY(0deg)') {
+                    rotateContainer(container);
+                } else {
+                    container.style.transform = 'rotateY(0deg)';
+                }
+
+                setTimeout(function () {
+                    containers.forEach(function (c) {
+                        c.style.pointerEvents = 'auto';
+                    });
+                }, 10000); // 10 seconds
             }
+        }
+
+        function rotateContainersInOrder() {
+            let wrapper = wrappers[currentWrapperIndex];
+            let container = wrapper.querySelector('.container');
+
+            handleClick(container);
+
+            currentWrapperIndex = (currentWrapperIndex + 1) % wrappers.length;
+
+            setTimeout(function () {
+                rotateContainersInOrder();
+            }, 10000); // 10 seconds
+        }
+
+        // Initial call to start rotation
+        rotateContainersInOrder();
+
+        containers.forEach(function (container) {
+            container.addEventListener('click', function () {
+                handleClick(container);
+            });
         });
     });
-</script> -->
-<!-- <script>
-    let containers = document.querySelectorAll('.container');
-    let currentIndex = 0;
+</script>
 
-    function rotateContainers() {
-        containers[currentIndex].classList.toggle('rotate');
-        currentIndex = (currentIndex + 1) % containers.length;
-        setTimeout(rotateContainers, 10000); // 10 seconds interval
-    }
-
-    rotateContainers();
-
-    document.addEventListener('click', function () {
-        containers[currentIndex].classList.toggle('rotate');
-        currentIndex = (currentIndex + 1) % containers.length;
-        setTimeout(rotateContainers, 10000); // 10 seconds interval
-    });
-</script> -->
-
-
+</script>
 
 
 </body>

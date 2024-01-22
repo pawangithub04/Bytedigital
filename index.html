@@ -83,7 +83,7 @@
             ;
         }
 
-        .faqcontent::before {
+        /* .faqcontent::before {
             content: "\2022";
             margin-right: 5px;
         }
@@ -151,7 +151,7 @@
         .faq1 {
             margin-bottom: 16px;
             font-size: 24px;
-        }
+        } */
 
         /* for new addition in section one */
         * {
@@ -253,10 +253,11 @@
 
         .projectchild {
             display: flex;
-            align-items: flex-start;
+            /* align-items: flex-start; */
             gap: 24px;
             align-self: stretch;
             width: 100%;
+            flex-direction: row;
         }
 
         .project {
@@ -278,6 +279,7 @@
         #project2 {
             background: #FBFADA;
             width: 50%;
+            flex: 1;
         }
 
         .projectchild2 {
@@ -303,10 +305,11 @@
             flex-direction: column;
             align-items: flex-start;
             gap: 8px;
+            flex: 1;
         }
 
         .projectnamebox h3 {
-            color: #000;
+            color: black;
             font-family: "IBM Plex Sans";
             font-size: 32px;
             font-style: normal;
@@ -316,7 +319,7 @@
         }
 
         .projectnamebox p {
-            color: #000;
+            color: black;
             font-family: "IBM Plex Sans";
             font-size: 24px;
             font-style: normal;
@@ -324,6 +327,13 @@
             line-height: 125%;
             /* 30px */
         }
+        #projectnamebox p {
+            color: white;
+        }
+        #projectnamebox h3{
+            color: white;
+        }
+
 
         .phoneimg {
             box-sizing: border-box;
@@ -332,13 +342,16 @@
 
         .bottomimg img {
             width: 100%;
+            flex: 0 0 auto;
         }
 
         .viewmorebutton {
             width: 100%;
             position: relative;
         }
-
+        .viewprojectbutton:hover{
+            cursor: pointer;
+        }
         .viewprojectbutton {
             position: absolute;
             right: 0px;
@@ -359,6 +372,9 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 letter-spacing: -0.34px;
+        }
+        #c2 p{
+            font-size: 17px;
         }
 
         @media (max-width: 1039px) {
@@ -505,7 +521,7 @@ letter-spacing: -0.34px;
                         <div class="c3" id="c32">
                             <button>
                                 <div class="cta1">
-                                    <a href="#"><b class="Free_E_book" style="color: black;"> View our work </b></a>
+                                    <a href="our_work.html"><b class="Free_E_book" style="color: black;"> View our work </b></a>
                                     <a href="#"><img style="display: none;" class="download-icon" alt="Downloading icon"
                                             src="IMAGES/download.svg" /></a>
                                 </div>
@@ -533,7 +549,7 @@ letter-spacing: -0.34px;
                         <div class="columncontent">
                             <img src="IMAGES/indeximagesec2.svg" alt="" class="columnimg" id="column1img2">
                             <p class="columntext" id="column1text2">
-                                Creating a brand everyone remembers
+                                Exceptional Digital marketing service
                             </p>
                         </div>
                     </div>
@@ -543,13 +559,13 @@ letter-spacing: -0.34px;
                                 <div class="columncontent" id="column1content">
                                     <img src="IMAGES/indeximagesec3.svg" alt="" class="columnimg" id="column1img1">
                                     <p class="column1text" id="column1text1">
-                                        Creating a brand everyone remembers
+                                        Redefining an established brand
                                     </p>
                                 </div>
                                 <div class="columncontent">
                                     <img src="IMAGES/indeximagesec4.svg" alt="" class="columnimg" id="column1img2">
                                     <p class="columntext" id="column1text2">
-                                        Creating a brand everyone remembers
+                                        App design and development
                                     </p>
                                 </div>
                             </div>
@@ -557,13 +573,13 @@ letter-spacing: -0.34px;
                                 <div class="columncontent" id="column1content">
                                     <img src="IMAGES/indeximagesec5.svg" alt="" class="columnimg" id="column1img1">
                                     <p class="column1text" id="column1text1">
-                                        Creating a brand everyone remembers
+                                        Best service design in the industry
                                     </p>
                                 </div>
                                 <div class="columncontent">
                                     <img src="IMAGES/indeximagesec6.svg" alt="" class="columnimg" id="column1img2">
                                     <p class="columntext" id="column1text2">
-                                        Creating a brand everyone remembers
+                                        Gold standard customer experience
                                     </p>
                                 </div>
                             </div>
@@ -572,7 +588,7 @@ letter-spacing: -0.34px;
                             <div class="columncontent" id="column1content" style="width: 100%;">
                                 <img src="IMAGES/indeximagesec7.svg" alt="" class="columnimg" id="lastimg">
                                 <p class="column1text" id="column1text1">
-                                    Creating a brand everyone remembers
+                                    Business strategy, security and workshop
                                 </p>
                             </div>
 
@@ -600,7 +616,7 @@ letter-spacing: -0.34px;
                 </div>
                 <div class="projectscontainer">
                     <div class="projectchild">
-                        <div class="project" id="project1">
+                       <a href="Global saas company.html" class="project" id="project1">
                             <div class="projectnamebox">
                                 <h3>Global Network SAAS company</h3>
                                 <p>Transformed their online presence, doubling user engagement and expanding reach by
@@ -609,8 +625,8 @@ letter-spacing: -0.34px;
                             <div class="bottomimg">
                                 <img src="IMAGES/project1img.svg" alt="">
                             </div>
-                        </div>
-                        <div class="project" id="project2">
+                        </a>
+                        <a href="gibbon.html" class="project" id="project2">
                             <div class="projectnamebox">
                                 <h3>Gibbon
                                     <body>Multimedia
@@ -621,11 +637,11 @@ letter-spacing: -0.34px;
                             <div class="bottomimg">
                                 <img src="IMAGES/project2img.svg" alt="">
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="projectchild2">
-                        <div class="projectw" id="project3">
-                            <div class="projectnamebox">
+                        <a href="food and drinks .html" class="projectw" id="project3">
+                            <div class="projectnamebox" id="projectnamebox">
                                 <h3>Food and Drink</h3>
                                 <p>Our strategic improvements yielded exceptional results, with a remarkable 40% surge
                                     in user satisfaction and a substantial 25% increase in daily transactions. By
@@ -635,13 +651,13 @@ letter-spacing: -0.34px;
                             <div class="imge">
                                 <img src="IMAGES/project3img.svg" alt="" class="phoneimg">
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="viewmorebutton">
-                        <button class="viewprojectbutton">
+                        <a href="our_work.html"><button class="viewprojectbutton">
                             <p>View more projects</p>
                             <img src="IMAGES/viewmorebtn.svg" alt="">
-                        </button>
+                        </button></a>
                     </div>
                 </div>
 
