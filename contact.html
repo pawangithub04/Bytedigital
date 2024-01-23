@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us <Form></Form></title>
+    <title>Contact us</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +20,9 @@
         rel="stylesheet">
         <link rel="stylesheet" href="contactuscss/contactusforlive.css">
         <link rel="stylesheet" href="contactuscss/mediatag.css">
+        <link rel="stylesheet" href="blog.css/blog.css">
+        <link rel="shortcut icon" href="IMAGES/byteLOGO.svg" type="image/x-icon">  
+        
     <style>
 #error-message{
     position: relative;
@@ -29,10 +32,30 @@
     position: relative;
     top: -16px;
 }
+.main{
+    padding: 80px 252px;
+}
+@media (max-width: 1512px){
+.main {
+    padding: 80px 150px;
+}}
+@media (max-width: 900px){
+.main {
+    padding: 80px 110px;
+}}
+@media(max-width:780px){
+    .main {
+    padding: 80px 85px;
+}
+}
+@media (max-width: 550px){
+.main {
+    padding: 80px 16px;
+}}
 </style>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <div class="class">
             <div class="class2">
                 <a href="index.html"><img src="IMAGES/byteLOGO.svg" alt=""></a>
@@ -42,11 +65,37 @@
                 <a href="index.html"><div class="digital">Digital</div></a>
             </div>
         </div>
+    </header> -->
+    <header>
+        <div class="header" id="header">
+            <div class="logo" id="logo">
+                <a href="index.html"><img src="IMAGES/byteLOGO.svg" alt=""></a>
+                <div class="byte-digital">
+                    <a href="index.html"><div class="byte">Byte</div></a>
+                    <a href="index.html"><div class="digital">Digital</div></a>
+                </div>
+            </div>
+            <div class="headlinks" id="headerlinks">
+                
+                <a href="aboutus.html"><div class="no-decoration" >About us </div></a>
+                <a href="index.html#section5"><div class="no-decoration">Services </div></a>
+                <a href="our_work.html"><div class="no-decoration">Our work </div></a>
+                <a href="blog.html"><div class="no-decoration" >Blog </div></a>
+                <a href="contact.html" target="_blank"><div class="no-decoration"><button>Get in touch</button> </div></a>
+                
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
     </header>
+    
     <main>
-        <div class="classm1">
+        <div class="main">
             <div class="subclassm1">
-                <div class="boook" style="width: 100%;">
+                <div class="boook" >
                     <div class="content-box">
                         <h3><strong>Get in touch</strong></h3>
                         
@@ -247,6 +296,15 @@
           emailLabel.style.color = "initial";
         });
         </script> -->
+
+            <script>
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector(".headlinks");
+        hamburger.onclick = function() {
+            nav.classList.toggle("active");
+        }
+    </script>
+
 </body>
 
 </html>

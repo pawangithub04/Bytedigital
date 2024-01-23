@@ -1,4 +1,4 @@
-@media (min-width: 1659px) {
+/* @media (min-width: 1659px) {
     .classm1 {
       padding:  200px;
       padding-top: 100px;
@@ -318,7 +318,7 @@
       padding-bottom: 9px;
   }
   }
-  /* for phone  */
+
   @media (max-width: 550px){
      
       
@@ -395,7 +395,7 @@
   
   
   }
-  /* for phone */
+
   @media (max-width: 550px){
     .class3 b {
       font-size: 16px;
@@ -484,7 +484,7 @@ font-size: 16px;
 
 
 
-} 
+}  */
 /* @media (max-width: 380px){
   .classm1{
     padding: 24px 16px;
