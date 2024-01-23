@@ -1,3 +1,74 @@
+.faqcontent::before {
+    content: "\2022";
+    margin-right: 5px;
+}
+
+.faq4 p::before {
+    content: "\2022";
+    margin-right: 5px;
+}
+
+.faq4 h2 {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.faqlist li {
+    margin-bottom: 16px;
+}
+
+
+.faq4 h3 {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 16px;
+
+}
+
+.faq4 p {
+    margin-bottom: 16PX;
+}
+
+.faq3 p {
+    margin-bottom: 16px;
+    padding: 0;
+}
+
+.faq5 p::before {
+    content: "\2022";
+    margin-right: 5px;
+}
+
+.faq5 h2 {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.faq5 h5 {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: normal;
+
+}
+
+.faq5 p {
+    margin-bottom: 16PX;
+}
+
+.faq2 {
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.faq1 {
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+
 @media(max-width:1512px) {
 
     /* ..........................................header............................................. */

@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Byte Digital | Contact us</title>
+    <title>Contact us</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="IMAGES/byteLOGO.svg" type="image/x-icon">  
     
 
     <link rel="stylesheet"
@@ -20,9 +19,10 @@
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@100;200;300&display=swap"
         rel="stylesheet">
         <link rel="stylesheet" href="contactuscss/contactusforlive.css">
-        <link rel="stylesheet" href="blog.css/blog.css">
         <link rel="stylesheet" href="contactuscss/mediatag.css">
-   
+        <link rel="stylesheet" href="blog.css/blog.css">
+        <link rel="shortcut icon" href="IMAGES/byteLOGO.svg" type="image/x-icon">  
+        
     <style>
 #error-message{
     position: relative;
@@ -32,12 +32,40 @@
     position: relative;
     top: -16px;
 }
+.main{
+    padding: 80px 252px;
+}
+@media (max-width: 1512px){
+.main {
+    padding: 80px 150px;
+}}
+@media (max-width: 900px){
+.main {
+    padding: 80px 110px;
+}}
+@media(max-width:780px){
+    .main {
+    padding: 80px 85px;
+}
+}
+@media (max-width: 550px){
+.main {
+    padding: 80px 16px;
+}}
 </style>
 </head>
-<script src="byte digitaljs/submitbutton.js"></script>
-
 <body>
- 
+    <!-- <header>
+        <div class="class">
+            <div class="class2">
+                <a href="index.html"><img src="IMAGES/byteLOGO.svg" alt=""></a>
+            </div>
+            <div class="class3">
+                <a href="index.html"><b class="book-a-free">Byte</b></a>
+                <a href="index.html"><div class="digital">Digital</div></a>
+            </div>
+        </div>
+    </header> -->
     <header>
         <div class="header" id="header">
             <div class="logo" id="logo">
@@ -47,33 +75,31 @@
                     <a href="index.html"><div class="digital">Digital</div></a>
                 </div>
             </div>
-            <div class="headlinks" id="headerlinks" style="display: none;">
+            <div class="headlinks" id="headerlinks">
                 
                 <a href="aboutus.html"><div class="no-decoration" >About us </div></a>
                 <a href="index.html#section5"><div class="no-decoration">Services </div></a>
                 <a href="our_work.html"><div class="no-decoration">Our work </div></a>
-                <a href="blog.html"><div class="no-decoration" id="active">Blog </div></a>
+                <a href="blog.html"><div class="no-decoration" >Blog </div></a>
+                <a href="contact.html" target="_blank"><div class="no-decoration"><button>Get in touch</button> </div></a>
                 
             </div>
-            <div class="hamburger" style="display: none;">
+            <div class="hamburger">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
         </div>
     </header>
-
-
-
-
+    
     <main>
-        <div class="classm1">
+        <div class="main">
             <div class="subclassm1">
-                <div class="boook">
+                <div class="boook" >
                     <div class="content-box">
                         <h3><strong>Get in touch</strong></h3>
                         
-                        <p>Unlock the potential of your project with our complimentary in-depth consultation! Benefit from 20 years of industry expertise as we delve into your project needs, budget, and marketing direction.</p>
+                        <p>Unlock the potential of your project with our complimentary in-depth consultation! Benefit from 20 years of industry expertise as we delve into your project needs, budget, and marketing direction. Our commitment is to provide clear planning and guidance, all without any pressure, obligation, or cost to you. Book your free consultation now and let's elevate your vision together!</p>
 
                         <p><strong>No pressure, no obligation and absolutely no cost.</strong></p>
                     </div>
@@ -104,24 +130,21 @@
                     </div>
 
                 </div>
-              
-
-                <!-- <div class="form">
-
+                <div class="form" style="display: none;">
                     <form id="myForm" action="submit_page.html" method="post">
                         <div class="your-full-name-parent">
-                            <div class="your-full-name"><label for="name">Name:</label></div>
+                            <div class="your-full-name"><label for="name">your Name:</label></div>
                             <div class="frame-inner"><input type="text" id="name" name="name" required></div>
 
                         </div>
                         <div class="your-phone-number-parent">
-                            <div class="your-full-name"><label for="phone_number">Contact number</label></div>
+                            <div class="your-full-name"><label for="phone_number">Your phone number</label></div>
                             <div class="frame-inner"><input type="tel" id="phone_number" pattern="[0-9]{10}" name="phone_number" required></div>
                             <div id="error-message" style="color: red;"></div>
                             
                         </div>
                         <div class="your-email-address-parent">
-                            <div class="your-full-name"><label id="email-label" for="email">Email address</label></div>
+                            <div class="your-full-name"><label id="email-label" for="email">Your email address</label></div>
                             <div class="frame-inner"><input type="email" id="email"  name="email" required></div>
                             <div id="email-error-message" style="color: red;"></div>
                         </div>
@@ -138,7 +161,7 @@
                         <div class="select">
                             <h3>I am looking for:</h3>
                         </div>
-                         <div class="toggle-buttons-container">
+                        <div class="toggle-buttons-container">
     
                             <div class="toggle-button">
                                 <input type="checkbox" id="option-1">
@@ -165,23 +188,23 @@
                                 <label for="option-5">App development</label>
                             </div>
                         </div>
-                         <div class="horizontal-button">
+                        <div class="horizontal-button">
     
-                            <a href="thankyou.html" target="_blank" ><button id="clickButton" type="submit">Submit</button></a>
+                            <a href="thankyou.html" target="_blank" ><button id="clickButton" type="submit">Book a free consultation</button></a>
     
                         </div>
                         
-                     </form>
+                    </form>
                     
-            </div> -->
+            </div>
         </div>
 
     </main>
 
     </div>
    
-  
-<!-- <script>
+<script src="submitbutton.js"></script>  
+<script>
     const phoneNumberInput = document.getElementById("phone_number");
     const errorMessageDiv = document.getElementById("error-message");
     
@@ -195,10 +218,26 @@
       errorMessageDiv.textContent = "";
       phoneNumberInput.style.borderColor = "initial"; // Reset border color
     });
-    </script> -->
+    </script>
 
-
-    <!-- <script>
+<!-- <script>
+    const phoneNumberInput = document.getElementById("phone_number");
+    const errorMessageDiv = document.getElementById("error-message");
+    
+    phoneNumberInput.addEventListener("invalid", function(event) {
+      // Prevent the browser's default error message
+      event.preventDefault();
+    
+      // Display a custom error message
+      errorMessageDiv.textContent = "Please enter a valid 10-digit phone number.";
+    });
+    
+    // Clear the error message when the input is considered valid
+    phoneNumberInput.addEventListener("input", function() {
+      errorMessageDiv.textContent = "";
+    });
+    </script>   -->
+    <script>
         const emailInput = document.getElementById("email");
         const emailErrorMessageDiv = document.getElementById("email-error-message");
         
@@ -212,7 +251,7 @@
           emailErrorMessageDiv.textContent = "";
           emailInput.style.borderColor = "initial";
         });
-        </script> -->
+        </script>
         <script>
             document.getElementById("clickButton").addEventListener("click", function(event) {
               event.preventDefault(); // Prevent the default form submission
@@ -228,7 +267,7 @@
             </script>
          
     
-     <script>
+    <!-- <script>
         const phoneNumberInput = document.getElementById("phone_number");
         const errorMessageDiv = document.getElementById("error-message");
         
@@ -256,7 +295,16 @@
           emailErrorMessageDiv.textContent = "";
           emailLabel.style.color = "initial";
         });
-        </script> 
+        </script> -->
+
+            <script>
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector(".headlinks");
+        hamburger.onclick = function() {
+            nav.classList.toggle("active");
+        }
+    </script>
+
 </body>
 
 </html>
